@@ -1,0 +1,97 @@
+{
+  "release": "showcase-v1",
+  "projects": [
+    {
+      "id": "jevil-dash",
+      "title": "Jevil in Geometry Dash",
+      "page": "jevil-dash/README.md",
+      "poster": "jevil-dash/poster.jpg",
+      "videos": [
+        {
+          "edition": "vertical",
+          "asset": "jevil-dash-short-v2.mp4",
+          "url": "https://github.com/rlaope/deltarune-maker/releases/download/showcase-v1/jevil-dash-short-v2.mp4",
+          "bytes": 97480504,
+          "sha256": "b6c7f52e4e16a2e09d5488b4f4923f3b8d599758ce614fba740b05d1568d5ab9",
+          "width": 1080,
+          "height": 1920,
+          "fps": 60,
+          "frames": 3600,
+          "duration_seconds": 60.0,
+          "audio": {
+            "codec": "aac",
+            "sample_rate_hz": 48000,
+            "channels": 2
+          }
+        },
+        {
+          "edition": "gameplay",
+          "asset": "jevil-dash-gameplay-v2.mp4",
+          "url": "https://github.com/rlaope/deltarune-maker/releases/download/showcase-v1/jevil-dash-gameplay-v2.mp4",
+          "bytes": 127650493,
+          "sha256": "933096492c450c0b93406c77ad1e42bb295cd11605ff04a0b3e3132194a04706",
+          "width": 1280,
+          "height": 960,
+          "fps": 60,
+          "frames": 3600,
+          "duration_seconds": 60.0,
+          "audio": {
+            "codec": "aac",
+            "sample_rate_hz": 48000,
+            "channels": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "five-nights-at-spamtons",
+      "title": "Five Nights at Spamton's",
+      "page": "five-nights-at-spamtons/README.md",
+      "poster": "five-nights-at-spamtons/poster.jpg",
+      "videos": [
+        {
+          "edition": "master",
+          "asset": "five-nights-at-spamtons-v4.mp4",
+          "url": "https://github.com/rlaope/deltarune-maker/releases/download/showcase-v1/five-nights-at-spamtons-v4.mp4",
+          "bytes": 15067181,
+          "sha256": "ad59c345947e2bdd044c3a85526a3c1fcf571b14c7a129d74442fe5c09245c61",
+          "width": 2160,
+          "height": 3840,
+          "fps": 60,
+          "frames": 2893,
+          "duration_seconds": 48.216667,
+          "audio": {
+            "codec": "aac",
+            "sample_rate_hz": 48000,
+            "channels": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "ralsei-doubles",
+      "title": "What If Ralsei Kept Doubling in Size?",
+      "page": "ralsei-doubles/README.md",
+      "poster": "ralsei-doubles/poster.jpg",
+      "videos": [
+        {
+          "edition": "master",
+          "asset": "ralsei-doubles-v2.mp4",
+          "url": "https://github.com/rlaope/deltarune-maker/releases/download/showcase-v1/ralsei-doubles-v2.mp4",
+          "bytes": 21125042,
+          "sha256": "8ed9863225a9cab84c763aba1c0fa7c75990edb3a840af3140e1b741852fc4d3",
+          "width": 2160,
+          "height": 3840,
+          "fps": 60,
+          "frames": 3097,
+          "duration_seconds": 51.616667,
+          "audio": {
+            "codec": "aac",
+            "sample_rate_hz": 48000,
+            "channels": 2
+          }
+        }
+      ]
+    }
+  ]
+}
