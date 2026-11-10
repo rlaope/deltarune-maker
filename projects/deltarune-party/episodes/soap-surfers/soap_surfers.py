@@ -6,9 +6,10 @@ from itertools import combinations
 from math import atan2, ceil, cos, exp, hypot, pi, sin
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 from mpds_ui import ds_text, stamp as ds_stamp
+from soap_skills import SKILLS, SkillRound
 from study_cast import PLAYERS
 
 
@@ -24,34 +25,49 @@ RESTITUTION = .28
 PAD_NAMES = ('R', 'DR', 'D', 'DL', 'L', 'UL', 'U', 'UR')
 PAD = tuple((round(cos(pi * i / 4), 12), round(sin(pi * i / 4), 12)) for i in range(8))
 SIZE = (240, 180)
-ART = Path(__file__).resolve().parent / 'assets/mpds/soap'
+ROOT = Path(__file__).resolve().parent
+ART = ROOT / 'assets/mpds/soap'
+ACTION = ROOT / 'assets/chapter5/action'
 NEAR = Image.Resampling.NEAREST
+JARONA_BLUE = {
+    (255, 240, 111): (166, 243, 255),
+    (254, 229, 2): (77, 204, 245),
+    (223, 115, 50): (51, 120, 193),
+    (115, 106, 60): (42, 76, 134),
+    (113, 88, 68): (49, 73, 135),
+}
 BAR_COLORS = dict(zip(PLAYERS, ('blue', 'red', 'green', 'yellow')))
 
 # These are steering intentions, in local seconds and normalized sink units.
 # The D-pad follows them through acceleration, drag and collisions.
 STEER_PLANS = {
     'queen': (
-        (1.05, -.48, -.39), (2.60, -.05, -.21), (3.10, .48, .06), (4.20, -.38, -.34),
-        (5.20, -.25, -.54), (7.00, 1.14, -.54),
+        (1.05, -.48, -.39), (2.60, -.10, -.23), (3.85, -.35, -.35), (4.90, -.42, -.38),
+        (6.20, .40, -.50), (7.50, .62, -.18), (9.25, .50, -.40), (11.00, .63, -.42),
+        (12.00, .51, -.59), (13.80, .41, -.38), (15.50, .55, -.35), (17.35, .74, -.42),
+        (19.20, .72, -.42), (21.50, -.33, -.45), (24.00, -.54, .18), (29.00, -.50, -.32),
     ),
     'gerson': (
-        (1.05, -.49, .33), (2.60, -.46, .27), (3.50, -.17, .32), (4.40, -.25, .15),
-        (5.90, -.40, .28), (7.00, -.24, .17), (9.20, -.20, .18), (11.50, -.13, .12),
-        (12.80, .22, .02), (14.20, .57, .24), (15.05, .57, .24), (16.35, .60, .20),
-        (16.85, .54, .57), (18.35, .02, -.12),
+        (1.05, -.49, .33), (2.60, -.46, .27), (3.60, -.18, .31), (5.30, -.47, .18),
+        (6.40, -.60, -.26), (7.45, -.40, -.19), (8.20, -.49, .08), (9.60, -.34, .45),
+        (11.10, -.63, .17), (12.70, -.37, .33), (14.40, -.24, .13), (15.70, -.22, .17),
+        (17.30, -.48, .05), (19.50, -.51, .35), (21.10, -.30, .34), (22.95, -.37, -.26),
+        (24.50, -.31, -.10), (25.60, -.18, .23), (26.50, -.13, -.14), (27.55, .28, -.15),
+        (28.55, .40, -.20), (30.60, -.19, .25),
     ),
     'flowery': (
-        (1.05, .50, -.39), (2.50, .05, -.18), (3.50, .60, -.55), (4.30, .45, .02),
-        (5.20, .50, -.49), (6.05, .67, -.48), (6.60, .43, -.25), (7.50, .32, .25),
-        (8.75, .30, .28), (9.70, -.15, .28), (10.75, -.18, 1.08), (11.30, .26, .48),
-        (12.20, -.45, -.37), (14.00, -.17, .05), (14.85, -.17, .05), (16.15, .44, .37),
-        (17.10, 1.21, .39),
+        (1.05, .50, -.39), (2.50, .05, -.18), (3.50, .51, -.50), (5.15, .55, .12),
+        (6.85, .32, -.30), (7.42, .32, -.25), (8.70, .28, -.23), (10.20, .32, .31),
+        (11.90, .34, .29), (13.40, -.21, -.42), (14.85, -.04, -.14), (15.48, .44, -.49), (16.20, .27, -.29),
+        (17.80, .24, -.20), (19.75, .30, -.40), (21.85, .16, .16), (23.65, .12, .21),
+        (25.30, .41, .12), (26.50, .65, -.10), (28.50, .68, -.12), (30.50, .45, -.36),
     ),
     'ralsei': (
-        (1.05, .49, .37), (2.70, .20, .28), (3.65, .35, .37), (4.65, .72, .60),
-        (5.30, .42, .32), (6.40, .07, .38), (7.50, -.34, .43), (8.90, -.24, .48),
-        (10.40, -.18, .81), (11.50, -.13, .81), (13.70, .02, .21), (16.20, -.34, .16),
+        (1.05, .49, .37), (2.70, .20, .28), (3.77, .18, .07), (4.68, .16, .49),
+        (5.50, .40, .56), (6.75, .43, .28), (8.15, .39, .51), (10.30, .30, .43),
+        (11.40, .11, .21), (12.45, .15, .21), (13.70, .57, .34), (15.80, .37, .54),
+        (17.50, .21, .17), (18.55, .25, .17), (20.35, .63, .41), (21.65, .58, .55),
+        (23.55, .64, .54), (25.10, .43, .38), (27.60, .23, .48), (30.80, .21, .38),
     ),
 }
 
@@ -69,6 +85,8 @@ class Rider:
     hit_t: float | None = None
     hit_by: str | None = None
     near_rim: float = 0
+    recovery: float = 0
+    skill_hit_t: float | None = None
 
     @property
     def alive(self):
@@ -77,7 +95,8 @@ class Rider:
     def snapshot(self):
         return dict(x=self.x, y=self.y, vx=self.vx, vy=self.vy, angle=self.angle, alive=self.alive,
                     direction=self.direction, fall_t=self.fall_t, fall_x=None if self.alive else self.x,
-                    fall_y=None if self.alive else self.y, place=self.place, hit_t=self.hit_t, hit_by=self.hit_by)
+                    fall_y=None if self.alive else self.y, place=self.place, hit_t=self.hit_t, hit_by=self.hit_by,
+                    skill_hit_t=self.skill_hit_t)
 
 
 def _steer(t, plan, rider):
@@ -95,15 +114,17 @@ def _steer(t, plan, rider):
     return round(atan2(ay, ax) * 4 / pi) % 8 if hypot(ax, ay) > .13 else -1
 
 
-def _move(rider):
-    dx, dy = PAD[rider.direction] if rider.direction >= 0 else (0, 0)
+def _move(rider, t):
+    recovering = t < rider.recovery
+    dx, dy = PAD[rider.direction] if rider.direction >= 0 and not recovering else (0, 0)
     damping = exp(-DRAG / TICK_RATE)
     rider.vx = (rider.vx + dx * ACCELERATION / TICK_RATE) * damping
     rider.vy = (rider.vy + dy * ACCELERATION / TICK_RATE) * damping
     speed = hypot(rider.vx, rider.vy)
-    if speed > SPEED_LIMIT:
-        rider.vx *= SPEED_LIMIT / speed
-        rider.vy *= SPEED_LIMIT / speed
+    limit = 2.30 if recovering else SPEED_LIMIT
+    if speed > limit:
+        rider.vx *= limit / speed
+        rider.vy *= limit / speed
     rider.x += rider.vx / TICK_RATE
     rider.y += rider.vy / TICK_RATE
     if speed > .12:
@@ -131,9 +152,10 @@ def _bump(first, second):
     return approach
 
 
-def _run(duration, *, tape=None, contacts=True):
+def _run(duration, *, tape=None, contacts=True, skills=True):
     riders = {who: Rider(*STEER_PLANS[who][0][1:]) for who in PLAYERS}
     timeline, events, effects = [], [], []
+    combat = SkillRound(TICK_RATE)
     finish_tick = resolve_tick = None
     winners = []
 
@@ -155,7 +177,7 @@ def _run(duration, *, tape=None, contacts=True):
                 if direction != rider.direction:
                     rider.direction = direction
                     emit(t, 'steer', who, direction=direction, control=PAD_NAMES[direction] if direction >= 0 else None)
-                _move(rider)
+                _move(rider, t)
             if contacts:
                 for (who, rider), (other, opponent) in combinations(active, 2):
                     speed = _bump(rider, opponent)
@@ -165,6 +187,8 @@ def _run(duration, *, tape=None, contacts=True):
                         opponent.hit_t, opponent.hit_by = t, who
                         emit(t, 'bump', who, other=other, speed=speed, strength=min(1, speed / 1.2), x=x, y=y)
                         effects.append(dict(t=t, x=x, y=y, speed=speed))
+            if skills:
+                combat.step(t, tick, riders, emit)
             fallen = []
             for who, rider in active:
                 radius = hypot(rider.x, rider.y)
@@ -198,7 +222,8 @@ def _run(duration, *, tape=None, contacts=True):
                              finish_t=None if finish_tick is None else finish_tick / TICK_RATE,
                              time_left=max(0, ceil(30 - max(0, (min(tick, resolve_tick or tick) - GO_TICK) / TICK_RATE))),
                              scores={who: rider.place for who, rider in riders.items()}, effects=effects.copy(),
-                             players={who: rider.snapshot() for who, rider in riders.items()}))
+                             players={who: rider.snapshot() for who, rider in riders.items()},
+                             **combat.snapshot(t, riders)))
     return timeline, events
 
 
@@ -210,13 +235,13 @@ def simulate(fps, duration, mode='show'):
         timeline, events = _run(duration)
     else:
         tape = {who: {} for who in PLAYERS}
-        if mode == 'no-contact':
+        if mode in ('no-contact', 'no-skills'):
             for event in _run(duration)[1]:
                 if event['type'] in ('steer', 'fall'):
                     tape[event['id']][round(event['t'] * TICK_RATE)] = event.get('direction', -1)
         elif mode != 'no-input':
             raise ValueError(f'Unknown Soap Surfers replay: {mode}')
-        timeline, events = _run(duration, tape=tape, contacts=mode != 'no-contact')
+        timeline, events = _run(duration, tape=tape, contacts=mode != 'no-contact', skills=mode == 'no-contact')
     frames = [dict(timeline[int(n * TICK_RATE / fps)], t=n / fps) for n in range(round(fps * duration))]
     return frames, events
 
@@ -224,6 +249,48 @@ def simulate(fps, duration, mode='show'):
 @lru_cache(maxsize=42)
 def _art(name):
     return Image.open(ART / f'{name}.png').convert('RGBA')
+
+
+@lru_cache(maxsize=100)
+def _action(name, height, facing='left'):
+    with Image.open(ACTION / f'{name}.png') as image:
+        art = image.convert('RGBA')
+    art = art.crop(art.getbbox())
+    if name == 'flowery-jarona-punch-0':
+        data = [(*JARONA_BLUE.get(pixel[:3], pixel[:3]), pixel[3]) for pixel in art.get_flattened_data()]
+        art.putdata(data)
+    art = art.resize((max(1, round(art.width * height / art.height)), height), NEAR)
+    return art.transpose(Image.Transpose.FLIP_LEFT_RIGHT) if facing == 'right' else art
+
+
+@lru_cache(maxsize=2)
+def _fire_frame(index):
+    sprite = _action(f'ralsei-fire-{index}', 18)
+    alpha = Image.new('L', (sprite.width + 4, sprite.height + 4))
+    alpha.paste(sprite.getchannel('A'), (2, 2))
+    outline = Image.new('RGBA', alpha.size, '#b83b36')
+    outline.putalpha(alpha.filter(ImageFilter.MaxFilter(3)))
+    warm = Image.new('RGBA', alpha.size, '#f48348')
+    warm.putalpha(alpha)
+    core = Image.new('RGBA', alpha.size, '#fff0a8')
+    core.putalpha(alpha.filter(ImageFilter.MinFilter(3)))
+    return Image.alpha_composite(Image.alpha_composite(outline, warm), core)
+
+
+@lru_cache(maxsize=8)
+def _dash_ghost(facing, opacity):
+    actor = _action('flowery-jarona-punch-0', 37, facing)
+    ghost = Image.new('RGBA', actor.size, '#329bdb')
+    ghost.putalpha(actor.getchannel('A').point(lambda a: round(a * opacity)))
+    return ghost
+
+
+@lru_cache(maxsize=3)
+def _dash_petal(index):
+    petal = _action(f'flowery-petal-{index}', 6 + index * 2)
+    ink = Image.new('RGBA', petal.size, '#0080ff')
+    ink.putalpha(petal.getchannel('A'))
+    return ink
 
 
 def _paste(image, layer, x, y):
@@ -270,7 +337,7 @@ class SoapSurfers:
     def _facing(angle):
         return ('right', 'down', 'left', 'up')[round(angle / (pi / 2)) % 4]
 
-    def _rider(self, image, who, player, t, cheer_age):
+    def _rider(self, image, who, player, t, cheer_age, cast):
         x, y = player['x'], player['y']
         fall = player['fall_t']
         age = None if fall is None else t - fall
@@ -297,7 +364,14 @@ class SoapSurfers:
             pose = 'laugh' if who == 'gerson' else 'down'
             stride = int(cheer_age * 8) % (3 if who == 'gerson' else 4)
             lift = 7 * abs(sin(cheer_age * 8))
+        hit = player['skill_hit_t']
+        if age is None and hit is not None and 0 <= t - hit < .28:
+            tilt = round(23 * (1 - (t - hit) / .28)) * (-1 if player['vx'] > 0 else 1)
+            lift = round(6 * sin(pi * (t - hit) / .28))
         actor = self._body(who, pose, stride, tilt)
+        if cast and age is None and not tilt:
+            actor = self._cast_actor(cast, t)
+            lift = 2 if cast['skill'] == 'jarona' else 0
         if age is not None:
             alpha = round(255 * max(0, 1 - age / .58))
             bar, actor = bar.copy(), actor.copy()
@@ -306,6 +380,122 @@ class SoapSurfers:
         _center(image, bar, sx, sy)
         _paste(image, actor, sx - actor.width / 2, sy - actor.height - 1 - lift)
 
+    def _cast_actor(self, cast, t):
+        age = t - cast['at']
+        charging = age < cast['windup']
+        facing = 'right' if cos(cast['angle']) > 0 else 'left'
+        skill = cast['skill']
+        if skill == 'jarona':
+            if charging:
+                pose = min(4, int(age / cast['windup'] * 5))
+                return _action(f'flowery-jarona-windup-{pose}', 38, facing)
+            return _action('flowery-jarona-punch-0', 37, facing)
+        if skill == 'hammer':
+            pose = min(2, int(age / cast['windup'] * 3)) if charging else 3
+            return _action(f'gerson-hammer-slam-{pose}', 37, facing)
+        if skill == 'fire':
+            return _action('ralsei-fire-cast', 31, facing)
+        return self._body('queen', facing, 0, 0)
+
+    @staticmethod
+    def _telegraphs(image, game, t):
+        draw = ImageDraw.Draw(image)
+        for caster, cast in game['casts'].items():
+            age = t - cast['at']
+            if age >= cast['windup']:
+                continue
+            u = min(1, age / cast['windup'])
+            skill = SKILLS[caster]
+            x, y = cast['x'], cast['y']
+            if skill.name == 'hammer':
+                x += .18 * cos(cast['angle'])
+                y += .18 * sin(cast['angle'])
+                sx, sy = _screen_xy(x, y)
+                for i in range(12):
+                    a = pi * i / 6 + u * .22
+                    px = sx + 47 * cos(a)
+                    py = sy + 32 * sin(a)
+                    draw.line((px, py, px + 4 * cos(a), py + 3 * sin(a)), fill='#c5aa73', width=2)
+                continue
+            ink = {'energy': '#4c88c2', 'fire': '#e66d45', 'jarona': '#3b7991'}[skill.name]
+            dx, dy = cos(cast['angle']), sin(cast['angle'])
+            for i in range(1, 10):
+                distance = i / 9 * min(skill.reach, 1.05)
+                px, py = _screen_xy(x + distance * dx, y + distance * dy)
+                if hypot(x + distance * dx, y + distance * dy) < 1.01:
+                    draw.rectangle((px - 2, py - 1, px + 2, py + 1), fill=ink)
+            sx, sy = _screen_xy(x, y)
+            if skill.name == 'energy' and u > .30:
+                _center(image, _action('queen-attack', 9), sx + 12 * dx, sy + 7 * dy)
+            if u > .71:
+                width = 2 + round(4 * (u - .71) / .29)
+                draw.line((sx - width, sy - 31, sx + width, sy - 31), fill='white', width=1)
+                draw.line((sx, sy - 31 - width, sx, sy - 31 + width), fill='white', width=1)
+
+    @staticmethod
+    def _attacks(image, game, t):
+        draw = ImageDraw.Draw(image)
+        for shot in game['shots']:
+            skill = shot['skill']
+            sx, sy = _screen_xy(shot['x'], shot['y'])
+            dx, dy = cos(shot['angle']), sin(shot['angle'])
+            if skill == 'hammer':
+                radius = shot['radius']
+                draw.ellipse((sx - 115 * radius, sy - 79 * radius,
+                              sx + 115 * radius, sy + 79 * radius),
+                             outline='#a67245', width=3)
+                draw.ellipse((sx - 115 * radius, sy - 79 * radius,
+                              sx + 115 * radius, sy + 79 * radius),
+                             outline='#fff1b1', width=1)
+                if radius < .16:
+                    head = _action('gerson-hammer-0', 18).rotate(round(t * 840) % 360, NEAR, expand=True)
+                    _center(image, head, sx, sy - 9)
+            elif skill == 'jarona':
+                facing = 'right' if dx > 0 else 'left'
+                for distance, opacity in ((.29, .22), (.18, .34)):
+                    if shot['radius'] > distance:
+                        ghost = _dash_ghost(facing, opacity)
+                        _center(image, ghost, sx - dx * 115 * distance, sy - dy * 79 * distance - 22)
+                for i in range(1, 4):
+                    if shot['radius'] > i * .09:
+                        petal = _dash_petal(i)
+                        _center(image, petal, sx - dx * (8 + 11 * i), sy - dy * (8 + 7 * i) - 7 + (-1)**i * 4)
+            else:
+                sy -= 13
+                if skill == 'fire':
+                    span = min(35, 115 * shot['radius'])
+                    angle = atan2(dy * 79, dx * 115)
+                    fx, fy = cos(angle), sin(angle)
+                    tail = (sx - fx * span, sy - fy * span, sx - fx * 4, sy - fy * 4)
+                    draw.line(tail, fill='#bf4034', width=5)
+                    draw.line(tail, fill='#f58145', width=2)
+                    fire = _fire_frame(int(t * 15) % 2)
+                    fire = fire.rotate(-angle * 180 / pi - 90, resample=NEAR, expand=True)
+                    _center(image, fire, sx, sy)
+                else:
+                    span = 19
+                    draw.line((sx - dx * span, sy - dy * span * .69,
+                               sx + dx * 5, sy + dy * 4), fill='#315780', width=8)
+                    beam = _action('queen-laser-beam', 5).resize((25, 5), NEAR)
+                    angle = atan2(dy * 79, dx * 115) * 180 / pi
+                    _center(image, beam.rotate(-angle, NEAR, expand=True), sx - 6 * dx, sy - 4 * dy)
+        for impact in game['impacts']:
+            age = t - impact['t']
+            if not 0 <= age < .23:
+                continue
+            sx, sy = _screen_xy(impact['x'], impact['y'])
+            offset = 7 + 32 * age
+            ink = {'energy': '#96edff', 'fire': '#ffc179',
+                   'jarona': '#7bd8e8', 'hammer': '#ffe5a5'}[impact['skill']]
+            for i in range(5):
+                a = i * 2 * pi / 5 + age
+                dx, dy = cos(a), sin(a)
+                draw.line((sx + dx * offset, sy - 8 + dy * offset,
+                           sx + dx * (offset + 5), sy - 8 + dy * (offset + 5)), fill=ink, width=2)
+            if age < .10:
+                _center(image, ds_stamp('board-star').resize((14, 14), NEAR), sx, sy - 8)
+
+
     def _reflection(self, game, t):
         image = self.mirror.copy()
         layer = Image.new('RGBA', SIZE)
@@ -313,7 +503,8 @@ class SoapSurfers:
             if not player['alive']:
                 continue
             x, y = 120 + 46 * player['x'], 87 + 19 * player['y']
-            silhouette = self._body(who, self._facing(player['angle']), 0, 0)
+            cast = game['casts'].get(who)
+            silhouette = self._cast_actor(cast, t) if cast else self._body(who, self._facing(player['angle']), 0, 0)
             silhouette = silhouette.resize((max(2, silhouette.width // 2), silhouette.height // 2), NEAR)
             shadow = Image.new('RGBA', silhouette.size, '#444960')
             shadow.putalpha(silhouette.getchannel('A').point(lambda p: p // 5))
@@ -364,10 +555,12 @@ class SoapSurfers:
         game, t = frame['soap'], frame['u']
         lower = self.sink.copy()
         cheer_age = None if game['finish_t'] is None else t - game['finish_t'] - WIN_DELAY / TICK_RATE
+        self._telegraphs(lower, game, t)
         for who, player in sorted(game['players'].items(), key=lambda item: item[1]['y']):
             cheer = cheer_age if cheer_age is not None and cheer_age >= 0 and who in game['winners'] else None
-            self._rider(lower, who, player, t, cheer)
+            self._rider(lower, who, player, t, cheer, game['casts'].get(who))
         self._impact(lower, game, t)
+        self._attacks(lower, game, t)
         if game['phase'] in ('play', 'settle'):
             self._draw_timer(lower, game['time_left'])
         elif game['phase'] == 'ready' and t >= .20:
