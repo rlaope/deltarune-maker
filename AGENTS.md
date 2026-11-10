@@ -17,6 +17,8 @@ Record each asset's source game, creator or rights holder, source URL or extract
 
 - Give every proposed game idea and every delivered video a standalone English posting title.
 - Build a readable setup, escalation, and payoff. Show the crossover's recognizable interaction early and give the audience time to understand it.
+- Give each episode its own setup, turning point, and payoff. Recurring characters, mechanics, and assets can return in a new sequence of events.
+- Build Mario Party DS episodes with the shared board, HUD, rules, and framing modules. Keep the episode script and minigame implementation separate. [Deltarune Party](projects/deltarune-party/README.md)
 - Use a varied cast and character-specific behavior, dialogue, and sounds. Let the chosen premise determine the cast.
 - Keep dialogue large enough for a phone and away from social platform overlays. Use portraits and the original dialogue style to identify speakers.
 - Preserve the original game's visual and audio identity while adapting the interaction to the premise.

@@ -24,6 +24,8 @@ Download the four MP4s to one folder, then run `python3 scripts/verify_showcase.
 
 Open the repository root in Claude Code, Codex, or Hermes Agent. [AGENTS.md](AGENTS.md) holds the shared studio rules, and [CLAUDE.md](CLAUDE.md) imports them for Claude Code. For another tool, give it the shared instructions and the [production workflow](docs/workflow.md).
 
+[Deltarune Party](projects/deltarune-party/README.md) contains the shared Mario Party DS board, interface, and a Soap Surfers production example.
+
 For new crossovers, use original game assets from each franchise and credit their sources in the example page.
 
 Each folder under `examples/` pairs a finished video with a frame and its project notes. Keep English titles, documentation, issues, and commits together with the work.
