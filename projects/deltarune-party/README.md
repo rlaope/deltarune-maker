@@ -29,7 +29,7 @@ cp projects/deltarune-party/episodes/soap-surfers/*.py /path/to/episode/
 cd /path/to/episode
 mkdir -p out/final
 python3 mix_soap.py
-python3 soap_film.py --output out/final/deltarune-party-ds-flower-short-v6.mp4
+python3 soap_film.py --output out/final/deltarune-party-ds-flower-short-v7.mp4
 ```
 
 Install FFmpeg for audio mixing and export. Keep the extracted assets and their source records in the local production directory. The repository carries the production code and documentation.
@@ -43,5 +43,6 @@ Install FFmpeg for audio mixing and export. Keep the extracted assets and their 
 - Use `PartyReel.roulette(lower, title, elapsed, lock_at)` after the board turn. Leave time between locking the title and opening `PartyReel.rules`, which renders the native rules and preview. `PartyReel.compose` frames the two 240 × 180 DS screens and dialogue in the 270 × 480 vertical composition. The episode supplies the minigame frames and transition times.
 - Keep board cameos in an episode module such as `board_event.py`. Use the same projectile path for contact and drawing. The Soap Surfers example samples steering, skill input, impacts, and ring-outs at a fixed tick rate and uses the resulting event times for the edit and audio.
 - Start the original DS turn jingle with the banner entrance. In the minigame, use the measured impact strength to set the contact sound level and add a short skid for harder bumps.
+- In Soap Surfers, the sink plate is scaled into a wider arena and the camera follows the riders. Steering, skill geometry, wakes, and the visible rim share the same projection.
 
 Copy from this template when starting an episode. Make shared UI changes here and copy them into the episode before rendering.

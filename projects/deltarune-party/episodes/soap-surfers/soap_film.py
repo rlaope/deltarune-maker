@@ -103,10 +103,13 @@ def build(fps=FPS):
 
 def dialogue(events):
     return_time = next(event['t'] for event in events if event.get('phase') == 'return')
+    go = next(event['t'] for event in events if event['type'] == 'go')
     lines = [
         {'speaker': 'ralsei', 'start': .49, 'end': 1.68, 'text': 'Alright, my turn!',
          'portrait': 'ralsei-smile-face'},
         *sorted((*EVENT_DIALOGUE, *BOARD_REACTIONS), key=lambda line: line['start']),
+        {'speaker': 'ralsei', 'start': go + .08, 'end': go + 1.46,
+         'text': "Whoa, it's slippery!", 'portrait': 'ralsei-surprised-face'},
     ]
     calls = {
         'queen': ('Watch This', 'queen-smug-face'),

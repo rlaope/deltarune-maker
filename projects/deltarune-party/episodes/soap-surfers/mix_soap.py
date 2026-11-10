@@ -51,6 +51,7 @@ def render_audio(duration, events, dialogue, text_rate):
     die_hit = next(event['t'] for event in events if event['type'] == 'die' and event['action'] == 'hit')
     roulette_lock = next(event['t'] for event in events if event['type'] == 'roulette' and event['action'] == 'lock')
     skill_hit_times = {event['t'] for event in events if event['type'] == 'skill_hit'}
+    motion_impacts = [event['t'] for event in events if event['type'] in ('bump', 'skill_hit', 'fall', 'save')]
     jarona_calls = 0
     for event in events:
         kind, time = event['type'], event['t']
@@ -131,6 +132,9 @@ def render_audio(duration, events, dialogue, text_rate):
             if strength >= .5:
                 add('sound', time + .08, 'mpds-soap-slide.wav', .13 + .16 * strength,
                     .28, fade=.026, pan=pan)
+        elif kind == 'skid' and all(abs(time - hit) >= .16 for hit in motion_impacts):
+            add('sound', time, 'mpds-soap-slide.wav', .14 + .10 * event['speed'], .34,
+                fade=.029, pan=.43 * event['x'])
         elif kind == 'save':
             add('sound', time, 'mpds-soap-slide.wav', .25, .32, pitch=.94,
                 fade=.028, pan=.46 * event['x'])

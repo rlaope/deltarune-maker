@@ -18,13 +18,17 @@ GO_TICK = 126
 ROUND_TICKS = 30 * TICK_RATE
 FINISH_HOLD = 52
 WIN_DELAY = 126
-RIM = 1.0
+RIM = 1.08
 BAR_DIAMETER = .235
-ACCELERATION, DRAG, SPEED_LIMIT = 2.15, .72, 1.18
+ACCELERATION, DRAG, SPEED_LIMIT = 2.42, .66, 1.30
 RESTITUTION = .28
 PAD_NAMES = ('R', 'DR', 'D', 'DL', 'L', 'UL', 'U', 'UR')
 PAD = tuple((round(cos(pi * i / 4), 12), round(sin(pi * i / 4), 12)) for i in range(8))
 SIZE = (240, 180)
+ARENA_SIZE = (268, 194)
+ARENA_CENTER = (120 * ARENA_SIZE[0] / SIZE[0], 96 * ARENA_SIZE[1] / SIZE[1])
+PX_X = 115 * ARENA_SIZE[0] / SIZE[0] / RIM
+PX_Y = 79 * ARENA_SIZE[1] / SIZE[1] / RIM
 ROOT = Path(__file__).resolve().parent
 ART = ROOT / 'assets/mpds/soap'
 ACTION = ROOT / 'assets/chapter5/action'
@@ -52,7 +56,7 @@ STEER_PLANS = {
         (6.40, -.60, -.26), (7.45, -.40, -.19), (8.20, -.49, .08), (9.60, -.34, .45),
         (11.10, -.63, .17), (12.70, -.37, .33), (13.72, -.07, -.62), (14.40, -.24, .13),
         (15.70, -.22, .17),
-        (17.30, -.48, .05), (19.50, -.51, .35), (21.10, -.30, .34), (22.95, -.37, -.26),
+        (17.30, -.40, -.07), (19.50, -.51, .35), (21.10, -.30, .34), (22.95, -.37, -.26),
         (24.31, .21, .12), (24.50, -.31, -.10), (25.60, -.18, .23), (26.50, -.13, -.14),
         (27.55, .28, -.15),
         (28.55, .40, -.20), (30.60, -.19, .25),
@@ -60,16 +64,16 @@ STEER_PLANS = {
     'flowery': (
         (1.05, .50, -.39), (2.50, .05, -.18), (3.50, .51, -.50), (5.15, .55, .12),
         (6.85, .32, -.30), (7.42, .32, -.25), (8.70, .28, -.23), (10.20, .32, .31),
-        (11.90, .34, .29), (13.40, -.21, -.42), (14.85, -.04, -.14), (15.48, .44, -.49), (16.20, .27, -.29),
-        (17.80, .24, -.20), (19.75, .30, -.40), (21.85, .16, .16), (23.65, .12, .21),
+        (11.90, .34, .29), (13.40, -.21, -.42), (14.85, -.04, -.14), (15.48, .28, -.57), (16.20, .27, -.29),
+        (17.80, .24, -.20), (19.75, .46, -.56), (21.85, .16, .16), (23.65, .12, .21),
         (25.30, .41, .12), (26.50, .65, -.10), (28.50, .68, -.12), (30.50, .45, -.36),
     ),
     'ralsei': (
         (1.05, .49, .37), (2.70, .20, .28), (3.77, .18, .07), (4.68, .16, .49),
-        (5.50, .40, .56), (6.75, .43, .28), (8.15, .39, .51), (10.30, .30, .43),
+        (5.50, .40, .56), (6.75, .51, .44), (8.15, .39, .51), (10.30, .30, .43),
         (11.40, .11, .21), (12.45, .15, .21), (13.70, .57, .34), (15.80, .37, .54),
         (17.23, .29, -.35), (17.50, .21, .17), (18.55, .25, .17), (20.35, .63, .41),
-        (20.62, .77, .50), (21.65, .58, .55),
+        (20.62, .77, .66), (21.65, .58, .55),
         (23.55, .64, .54), (25.10, .43, .38), (27.60, .23, .48), (30.80, .21, .38),
     ),
 }
@@ -137,6 +141,14 @@ def _move(rider, t):
         rider.angle = atan2(rider.vy, rider.vx)
 
 
+def _countersteer(rider, direction, t):
+    if direction < 0 or t < rider.recovery:
+        return 0
+    speed = hypot(rider.vx, rider.vy)
+    dx, dy = PAD[direction]
+    return speed if speed >= .78 and dx * rider.vx + dy * rider.vy < .15 * speed else 0
+
+
 def _bump(first, second):
     dx, dy = second.x - first.x, second.y - first.y
     distance = hypot(dx, dy)
@@ -164,6 +176,8 @@ def _run(duration, *, tape=None, contacts=True, skills=True):
     combat = SkillRound(TICK_RATE)
     finish_tick = resolve_tick = None
     winners = []
+    camera_x = camera_y = 0.0
+    last_skid = -1.0
 
     def emit(t, kind, who, **fields):
         events.append(dict(t=t, type=kind, id=who, **fields))
@@ -183,6 +197,9 @@ def _run(duration, *, tape=None, contacts=True, skills=True):
                 if direction != rider.direction:
                     rider.direction = direction
                     emit(t, 'steer', who, direction=direction, control=PAD_NAMES[direction] if direction >= 0 else None)
+                    if t - last_skid >= .52 and (speed := _countersteer(rider, direction, t)):
+                        emit(t, 'skid', who, x=rider.x, y=rider.y, speed=speed)
+                        last_skid = t
                 _move(rider, t)
             if contacts:
                 for (who, rider), (other, opponent) in combinations(active, 2):
@@ -206,9 +223,9 @@ def _run(duration, *, tape=None, contacts=True, skills=True):
                 radius = hypot(rider.x, rider.y)
                 if radius > RIM:
                     fallen.append((who, rider))
-                elif radius >= .90:
+                elif radius >= .90 * RIM:
                     rider.near_rim = max(rider.near_rim, radius)
-                elif radius < .82 and rider.near_rim:
+                elif radius < .82 * RIM and rider.near_rim:
                     emit(t, 'save', who, radius=rider.near_rim, x=rider.x, y=rider.y)
                     rider.near_rim = 0
             for who, rider in fallen:
@@ -230,7 +247,14 @@ def _run(duration, *, tape=None, contacts=True, skills=True):
             emit(t, 'win', winner)
         phase = 'finish' if finish_tick is not None else 'settle' if resolve_tick is not None else 'play' if tick >= GO_TICK else 'ready'
         effects = [effect for effect in effects if t - effect['t'] < .26]
+        live = [rider for rider in riders.values() if rider.alive]
+        if live:
+            focus_x = (min(rider.x for rider in live) + max(rider.x for rider in live)) / 2
+            focus_y = (min(rider.y for rider in live) + max(rider.y for rider in live)) / 2
+            camera_x += (focus_x - camera_x) * .025
+            camera_y += (focus_y - camera_y) * .025
         timeline.append(dict(t=t, phase=phase, ring=RIM, sponge=None, winner=winner, winners=winners.copy(),
+                             camera=(camera_x, camera_y),
                              finish_t=None if finish_tick is None else finish_tick / TICK_RATE,
                              time_left=max(0, ceil(30 - max(0, (min(tick, resolve_tick or tick) - GO_TICK) / TICK_RATE))),
                              scores={who: rider.place for who, rider in riders.items()}, effects=effects.copy(),
@@ -314,7 +338,7 @@ def _center(image, layer, x, y):
 
 
 def _screen_xy(x, y):
-    return 120 + 115 * x, 96 + 79 * y
+    return ARENA_CENTER[0] + PX_X * x, ARENA_CENTER[1] + PX_Y * y
 
 
 class SoapSurfers:
@@ -322,7 +346,7 @@ class SoapSurfers:
 
     def __init__(self, sprite):
         self.sprite = sprite
-        self.sink = _art('sink').resize(SIZE, NEAR).convert('RGB')
+        self.sink = _art('sink').resize(ARENA_SIZE, NEAR).convert('RGB')
         self.mirror = _art('mirror').resize(SIZE, NEAR).convert('RGB')
         self.start = ds_stamp('start').resize((87, 22), NEAR)
         self.finish = ds_stamp('finish').resize((99, 25), NEAR)
@@ -398,25 +422,32 @@ class SoapSurfers:
             for layer in (bar, actor):
                 layer.putalpha(layer.getchannel('A').point(lambda p: p * alpha // 255))
         if age is None and speed > .64:
-            self._wake(image, player, sx, sy, speed)
+            self._wake(image, player, sx, sy, speed, t)
         _center(image, bar, sx, sy)
         _paste(image, actor, sx - actor.width / 2, sy - actor.height - 1 - lift)
 
 
     @staticmethod
-    def _wake(image, player, sx, sy, speed):
-        dx, dy = player['vx'] * 115, player['vy'] * 79
+    def _wake(image, player, sx, sy, speed, t):
+        dx, dy = player['vx'] * PX_X, player['vy'] * PX_Y
         length = hypot(dx, dy)
         dx, dy = dx / length, dy / length
-        span = min(24, 12 + speed * 6)
+        span = min(32, 13 + speed * 10)
         # Near the edge, the same wake gets brighter as the rider digs back in.
         edge = player['near_rim'] and player['x'] * player['vx'] + player['y'] * player['vy'] < 0
-        ink = '#72b9cf' if edge else '#a0bfcb'
+        ink = '#69b7ce' if edge else '#98bfcf'
         draw = ImageDraw.Draw(image)
         for side in (-1, 1):
             x, y = sx + side * 5 * dy, sy - side * 5 * dx
-            draw.line((x - 8 * dx, y - 8 * dy, x - span * dx, y - span * dy), fill=ink, width=2)
-            draw.point((round(x - (span + 4) * dx), round(y - (span + 4) * dy)), fill='#f6fcff')
+            tip = (x - span * dx + side * 3 * dy, y - span * dy - side * 3 * dx)
+            draw.line((x - 8 * dx, y - 8 * dy, x - span * .68 * dx, y - span * .68 * dy, *tip),
+                      fill=ink, width=2)
+            for index in range(2 if speed > .88 else 1):
+                travel = (t * 6.8 + index * .5 + side * .19) % 1
+                back = 9 + (span + 3) * travel
+                spread = side * (2 + 5 * travel)
+                px, py = x - back * dx + spread * dy, y - back * dy - spread * dx
+                draw.line((px, py, px - 2 * dx, py - 2 * dy), fill='#f6fcff', width=1)
 
     def _cast_actor(self, cast, t):
         age = t - cast['at']
@@ -458,9 +489,9 @@ class SoapSurfers:
             ink = {'energy': '#4c88c2', 'fire': '#e66d45', 'jarona': '#3b7991'}[skill.name]
             dx, dy = cos(cast['angle']), sin(cast['angle'])
             for i in range(1, 10):
-                distance = i / 9 * min(skill.reach, 1.05)
+                distance = i / 9 * min(skill.reach, RIM)
                 px, py = _screen_xy(x + distance * dx, y + distance * dy)
-                if hypot(x + distance * dx, y + distance * dy) < 1.01:
+                if hypot(x + distance * dx, y + distance * dy) < RIM:
                     draw.rectangle((px - 2, py - 1, px + 2, py + 1), fill=ink)
             sx, sy = _screen_xy(x, y)
             if skill.name == 'energy' and u > .30:
@@ -479,11 +510,11 @@ class SoapSurfers:
             dx, dy = cos(shot['angle']), sin(shot['angle'])
             if skill == 'hammer':
                 radius = shot['radius']
-                draw.ellipse((sx - 115 * radius, sy - 79 * radius,
-                              sx + 115 * radius, sy + 79 * radius),
+                draw.ellipse((sx - PX_X * radius, sy - PX_Y * radius,
+                              sx + PX_X * radius, sy + PX_Y * radius),
                              outline='#a67245', width=3)
-                draw.ellipse((sx - 115 * radius, sy - 79 * radius,
-                              sx + 115 * radius, sy + 79 * radius),
+                draw.ellipse((sx - PX_X * radius, sy - PX_Y * radius,
+                              sx + PX_X * radius, sy + PX_Y * radius),
                              outline='#fff1b1', width=1)
                 if radius < .16:
                     head = _action('gerson-hammer-0', 18).rotate(round(t * 840) % 360, NEAR, expand=True)
@@ -493,7 +524,7 @@ class SoapSurfers:
                 for distance, opacity in ((.29, .22), (.18, .34)):
                     if shot['radius'] > distance:
                         ghost = _dash_ghost(facing, opacity)
-                        _center(image, ghost, sx - dx * 115 * distance, sy - dy * 79 * distance - 22)
+                        _center(image, ghost, sx - dx * PX_X * distance, sy - dy * PX_Y * distance - 22)
                 for i in range(1, 4):
                     if shot['radius'] > i * .09:
                         petal = _dash_petal(i)
@@ -501,8 +532,8 @@ class SoapSurfers:
             else:
                 sy -= 13
                 if skill == 'fire':
-                    span = min(35, 115 * shot['radius'])
-                    angle = atan2(dy * 79, dx * 115)
+                    span = min(35, PX_X * shot['radius'])
+                    angle = atan2(dy * PX_Y, dx * PX_X)
                     fx, fy = cos(angle), sin(angle)
                     tail = (sx - fx * span, sy - fy * span, sx - fx * 4, sy - fy * 4)
                     draw.line(tail, fill='#bf4034', width=5)
@@ -515,7 +546,7 @@ class SoapSurfers:
                     draw.line((sx - dx * span, sy - dy * span * .69,
                                sx + dx * 5, sy + dy * 4), fill='#315780', width=8)
                     beam = _action('queen-laser-beam', 5).resize((25, 5), NEAR)
-                    angle = atan2(dy * 79, dx * 115) * 180 / pi
+                    angle = atan2(dy * PX_Y, dx * PX_X) * 180 / pi
                     _center(image, beam.rotate(-angle, NEAR, expand=True), sx - 6 * dx, sy - 4 * dy)
         for impact in game['impacts']:
             age = t - impact['t']
@@ -537,16 +568,21 @@ class SoapSurfers:
     def _reflection(self, game, t):
         image = self.mirror.copy()
         layer = Image.new('RGBA', SIZE)
-        for who, player in game['players'].items():
+        for who, player in sorted(game['players'].items(), key=lambda item: item[1]['y']):
             if not player['alive']:
                 continue
             x, y = 120 + 46 * player['x'], 87 + 19 * player['y']
             cast = game['casts'].get(who)
-            silhouette = self._cast_actor(cast, t) if cast else self._body(who, self._facing(player['angle']), 0, 0)
-            silhouette = silhouette.resize((max(2, silhouette.width // 2), silhouette.height // 2), NEAR)
-            shadow = Image.new('RGBA', silhouette.size, '#444960')
-            shadow.putalpha(silhouette.getchannel('A').point(lambda p: p // 5))
-            _paste(layer, shadow, x - shadow.width / 2, y - shadow.height)
+            facing = self._facing(player['angle'])
+            actor = self._cast_actor(cast, t) if cast else self._body(who, facing, 0, 0)
+            heading = round((-player['angle'] * 180 / pi + 90) / 15) * 15
+            bar = self._soap(who, heading)
+            for sprite, lift in ((bar, 0), (actor, 8)):
+                sprite = sprite.resize(tuple(max(2, round(length * .51)) for length in sprite.size), NEAR)
+                glass = Image.new('RGBA', sprite.size, '#c3d4da')
+                reflection = Image.blend(sprite, glass, .22)
+                reflection.putalpha(sprite.getchannel('A').point(lambda p: p // 2))
+                layer.alpha_composite(reflection, (round(x - sprite.width / 2), round(y - lift - sprite.height / 2)))
         for i, (x, y) in enumerate(((92, 104), (139, 117), (115, 129), (153, 98))):
             y -= (t * (8 + i) + i * 7) % 40
             x += 3 * sin(t * 1.8 + i)
@@ -564,6 +600,24 @@ class SoapSurfers:
         for index, char in enumerate(f'{seconds:02d}'):
             glyph = ds_stamp(f'board-number-blue-{char}')
             _center(image, glyph.resize((12, 13), NEAR), 209 + 13 * index, 14)
+
+    @staticmethod
+    def _viewport(image, game, t):
+        camera_x, camera_y = game['camera']
+        room_x, room_y = (outer - inner for outer, inner in zip(ARENA_SIZE, SIZE))
+        left = room_x / 2 + camera_x * PX_X * .64
+        top = room_y / 2 + camera_y * PX_Y * .38
+        if game['effects']:
+            impact = game['effects'][-1]
+            age = t - impact['t']
+            if 0 <= age < .12 and impact['speed'] >= .85:
+                nx, ny = impact['normal']
+                shake = 2.1 * sin(85 * age) * (1 - age / .12)
+                left += nx * shake
+                top += ny * shake
+        left = round(max(0, min(room_x, left)))
+        top = round(max(0, min(room_y, top)))
+        return image.crop((left, top, left + SIZE[0], top + SIZE[1]))
 
     @staticmethod
     def _impact(image, game, t):
@@ -609,6 +663,7 @@ class SoapSurfers:
             self._rider(lower, who, player, t, cheer, game['casts'].get(who))
         self._impact(lower, game, t)
         self._attacks(lower, game, t)
+        lower = self._viewport(lower, game, t)
         if game['phase'] in ('play', 'settle'):
             self._draw_timer(lower, game['time_left'])
         elif game['phase'] == 'ready' and t >= .20:
