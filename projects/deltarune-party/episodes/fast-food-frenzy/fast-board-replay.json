@@ -1,0 +1,3167 @@
+{
+  "board": {
+    "id": "chapter-5",
+    "chapter": 5,
+    "title": "Flower Kingdom",
+    "width": 3840,
+    "height": 1920,
+    "start": "garden-gate",
+    "starSpots": [
+      "petal-arch",
+      "cliff-stairs",
+      "diner-fork",
+      "roof-parapet",
+      "shrine-turn"
+    ],
+    "spaces": [
+      {
+        "id": "garden-gate",
+        "x": 220,
+        "y": 580,
+        "label": "Garden Gate",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-003",
+            "label": "Main route"
+          },
+          {
+            "to": "petals-003",
+            "label": "Garden Market"
+          }
+        ]
+      },
+      {
+        "id": "main-002",
+        "x": 365,
+        "y": 355,
+        "type": "blue",
+        "next": [
+          "main-007"
+        ]
+      },
+      {
+        "id": "main-003",
+        "x": 256,
+        "y": 524,
+        "type": "item",
+        "next": [
+          "main-004"
+        ]
+      },
+      {
+        "id": "main-004",
+        "x": 293,
+        "y": 468,
+        "type": "blue",
+        "next": [
+          "main-005"
+        ]
+      },
+      {
+        "id": "main-005",
+        "x": 329,
+        "y": 411,
+        "type": "blue",
+        "next": [
+          "main-002"
+        ]
+      },
+      {
+        "id": "main-006",
+        "x": 620,
+        "y": 230,
+        "type": "blue",
+        "next": [
+          "main-011"
+        ]
+      },
+      {
+        "id": "main-007",
+        "x": 429,
+        "y": 324,
+        "type": "red",
+        "next": [
+          "main-008"
+        ]
+      },
+      {
+        "id": "main-008",
+        "x": 493,
+        "y": 293,
+        "type": "blue",
+        "next": [
+          "main-009"
+        ]
+      },
+      {
+        "id": "main-009",
+        "x": 556,
+        "y": 261,
+        "type": "blue",
+        "next": [
+          "main-006"
+        ]
+      },
+      {
+        "id": "main-010",
+        "x": 870,
+        "y": 370,
+        "type": "item",
+        "next": [
+          "main-015"
+        ]
+      },
+      {
+        "id": "main-011",
+        "x": 683,
+        "y": 265,
+        "type": "blue",
+        "next": [
+          "main-012"
+        ]
+      },
+      {
+        "id": "main-012",
+        "x": 745,
+        "y": 300,
+        "type": "blue",
+        "next": [
+          "main-013"
+        ]
+      },
+      {
+        "id": "main-013",
+        "x": 808,
+        "y": 335,
+        "type": "blue",
+        "next": [
+          "main-010"
+        ]
+      },
+      {
+        "id": "petal-arch",
+        "x": 1120,
+        "y": 455,
+        "label": "Petal Arch",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-019",
+            "label": "Main route"
+          },
+          {
+            "to": "cliffs-003",
+            "label": "Echo Cliff Traverse"
+          }
+        ]
+      },
+      {
+        "id": "main-015",
+        "x": 933,
+        "y": 391,
+        "type": "blue",
+        "next": [
+          "main-016"
+        ]
+      },
+      {
+        "id": "main-016",
+        "x": 995,
+        "y": 413,
+        "type": "blue",
+        "next": [
+          "main-017"
+        ]
+      },
+      {
+        "id": "main-017",
+        "x": 1058,
+        "y": 434,
+        "type": "blue",
+        "next": [
+          "petal-arch"
+        ]
+      },
+      {
+        "id": "main-018",
+        "x": 1330,
+        "y": 330,
+        "type": "blue",
+        "next": [
+          "main-022"
+        ]
+      },
+      {
+        "id": "main-019",
+        "x": 1190,
+        "y": 413,
+        "type": "item",
+        "next": [
+          "main-020"
+        ]
+      },
+      {
+        "id": "main-020",
+        "x": 1260,
+        "y": 372,
+        "type": "blue",
+        "next": [
+          "main-018"
+        ]
+      },
+      {
+        "id": "main-021",
+        "x": 1540,
+        "y": 460,
+        "type": "blue",
+        "next": [
+          "main-026"
+        ]
+      },
+      {
+        "id": "main-022",
+        "x": 1383,
+        "y": 363,
+        "type": "blue",
+        "next": [
+          "main-023"
+        ]
+      },
+      {
+        "id": "main-023",
+        "x": 1435,
+        "y": 395,
+        "type": "red",
+        "next": [
+          "main-024"
+        ]
+      },
+      {
+        "id": "main-024",
+        "x": 1488,
+        "y": 428,
+        "type": "blue",
+        "next": [
+          "main-021"
+        ]
+      },
+      {
+        "id": "main-025",
+        "x": 1740,
+        "y": 295,
+        "type": "blue",
+        "next": [
+          "main-030"
+        ]
+      },
+      {
+        "id": "main-026",
+        "x": 1590,
+        "y": 419,
+        "type": "item",
+        "next": [
+          "main-027"
+        ]
+      },
+      {
+        "id": "main-027",
+        "x": 1640,
+        "y": 378,
+        "type": "blue",
+        "next": [
+          "main-028"
+        ]
+      },
+      {
+        "id": "main-028",
+        "x": 1690,
+        "y": 336,
+        "type": "blue",
+        "next": [
+          "main-025"
+        ]
+      },
+      {
+        "id": "main-029",
+        "x": 1980,
+        "y": 245,
+        "type": "blue",
+        "next": [
+          "main-034"
+        ]
+      },
+      {
+        "id": "main-030",
+        "x": 1800,
+        "y": 283,
+        "type": "red",
+        "next": [
+          "main-031"
+        ]
+      },
+      {
+        "id": "main-031",
+        "x": 1860,
+        "y": 270,
+        "type": "blue",
+        "next": [
+          "main-032"
+        ]
+      },
+      {
+        "id": "main-032",
+        "x": 1920,
+        "y": 258,
+        "type": "blue",
+        "next": [
+          "main-029"
+        ]
+      },
+      {
+        "id": "cliff-stairs",
+        "x": 2220,
+        "y": 390,
+        "label": "Cliff Stairs",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-038",
+            "label": "Main route"
+          },
+          {
+            "to": "bridges-003",
+            "label": "Cross the Castle Terrace"
+          }
+        ]
+      },
+      {
+        "id": "main-034",
+        "x": 2040,
+        "y": 281,
+        "type": "blue",
+        "next": [
+          "main-035"
+        ]
+      },
+      {
+        "id": "main-035",
+        "x": 2100,
+        "y": 318,
+        "type": "item",
+        "next": [
+          "main-036"
+        ]
+      },
+      {
+        "id": "main-036",
+        "x": 2160,
+        "y": 354,
+        "type": "blue",
+        "next": [
+          "cliff-stairs"
+        ]
+      },
+      {
+        "id": "main-037",
+        "x": 2440,
+        "y": 510,
+        "type": "blue",
+        "next": [
+          "main-042"
+        ]
+      },
+      {
+        "id": "main-038",
+        "x": 2275,
+        "y": 420,
+        "type": "blue",
+        "next": [
+          "main-039"
+        ]
+      },
+      {
+        "id": "main-039",
+        "x": 2330,
+        "y": 450,
+        "type": "red",
+        "next": [
+          "main-040"
+        ]
+      },
+      {
+        "id": "main-040",
+        "x": 2385,
+        "y": 480,
+        "type": "blue",
+        "next": [
+          "main-037"
+        ]
+      },
+      {
+        "id": "main-041",
+        "x": 2680,
+        "y": 365,
+        "type": "blue",
+        "next": [
+          "main-046"
+        ]
+      },
+      {
+        "id": "main-042",
+        "x": 2500,
+        "y": 474,
+        "type": "item",
+        "next": [
+          "main-043"
+        ]
+      },
+      {
+        "id": "main-043",
+        "x": 2560,
+        "y": 438,
+        "type": "blue",
+        "next": [
+          "main-044"
+        ]
+      },
+      {
+        "id": "main-044",
+        "x": 2620,
+        "y": 401,
+        "type": "blue",
+        "next": [
+          "main-041"
+        ]
+      },
+      {
+        "id": "main-045",
+        "x": 2940,
+        "y": 275,
+        "type": "blue",
+        "next": [
+          "main-050"
+        ]
+      },
+      {
+        "id": "main-046",
+        "x": 2745,
+        "y": 343,
+        "type": "red",
+        "next": [
+          "main-047"
+        ]
+      },
+      {
+        "id": "main-047",
+        "x": 2810,
+        "y": 320,
+        "type": "blue",
+        "next": [
+          "main-048"
+        ]
+      },
+      {
+        "id": "main-048",
+        "x": 2875,
+        "y": 298,
+        "type": "blue",
+        "next": [
+          "main-045"
+        ]
+      },
+      {
+        "id": "main-049",
+        "x": 3240,
+        "y": 385,
+        "type": "blue",
+        "next": [
+          "main-055"
+        ]
+      },
+      {
+        "id": "main-050",
+        "x": 3000,
+        "y": 297,
+        "type": "blue",
+        "next": [
+          "main-051"
+        ]
+      },
+      {
+        "id": "main-051",
+        "x": 3060,
+        "y": 319,
+        "type": "item",
+        "next": [
+          "main-052"
+        ]
+      },
+      {
+        "id": "main-052",
+        "x": 3120,
+        "y": 341,
+        "type": "blue",
+        "next": [
+          "main-053"
+        ]
+      },
+      {
+        "id": "main-053",
+        "x": 3180,
+        "y": 363,
+        "type": "blue",
+        "next": [
+          "main-049"
+        ]
+      },
+      {
+        "id": "castle-porch",
+        "x": 3480,
+        "y": 580,
+        "label": "Castle Porch",
+        "type": "blue",
+        "next": [
+          "main-059"
+        ]
+      },
+      {
+        "id": "main-055",
+        "x": 3300,
+        "y": 434,
+        "type": "red",
+        "next": [
+          "main-056"
+        ]
+      },
+      {
+        "id": "main-056",
+        "x": 3360,
+        "y": 483,
+        "type": "blue",
+        "next": [
+          "main-057"
+        ]
+      },
+      {
+        "id": "main-057",
+        "x": 3420,
+        "y": 531,
+        "type": "blue",
+        "next": [
+          "castle-porch"
+        ]
+      },
+      {
+        "id": "main-058",
+        "x": 3670,
+        "y": 805,
+        "type": "item",
+        "next": [
+          "main-063"
+        ]
+      },
+      {
+        "id": "main-059",
+        "x": 3528,
+        "y": 636,
+        "type": "blue",
+        "next": [
+          "main-060"
+        ]
+      },
+      {
+        "id": "main-060",
+        "x": 3575,
+        "y": 693,
+        "type": "blue",
+        "next": [
+          "main-061"
+        ]
+      },
+      {
+        "id": "main-061",
+        "x": 3623,
+        "y": 749,
+        "type": "blue",
+        "next": [
+          "main-058"
+        ]
+      },
+      {
+        "id": "main-062",
+        "x": 3550,
+        "y": 1020,
+        "type": "red",
+        "next": [
+          "main-067"
+        ]
+      },
+      {
+        "id": "main-063",
+        "x": 3640,
+        "y": 859,
+        "type": "blue",
+        "next": [
+          "main-064"
+        ]
+      },
+      {
+        "id": "main-064",
+        "x": 3610,
+        "y": 913,
+        "type": "blue",
+        "next": [
+          "main-065"
+        ]
+      },
+      {
+        "id": "main-065",
+        "x": 3580,
+        "y": 966,
+        "type": "blue",
+        "next": [
+          "main-062"
+        ]
+      },
+      {
+        "id": "main-066",
+        "x": 3670,
+        "y": 1260,
+        "type": "blue",
+        "next": [
+          "main-071"
+        ]
+      },
+      {
+        "id": "main-067",
+        "x": 3580,
+        "y": 1080,
+        "type": "item",
+        "next": [
+          "main-068"
+        ]
+      },
+      {
+        "id": "main-068",
+        "x": 3610,
+        "y": 1140,
+        "type": "blue",
+        "next": [
+          "main-069"
+        ]
+      },
+      {
+        "id": "main-069",
+        "x": 3640,
+        "y": 1200,
+        "type": "blue",
+        "next": [
+          "main-066"
+        ]
+      },
+      {
+        "id": "roof-parapet",
+        "x": 3460,
+        "y": 1490,
+        "label": "Roof Parapet",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-075",
+            "label": "Main route"
+          },
+          {
+            "to": "roof-003",
+            "label": "Diner Roof Walk"
+          }
+        ]
+      },
+      {
+        "id": "main-071",
+        "x": 3618,
+        "y": 1318,
+        "type": "red",
+        "next": [
+          "main-072"
+        ]
+      },
+      {
+        "id": "main-072",
+        "x": 3565,
+        "y": 1375,
+        "type": "blue",
+        "next": [
+          "main-073"
+        ]
+      },
+      {
+        "id": "main-073",
+        "x": 3513,
+        "y": 1433,
+        "type": "blue",
+        "next": [
+          "roof-parapet"
+        ]
+      },
+      {
+        "id": "main-074",
+        "x": 3180,
+        "y": 1610,
+        "type": "item",
+        "next": [
+          "main-079"
+        ]
+      },
+      {
+        "id": "main-075",
+        "x": 3390,
+        "y": 1520,
+        "type": "blue",
+        "next": [
+          "main-076"
+        ]
+      },
+      {
+        "id": "main-076",
+        "x": 3320,
+        "y": 1550,
+        "type": "blue",
+        "next": [
+          "main-077"
+        ]
+      },
+      {
+        "id": "main-077",
+        "x": 3250,
+        "y": 1580,
+        "type": "blue",
+        "next": [
+          "main-074"
+        ]
+      },
+      {
+        "id": "main-078",
+        "x": 2920,
+        "y": 1745,
+        "type": "red",
+        "next": [
+          "main-083"
+        ]
+      },
+      {
+        "id": "main-079",
+        "x": 3115,
+        "y": 1644,
+        "type": "blue",
+        "next": [
+          "main-080"
+        ]
+      },
+      {
+        "id": "main-080",
+        "x": 3050,
+        "y": 1678,
+        "type": "blue",
+        "next": [
+          "main-081"
+        ]
+      },
+      {
+        "id": "main-081",
+        "x": 2985,
+        "y": 1711,
+        "type": "blue",
+        "next": [
+          "main-078"
+        ]
+      },
+      {
+        "id": "main-082",
+        "x": 2650,
+        "y": 1590,
+        "type": "blue",
+        "next": [
+          "main-087"
+        ]
+      },
+      {
+        "id": "main-083",
+        "x": 2853,
+        "y": 1706,
+        "type": "item",
+        "next": [
+          "main-084"
+        ]
+      },
+      {
+        "id": "main-084",
+        "x": 2785,
+        "y": 1668,
+        "type": "blue",
+        "next": [
+          "main-085"
+        ]
+      },
+      {
+        "id": "main-085",
+        "x": 2718,
+        "y": 1629,
+        "type": "blue",
+        "next": [
+          "main-082"
+        ]
+      },
+      {
+        "id": "main-086",
+        "x": 2380,
+        "y": 1740,
+        "type": "blue",
+        "next": [
+          "main-091"
+        ]
+      },
+      {
+        "id": "main-087",
+        "x": 2583,
+        "y": 1628,
+        "type": "red",
+        "next": [
+          "main-088"
+        ]
+      },
+      {
+        "id": "main-088",
+        "x": 2515,
+        "y": 1665,
+        "type": "blue",
+        "next": [
+          "main-089"
+        ]
+      },
+      {
+        "id": "main-089",
+        "x": 2448,
+        "y": 1703,
+        "type": "blue",
+        "next": [
+          "main-086"
+        ]
+      },
+      {
+        "id": "diner-fork",
+        "x": 2120,
+        "y": 1610,
+        "label": "Diner Fork",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-095",
+            "label": "Main route"
+          },
+          {
+            "to": "diner-003",
+            "label": "Diner and Shrine"
+          }
+        ]
+      },
+      {
+        "id": "main-091",
+        "x": 2315,
+        "y": 1708,
+        "type": "blue",
+        "next": [
+          "main-092"
+        ]
+      },
+      {
+        "id": "main-092",
+        "x": 2250,
+        "y": 1675,
+        "type": "blue",
+        "next": [
+          "main-093"
+        ]
+      },
+      {
+        "id": "main-093",
+        "x": 2185,
+        "y": 1643,
+        "type": "blue",
+        "next": [
+          "diner-fork"
+        ]
+      },
+      {
+        "id": "main-094",
+        "x": 1850,
+        "y": 1710,
+        "type": "red",
+        "next": [
+          "main-099"
+        ]
+      },
+      {
+        "id": "main-095",
+        "x": 2053,
+        "y": 1635,
+        "type": "blue",
+        "next": [
+          "main-096"
+        ]
+      },
+      {
+        "id": "main-096",
+        "x": 1985,
+        "y": 1660,
+        "type": "blue",
+        "next": [
+          "main-097"
+        ]
+      },
+      {
+        "id": "main-097",
+        "x": 1918,
+        "y": 1685,
+        "type": "blue",
+        "next": [
+          "main-094"
+        ]
+      },
+      {
+        "id": "main-098",
+        "x": 1580,
+        "y": 1510,
+        "type": "blue",
+        "next": [
+          "main-104"
+        ]
+      },
+      {
+        "id": "main-099",
+        "x": 1796,
+        "y": 1670,
+        "type": "item",
+        "next": [
+          "main-100"
+        ]
+      },
+      {
+        "id": "main-100",
+        "x": 1742,
+        "y": 1630,
+        "type": "blue",
+        "next": [
+          "main-101"
+        ]
+      },
+      {
+        "id": "main-101",
+        "x": 1688,
+        "y": 1590,
+        "type": "blue",
+        "next": [
+          "main-102"
+        ]
+      },
+      {
+        "id": "main-102",
+        "x": 1634,
+        "y": 1550,
+        "type": "blue",
+        "next": [
+          "main-098"
+        ]
+      },
+      {
+        "id": "main-103",
+        "x": 1300,
+        "y": 1690,
+        "type": "red",
+        "next": [
+          "main-109"
+        ]
+      },
+      {
+        "id": "main-104",
+        "x": 1524,
+        "y": 1546,
+        "type": "blue",
+        "next": [
+          "main-105"
+        ]
+      },
+      {
+        "id": "main-105",
+        "x": 1468,
+        "y": 1582,
+        "type": "blue",
+        "next": [
+          "main-106"
+        ]
+      },
+      {
+        "id": "main-106",
+        "x": 1412,
+        "y": 1618,
+        "type": "item",
+        "next": [
+          "main-107"
+        ]
+      },
+      {
+        "id": "main-107",
+        "x": 1356,
+        "y": 1654,
+        "type": "blue",
+        "next": [
+          "main-103"
+        ]
+      },
+      {
+        "id": "main-108",
+        "x": 1000,
+        "y": 1760,
+        "type": "blue",
+        "next": [
+          "main-113"
+        ]
+      },
+      {
+        "id": "main-109",
+        "x": 1225,
+        "y": 1708,
+        "type": "blue",
+        "next": [
+          "main-110"
+        ]
+      },
+      {
+        "id": "main-110",
+        "x": 1150,
+        "y": 1725,
+        "type": "red",
+        "next": [
+          "main-111"
+        ]
+      },
+      {
+        "id": "main-111",
+        "x": 1075,
+        "y": 1743,
+        "type": "blue",
+        "next": [
+          "main-108"
+        ]
+      },
+      {
+        "id": "shrine-turn",
+        "x": 745,
+        "y": 1550,
+        "label": "Shrine Turn",
+        "type": "blue",
+        "next": [
+          {
+            "to": "main-118",
+            "label": "Main route"
+          },
+          {
+            "to": "irrigation-003",
+            "label": "Shrine Water Walk"
+          }
+        ]
+      },
+      {
+        "id": "main-113",
+        "x": 949,
+        "y": 1718,
+        "type": "blue",
+        "next": [
+          "main-114"
+        ]
+      },
+      {
+        "id": "main-114",
+        "x": 898,
+        "y": 1676,
+        "type": "blue",
+        "next": [
+          "main-115"
+        ]
+      },
+      {
+        "id": "main-115",
+        "x": 847,
+        "y": 1634,
+        "type": "item",
+        "next": [
+          "main-116"
+        ]
+      },
+      {
+        "id": "main-116",
+        "x": 796,
+        "y": 1592,
+        "type": "blue",
+        "next": [
+          "shrine-turn"
+        ]
+      },
+      {
+        "id": "main-117",
+        "x": 480,
+        "y": 1660,
+        "type": "blue",
+        "next": [
+          "main-122"
+        ]
+      },
+      {
+        "id": "main-118",
+        "x": 679,
+        "y": 1578,
+        "type": "blue",
+        "next": [
+          "main-119"
+        ]
+      },
+      {
+        "id": "main-119",
+        "x": 613,
+        "y": 1605,
+        "type": "red",
+        "next": [
+          "main-120"
+        ]
+      },
+      {
+        "id": "main-120",
+        "x": 546,
+        "y": 1633,
+        "type": "blue",
+        "next": [
+          "main-117"
+        ]
+      },
+      {
+        "id": "main-121",
+        "x": 255,
+        "y": 1520,
+        "type": "blue",
+        "next": [
+          "main-126"
+        ]
+      },
+      {
+        "id": "main-122",
+        "x": 424,
+        "y": 1625,
+        "type": "item",
+        "next": [
+          "main-123"
+        ]
+      },
+      {
+        "id": "main-123",
+        "x": 368,
+        "y": 1590,
+        "type": "blue",
+        "next": [
+          "main-124"
+        ]
+      },
+      {
+        "id": "main-124",
+        "x": 311,
+        "y": 1555,
+        "type": "blue",
+        "next": [
+          "main-121"
+        ]
+      },
+      {
+        "id": "main-125",
+        "x": 175,
+        "y": 1240,
+        "type": "blue",
+        "next": [
+          "main-130"
+        ]
+      },
+      {
+        "id": "main-126",
+        "x": 235,
+        "y": 1450,
+        "type": "red",
+        "next": [
+          "main-127"
+        ]
+      },
+      {
+        "id": "main-127",
+        "x": 215,
+        "y": 1380,
+        "type": "blue",
+        "next": [
+          "main-128"
+        ]
+      },
+      {
+        "id": "main-128",
+        "x": 195,
+        "y": 1310,
+        "type": "blue",
+        "next": [
+          "main-125"
+        ]
+      },
+      {
+        "id": "main-129",
+        "x": 360,
+        "y": 1005,
+        "type": "blue",
+        "next": [
+          "main-134"
+        ]
+      },
+      {
+        "id": "main-130",
+        "x": 221,
+        "y": 1181,
+        "type": "blue",
+        "next": [
+          "main-131"
+        ]
+      },
+      {
+        "id": "main-131",
+        "x": 268,
+        "y": 1123,
+        "type": "item",
+        "next": [
+          "main-132"
+        ]
+      },
+      {
+        "id": "main-132",
+        "x": 314,
+        "y": 1064,
+        "type": "blue",
+        "next": [
+          "main-129"
+        ]
+      },
+      {
+        "id": "main-133",
+        "x": 230,
+        "y": 820,
+        "type": "blue",
+        "next": [
+          "main-137"
+        ]
+      },
+      {
+        "id": "main-134",
+        "x": 317,
+        "y": 943,
+        "type": "blue",
+        "next": [
+          "main-135"
+        ]
+      },
+      {
+        "id": "main-135",
+        "x": 273,
+        "y": 882,
+        "type": "red",
+        "next": [
+          "main-133"
+        ]
+      },
+      {
+        "id": "main-137",
+        "x": 227,
+        "y": 740,
+        "type": "blue",
+        "next": [
+          "main-138"
+        ]
+      },
+      {
+        "id": "main-138",
+        "x": 223,
+        "y": 660,
+        "type": "item",
+        "next": [
+          "garden-gate"
+        ]
+      },
+      {
+        "id": "petals-002",
+        "x": 505,
+        "y": 640,
+        "type": "blue",
+        "next": [
+          "petals-007"
+        ]
+      },
+      {
+        "id": "petals-003",
+        "x": 291,
+        "y": 595,
+        "type": "item",
+        "next": [
+          "petals-004"
+        ]
+      },
+      {
+        "id": "petals-004",
+        "x": 363,
+        "y": 610,
+        "type": "blue",
+        "next": [
+          "petals-005"
+        ]
+      },
+      {
+        "id": "petals-005",
+        "x": 434,
+        "y": 625,
+        "type": "blue",
+        "next": [
+          "petals-002"
+        ]
+      },
+      {
+        "id": "petal-booth",
+        "x": 750,
+        "y": 655,
+        "label": "Garden Market",
+        "type": "event",
+        "next": [
+          "petals-011"
+        ],
+        "event": {
+          "id": "petal-booth",
+          "title": "Garden Market",
+          "lines": [
+            {
+              "speaker": "Green",
+              "text": "Help me carry the flowers? The market has a little money left for hands that help."
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 5
+          }
+        }
+      },
+      {
+        "id": "petals-007",
+        "x": 566,
+        "y": 644,
+        "type": "blue",
+        "next": [
+          "petals-008"
+        ]
+      },
+      {
+        "id": "petals-008",
+        "x": 628,
+        "y": 648,
+        "type": "blue",
+        "next": [
+          "petals-009"
+        ]
+      },
+      {
+        "id": "petals-009",
+        "x": 689,
+        "y": 651,
+        "type": "item",
+        "next": [
+          "petal-booth"
+        ]
+      },
+      {
+        "id": "petals-010",
+        "x": 940,
+        "y": 720,
+        "type": "blue",
+        "next": [
+          "petals-014"
+        ]
+      },
+      {
+        "id": "petals-011",
+        "x": 813,
+        "y": 677,
+        "type": "blue",
+        "next": [
+          "petals-012"
+        ]
+      },
+      {
+        "id": "petals-012",
+        "x": 877,
+        "y": 698,
+        "type": "blue",
+        "next": [
+          "petals-010"
+        ]
+      },
+      {
+        "id": "petals-014",
+        "x": 976,
+        "y": 667,
+        "type": "blue",
+        "next": [
+          "petals-015"
+        ]
+      },
+      {
+        "id": "petals-015",
+        "x": 1012,
+        "y": 614,
+        "type": "item",
+        "next": [
+          "petals-016"
+        ]
+      },
+      {
+        "id": "petals-016",
+        "x": 1048,
+        "y": 561,
+        "type": "blue",
+        "next": [
+          "petals-017"
+        ]
+      },
+      {
+        "id": "petals-017",
+        "x": 1084,
+        "y": 508,
+        "type": "blue",
+        "next": [
+          "petal-arch"
+        ]
+      },
+      {
+        "id": "cliffs-002",
+        "x": 1400,
+        "y": 760,
+        "type": "red",
+        "next": [
+          "cliffs-009"
+        ]
+      },
+      {
+        "id": "cliffs-003",
+        "x": 1167,
+        "y": 506,
+        "type": "red",
+        "next": [
+          "cliffs-004"
+        ]
+      },
+      {
+        "id": "cliffs-004",
+        "x": 1213,
+        "y": 557,
+        "type": "blue",
+        "next": [
+          "cliffs-005"
+        ]
+      },
+      {
+        "id": "cliffs-005",
+        "x": 1260,
+        "y": 608,
+        "type": "blue",
+        "next": [
+          "cliffs-006"
+        ]
+      },
+      {
+        "id": "cliffs-006",
+        "x": 1307,
+        "y": 658,
+        "type": "item",
+        "next": [
+          "cliffs-007"
+        ]
+      },
+      {
+        "id": "cliffs-007",
+        "x": 1353,
+        "y": 709,
+        "type": "blue",
+        "next": [
+          "cliffs-002"
+        ]
+      },
+      {
+        "id": "cliffs-008",
+        "x": 1675,
+        "y": 730,
+        "type": "red",
+        "next": [
+          "cliffs-013"
+        ]
+      },
+      {
+        "id": "cliffs-009",
+        "x": 1469,
+        "y": 753,
+        "type": "red",
+        "next": [
+          "cliffs-010"
+        ]
+      },
+      {
+        "id": "cliffs-010",
+        "x": 1538,
+        "y": 745,
+        "type": "blue",
+        "next": [
+          "cliffs-011"
+        ]
+      },
+      {
+        "id": "cliffs-011",
+        "x": 1606,
+        "y": 738,
+        "type": "blue",
+        "next": [
+          "cliffs-008"
+        ]
+      },
+      {
+        "id": "echo-cliff",
+        "x": 1900,
+        "y": 690,
+        "label": "Echo Cliff",
+        "type": "event",
+        "next": [
+          "cliffs-016"
+        ],
+        "event": {
+          "id": "echo-cliff",
+          "title": "Call Across the Cliffs",
+          "lines": [
+            {
+              "speaker": "Seth",
+              "text": "You can hear the roof from here if you know which ledge to call from."
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 3
+          },
+          "choices": [
+            {
+              "id": "climb",
+              "label": "Take the stair to the roof",
+              "effect": {
+                "type": "warp",
+                "to": "roof-parapet"
+              }
+            },
+            {
+              "id": "stay",
+              "label": "Collect 3 coins",
+              "effect": {
+                "type": "coins",
+                "amount": 3
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "cliffs-013",
+        "x": 1750,
+        "y": 717,
+        "type": "blue",
+        "next": [
+          "cliffs-014"
+        ]
+      },
+      {
+        "id": "cliffs-014",
+        "x": 1825,
+        "y": 703,
+        "type": "red",
+        "next": [
+          "echo-cliff"
+        ]
+      },
+      {
+        "id": "cliffs-015",
+        "x": 2130,
+        "y": 630,
+        "type": "red",
+        "next": [
+          "cliffs-019"
+        ]
+      },
+      {
+        "id": "cliffs-016",
+        "x": 1977,
+        "y": 670,
+        "type": "blue",
+        "next": [
+          "cliffs-017"
+        ]
+      },
+      {
+        "id": "cliffs-017",
+        "x": 2053,
+        "y": 650,
+        "type": "blue",
+        "next": [
+          "cliffs-015"
+        ]
+      },
+      {
+        "id": "cliffs-019",
+        "x": 2153,
+        "y": 570,
+        "type": "blue",
+        "next": [
+          "cliffs-020"
+        ]
+      },
+      {
+        "id": "cliffs-020",
+        "x": 2175,
+        "y": 510,
+        "type": "red",
+        "next": [
+          "cliffs-021"
+        ]
+      },
+      {
+        "id": "cliffs-021",
+        "x": 2198,
+        "y": 450,
+        "type": "red",
+        "next": [
+          "cliff-stairs"
+        ]
+      },
+      {
+        "id": "bridges-002",
+        "x": 2400,
+        "y": 755,
+        "type": "red",
+        "next": [
+          "bridges-009"
+        ]
+      },
+      {
+        "id": "bridges-003",
+        "x": 2250,
+        "y": 451,
+        "type": "blue",
+        "next": [
+          "bridges-004"
+        ]
+      },
+      {
+        "id": "bridges-004",
+        "x": 2280,
+        "y": 512,
+        "type": "blue",
+        "next": [
+          "bridges-005"
+        ]
+      },
+      {
+        "id": "bridges-005",
+        "x": 2310,
+        "y": 573,
+        "type": "item",
+        "next": [
+          "bridges-006"
+        ]
+      },
+      {
+        "id": "bridges-006",
+        "x": 2340,
+        "y": 633,
+        "type": "blue",
+        "next": [
+          "bridges-007"
+        ]
+      },
+      {
+        "id": "bridges-007",
+        "x": 2370,
+        "y": 694,
+        "type": "blue",
+        "next": [
+          "bridges-002"
+        ]
+      },
+      {
+        "id": "bridges-008",
+        "x": 2650,
+        "y": 820,
+        "type": "red",
+        "next": [
+          "bridges-013"
+        ]
+      },
+      {
+        "id": "bridges-009",
+        "x": 2463,
+        "y": 771,
+        "type": "blue",
+        "next": [
+          "bridges-010"
+        ]
+      },
+      {
+        "id": "bridges-010",
+        "x": 2525,
+        "y": 788,
+        "type": "blue",
+        "next": [
+          "bridges-011"
+        ]
+      },
+      {
+        "id": "bridges-011",
+        "x": 2588,
+        "y": 804,
+        "type": "item",
+        "next": [
+          "bridges-008"
+        ]
+      },
+      {
+        "id": "terrace-sign",
+        "x": 2920,
+        "y": 850,
+        "label": "Castle Terrace Sign",
+        "type": "event",
+        "next": [
+          {
+            "to": "bridges-017",
+            "label": "Main route"
+          },
+          {
+            "to": "terrace-stairs-003",
+            "label": "Take the Diner Steps"
+          }
+        ],
+        "event": {
+          "id": "terrace-sign",
+          "title": "A Terrace Detour",
+          "lines": [
+            {
+              "speaker": "Blue",
+              "text": "I put the sign back the right way up. The long road is yours, unless you’d rather take the diner steps."
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 4
+          },
+          "choices": [
+            {
+              "id": "steps",
+              "label": "Head to the diner",
+              "effect": {
+                "type": "warp",
+                "to": "diner-fork"
+              }
+            },
+            {
+              "id": "walk",
+              "label": "Stay on the terrace",
+              "effect": {
+                "type": "coins",
+                "amount": 4
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "bridges-013",
+        "x": 2718,
+        "y": 828,
+        "type": "blue",
+        "next": [
+          "bridges-014"
+        ]
+      },
+      {
+        "id": "bridges-014",
+        "x": 2785,
+        "y": 835,
+        "type": "red",
+        "next": [
+          "bridges-015"
+        ]
+      },
+      {
+        "id": "bridges-015",
+        "x": 2853,
+        "y": 843,
+        "type": "blue",
+        "next": [
+          "terrace-sign"
+        ]
+      },
+      {
+        "id": "bridges-016",
+        "x": 3215,
+        "y": 840,
+        "type": "blue",
+        "next": [
+          "bridges-021"
+        ]
+      },
+      {
+        "id": "bridges-017",
+        "x": 2994,
+        "y": 848,
+        "type": "item",
+        "next": [
+          "bridges-018"
+        ]
+      },
+      {
+        "id": "bridges-018",
+        "x": 3068,
+        "y": 845,
+        "type": "blue",
+        "next": [
+          "bridges-019"
+        ]
+      },
+      {
+        "id": "bridges-019",
+        "x": 3141,
+        "y": 843,
+        "type": "blue",
+        "next": [
+          "bridges-016"
+        ]
+      },
+      {
+        "id": "bridges-021",
+        "x": 3268,
+        "y": 788,
+        "type": "blue",
+        "next": [
+          "bridges-022"
+        ]
+      },
+      {
+        "id": "bridges-022",
+        "x": 3321,
+        "y": 736,
+        "type": "blue",
+        "next": [
+          "bridges-023"
+        ]
+      },
+      {
+        "id": "bridges-023",
+        "x": 3374,
+        "y": 684,
+        "type": "item",
+        "next": [
+          "bridges-024"
+        ]
+      },
+      {
+        "id": "bridges-024",
+        "x": 3427,
+        "y": 632,
+        "type": "blue",
+        "next": [
+          "castle-porch"
+        ]
+      },
+      {
+        "id": "roof-002",
+        "x": 3220,
+        "y": 1320,
+        "type": "blue",
+        "next": [
+          "roof-007"
+        ]
+      },
+      {
+        "id": "roof-003",
+        "x": 3400,
+        "y": 1448,
+        "type": "blue",
+        "next": [
+          "roof-004"
+        ]
+      },
+      {
+        "id": "roof-004",
+        "x": 3340,
+        "y": 1405,
+        "type": "red",
+        "next": [
+          "roof-005"
+        ]
+      },
+      {
+        "id": "roof-005",
+        "x": 3280,
+        "y": 1363,
+        "type": "item",
+        "next": [
+          "roof-002"
+        ]
+      },
+      {
+        "id": "roof-sign",
+        "x": 2900,
+        "y": 1250,
+        "label": "Rooftop Sign",
+        "type": "event",
+        "next": [
+          "roof-012"
+        ],
+        "event": {
+          "id": "roof-sign",
+          "title": "A Rooftop Welcome",
+          "lines": [
+            {
+              "speaker": "Flowery",
+              "text": "What a climb! Take these while you can still see where they fall."
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 5
+          }
+        }
+      },
+      {
+        "id": "roof-007",
+        "x": 3156,
+        "y": 1306,
+        "type": "blue",
+        "next": [
+          "roof-008"
+        ]
+      },
+      {
+        "id": "roof-008",
+        "x": 3092,
+        "y": 1292,
+        "type": "blue",
+        "next": [
+          "roof-009"
+        ]
+      },
+      {
+        "id": "roof-009",
+        "x": 3028,
+        "y": 1278,
+        "type": "blue",
+        "next": [
+          "roof-010"
+        ]
+      },
+      {
+        "id": "roof-010",
+        "x": 2964,
+        "y": 1264,
+        "type": "red",
+        "next": [
+          "roof-sign"
+        ]
+      },
+      {
+        "id": "roof-011",
+        "x": 2630,
+        "y": 1330,
+        "type": "item",
+        "next": [
+          "roof-016"
+        ]
+      },
+      {
+        "id": "roof-012",
+        "x": 2833,
+        "y": 1270,
+        "type": "blue",
+        "next": [
+          "roof-013"
+        ]
+      },
+      {
+        "id": "roof-013",
+        "x": 2765,
+        "y": 1290,
+        "type": "blue",
+        "next": [
+          "roof-014"
+        ]
+      },
+      {
+        "id": "roof-014",
+        "x": 2698,
+        "y": 1310,
+        "type": "blue",
+        "next": [
+          "roof-011"
+        ]
+      },
+      {
+        "id": "roof-015",
+        "x": 2340,
+        "y": 1380,
+        "type": "blue",
+        "next": [
+          "roof-020"
+        ]
+      },
+      {
+        "id": "roof-016",
+        "x": 2558,
+        "y": 1343,
+        "type": "red",
+        "next": [
+          "roof-017"
+        ]
+      },
+      {
+        "id": "roof-017",
+        "x": 2485,
+        "y": 1355,
+        "type": "item",
+        "next": [
+          "roof-018"
+        ]
+      },
+      {
+        "id": "roof-018",
+        "x": 2413,
+        "y": 1368,
+        "type": "blue",
+        "next": [
+          "roof-015"
+        ]
+      },
+      {
+        "id": "roof-020",
+        "x": 2296,
+        "y": 1426,
+        "type": "blue",
+        "next": [
+          "roof-021"
+        ]
+      },
+      {
+        "id": "roof-021",
+        "x": 2252,
+        "y": 1472,
+        "type": "blue",
+        "next": [
+          "roof-022"
+        ]
+      },
+      {
+        "id": "roof-022",
+        "x": 2208,
+        "y": 1518,
+        "type": "red",
+        "next": [
+          "roof-023"
+        ]
+      },
+      {
+        "id": "roof-023",
+        "x": 2164,
+        "y": 1564,
+        "type": "item",
+        "next": [
+          "diner-fork"
+        ]
+      },
+      {
+        "id": "diner-002",
+        "x": 1950,
+        "y": 1290,
+        "type": "blue",
+        "next": [
+          "diner-008"
+        ]
+      },
+      {
+        "id": "diner-003",
+        "x": 2086,
+        "y": 1546,
+        "type": "item",
+        "next": [
+          "diner-004"
+        ]
+      },
+      {
+        "id": "diner-004",
+        "x": 2052,
+        "y": 1482,
+        "type": "blue",
+        "next": [
+          "diner-005"
+        ]
+      },
+      {
+        "id": "diner-005",
+        "x": 2018,
+        "y": 1418,
+        "type": "red",
+        "next": [
+          "diner-006"
+        ]
+      },
+      {
+        "id": "diner-006",
+        "x": 1984,
+        "y": 1354,
+        "type": "blue",
+        "next": [
+          "diner-002"
+        ]
+      },
+      {
+        "id": "diner-counter",
+        "x": 1670,
+        "y": 1185,
+        "label": "Diner Counter",
+        "type": "event",
+        "next": [
+          "diner-012"
+        ],
+        "event": {
+          "id": "diner-counter",
+          "title": "Second Diner Special",
+          "lines": [
+            {
+              "speaker": "Yellow",
+              "text": "You’ve got a table for two dice. Want the set, or the cash left under the plate?"
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 4
+          },
+          "choices": [
+            {
+              "id": "dice",
+              "label": "Order the Dice Set",
+              "effect": {
+                "type": "item",
+                "item": "double-dice"
+              },
+              "cost": 2
+            },
+            {
+              "id": "change",
+              "label": "Keep the change",
+              "effect": {
+                "type": "coins",
+                "amount": 4
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "diner-008",
+        "x": 1880,
+        "y": 1264,
+        "type": "blue",
+        "next": [
+          "diner-009"
+        ]
+      },
+      {
+        "id": "diner-009",
+        "x": 1810,
+        "y": 1238,
+        "type": "item",
+        "next": [
+          "diner-010"
+        ]
+      },
+      {
+        "id": "diner-010",
+        "x": 1740,
+        "y": 1211,
+        "type": "blue",
+        "next": [
+          "diner-counter"
+        ]
+      },
+      {
+        "id": "diner-011",
+        "x": 1375,
+        "y": 1290,
+        "type": "red",
+        "next": [
+          "diner-016"
+        ]
+      },
+      {
+        "id": "diner-012",
+        "x": 1596,
+        "y": 1211,
+        "type": "event",
+        "next": [
+          "diner-013"
+        ],
+        "event": {
+          "id": "diner-special-pick",
+          "title": "Diner Special",
+          "lines": [
+            {
+              "speaker": "flowery",
+              "text": "Pick a menu. No peeking!"
+            }
+          ],
+          "choices": [
+            {
+              "id": "left",
+              "label": "Menu 1",
+              "effect": {
+                "type": "coins",
+                "amount": 1
+              }
+            },
+            {
+              "id": "middle",
+              "label": "Menu 2",
+              "effect": {
+                "type": "coins",
+                "amount": 8
+              }
+            },
+            {
+              "id": "right",
+              "label": "Menu 3",
+              "effect": {
+                "type": "coins",
+                "amount": 20
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "diner-013",
+        "x": 1523,
+        "y": 1238,
+        "type": "blue",
+        "next": [
+          "diner-014"
+        ]
+      },
+      {
+        "id": "diner-014",
+        "x": 1449,
+        "y": 1264,
+        "type": "blue",
+        "next": [
+          "diner-011"
+        ]
+      },
+      {
+        "id": "diner-015",
+        "x": 1090,
+        "y": 1370,
+        "type": "item",
+        "next": [
+          "diner-020"
+        ]
+      },
+      {
+        "id": "diner-016",
+        "x": 1304,
+        "y": 1310,
+        "type": "blue",
+        "next": [
+          "diner-017"
+        ]
+      },
+      {
+        "id": "diner-017",
+        "x": 1233,
+        "y": 1330,
+        "type": "red",
+        "next": [
+          "diner-018"
+        ]
+      },
+      {
+        "id": "diner-018",
+        "x": 1161,
+        "y": 1350,
+        "type": "blue",
+        "next": [
+          "diner-015"
+        ]
+      },
+      {
+        "id": "diner-020",
+        "x": 1033,
+        "y": 1400,
+        "type": "blue",
+        "next": [
+          "diner-021"
+        ]
+      },
+      {
+        "id": "diner-021",
+        "x": 975,
+        "y": 1430,
+        "type": "item",
+        "next": [
+          "diner-022"
+        ]
+      },
+      {
+        "id": "diner-022",
+        "x": 918,
+        "y": 1460,
+        "type": "blue",
+        "next": [
+          "diner-023"
+        ]
+      },
+      {
+        "id": "diner-023",
+        "x": 860,
+        "y": 1490,
+        "type": "red",
+        "next": [
+          "diner-024"
+        ]
+      },
+      {
+        "id": "diner-024",
+        "x": 803,
+        "y": 1520,
+        "type": "blue",
+        "next": [
+          "shrine-turn"
+        ]
+      },
+      {
+        "id": "irrigation-002",
+        "x": 690,
+        "y": 1280,
+        "type": "red",
+        "next": [
+          "irrigation-007"
+        ]
+      },
+      {
+        "id": "irrigation-003",
+        "x": 731,
+        "y": 1483,
+        "type": "blue",
+        "next": [
+          "irrigation-004"
+        ]
+      },
+      {
+        "id": "irrigation-004",
+        "x": 718,
+        "y": 1415,
+        "type": "blue",
+        "next": [
+          "irrigation-005"
+        ]
+      },
+      {
+        "id": "irrigation-005",
+        "x": 704,
+        "y": 1348,
+        "type": "item",
+        "next": [
+          "irrigation-002"
+        ]
+      },
+      {
+        "id": "water-gauge",
+        "x": 800,
+        "y": 1080,
+        "label": "Shrine Water Gauge",
+        "type": "event",
+        "next": [
+          "irrigation-010"
+        ],
+        "event": {
+          "id": "water-gauge",
+          "title": "Water for the Garden",
+          "lines": [
+            {
+              "speaker": "Aqua",
+              "text": "This valve fills the garden beds. Try it while I watch the gauge."
+            }
+          ],
+          "effect": {
+            "type": "coins",
+            "amount": 6
+          }
+        }
+      },
+      {
+        "id": "irrigation-007",
+        "x": 727,
+        "y": 1213,
+        "type": "blue",
+        "next": [
+          "irrigation-008"
+        ]
+      },
+      {
+        "id": "irrigation-008",
+        "x": 763,
+        "y": 1147,
+        "type": "red",
+        "next": [
+          "water-gauge"
+        ]
+      },
+      {
+        "id": "irrigation-009",
+        "x": 580,
+        "y": 910,
+        "type": "blue",
+        "next": [
+          "irrigation-014"
+        ]
+      },
+      {
+        "id": "irrigation-010",
+        "x": 745,
+        "y": 1038,
+        "type": "blue",
+        "next": [
+          "irrigation-011"
+        ]
+      },
+      {
+        "id": "irrigation-011",
+        "x": 690,
+        "y": 995,
+        "type": "item",
+        "next": [
+          "irrigation-012"
+        ]
+      },
+      {
+        "id": "irrigation-012",
+        "x": 635,
+        "y": 953,
+        "type": "blue",
+        "next": [
+          "irrigation-009"
+        ]
+      },
+      {
+        "id": "irrigation-014",
+        "x": 529,
+        "y": 863,
+        "type": "red",
+        "next": [
+          "irrigation-015"
+        ]
+      },
+      {
+        "id": "irrigation-015",
+        "x": 477,
+        "y": 816,
+        "type": "blue",
+        "next": [
+          "irrigation-016"
+        ]
+      },
+      {
+        "id": "irrigation-016",
+        "x": 426,
+        "y": 769,
+        "type": "blue",
+        "next": [
+          "irrigation-017"
+        ]
+      },
+      {
+        "id": "irrigation-017",
+        "x": 374,
+        "y": 721,
+        "type": "item",
+        "next": [
+          "irrigation-018"
+        ]
+      },
+      {
+        "id": "irrigation-018",
+        "x": 323,
+        "y": 674,
+        "type": "blue",
+        "next": [
+          "irrigation-019"
+        ]
+      },
+      {
+        "id": "irrigation-019",
+        "x": 271,
+        "y": 627,
+        "type": "blue",
+        "next": [
+          "garden-gate"
+        ]
+      },
+      {
+        "id": "terrace-stairs-002",
+        "x": 2580,
+        "y": 1015,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-008"
+        ]
+      },
+      {
+        "id": "terrace-stairs-003",
+        "x": 2852,
+        "y": 883,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-004"
+        ]
+      },
+      {
+        "id": "terrace-stairs-004",
+        "x": 2784,
+        "y": 916,
+        "type": "red",
+        "next": [
+          "terrace-stairs-005"
+        ]
+      },
+      {
+        "id": "terrace-stairs-005",
+        "x": 2716,
+        "y": 949,
+        "type": "item",
+        "next": [
+          "terrace-stairs-006"
+        ]
+      },
+      {
+        "id": "terrace-stairs-006",
+        "x": 2648,
+        "y": 982,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-002"
+        ]
+      },
+      {
+        "id": "terrace-stairs-007",
+        "x": 2250,
+        "y": 1040,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-013"
+        ]
+      },
+      {
+        "id": "terrace-stairs-008",
+        "x": 2514,
+        "y": 1020,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-009"
+        ]
+      },
+      {
+        "id": "terrace-stairs-009",
+        "x": 2448,
+        "y": 1025,
+        "type": "red",
+        "next": [
+          "terrace-stairs-010"
+        ]
+      },
+      {
+        "id": "terrace-stairs-010",
+        "x": 2382,
+        "y": 1030,
+        "type": "item",
+        "next": [
+          "terrace-stairs-011"
+        ]
+      },
+      {
+        "id": "terrace-stairs-011",
+        "x": 2316,
+        "y": 1035,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-007"
+        ]
+      },
+      {
+        "id": "terrace-stairs-012",
+        "x": 1910,
+        "y": 1105,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-018"
+        ]
+      },
+      {
+        "id": "terrace-stairs-013",
+        "x": 2182,
+        "y": 1053,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-014"
+        ]
+      },
+      {
+        "id": "terrace-stairs-014",
+        "x": 2114,
+        "y": 1066,
+        "type": "red",
+        "next": [
+          "terrace-stairs-015"
+        ]
+      },
+      {
+        "id": "terrace-stairs-015",
+        "x": 2046,
+        "y": 1079,
+        "type": "item",
+        "next": [
+          "terrace-stairs-016"
+        ]
+      },
+      {
+        "id": "terrace-stairs-016",
+        "x": 1978,
+        "y": 1092,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-012"
+        ]
+      },
+      {
+        "id": "terrace-stairs-018",
+        "x": 1850,
+        "y": 1125,
+        "type": "blue",
+        "next": [
+          "terrace-stairs-019"
+        ]
+      },
+      {
+        "id": "terrace-stairs-019",
+        "x": 1790,
+        "y": 1145,
+        "type": "red",
+        "next": [
+          "terrace-stairs-020"
+        ]
+      },
+      {
+        "id": "terrace-stairs-020",
+        "x": 1730,
+        "y": 1165,
+        "type": "item",
+        "next": [
+          "diner-counter"
+        ]
+      }
+    ],
+    "regions": [
+      {
+        "id": "garden",
+        "name": "Garden",
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 980,
+        "asset": "boards/chapter-5/garden.png"
+      },
+      {
+        "id": "cliffs",
+        "name": "Cliffs",
+        "x": 1280,
+        "y": 0,
+        "width": 1280,
+        "height": 980,
+        "asset": "boards/chapter-5/cliffs.png"
+      },
+      {
+        "id": "floral-castle",
+        "name": "Flower Castle",
+        "x": 2560,
+        "y": 0,
+        "width": 1280,
+        "height": 980,
+        "asset": "boards/chapter-5/floral-castle.png"
+      },
+      {
+        "id": "shrine",
+        "name": "Garden Shrine",
+        "x": 0,
+        "y": 980,
+        "width": 1280,
+        "height": 940,
+        "asset": "boards/chapter-5/shrine.png"
+      },
+      {
+        "id": "second-diner",
+        "name": "Second Diner",
+        "x": 1280,
+        "y": 980,
+        "width": 1280,
+        "height": 940,
+        "asset": "boards/chapter-5/second-diner.png"
+      },
+      {
+        "id": "castle-roof",
+        "name": "Castle Rooftop",
+        "x": 2560,
+        "y": 980,
+        "width": 1280,
+        "height": 940,
+        "asset": "boards/chapter-5/castle-roof.png"
+      }
+    ],
+    "palette": {
+      "ground": "#392341",
+      "route": "#efc28a",
+      "shadow": "#59334c",
+      "accent": "#f89f7c"
+    }
+  },
+  "setup": {
+    "seed": 2368,
+    "rounds": 1,
+    "players": [
+      "lancer",
+      "susie",
+      "noelle",
+      "flowery"
+    ],
+    "starts": {
+      "lancer": "diner-014",
+      "susie": "diner-005",
+      "noelle": "diner-009",
+      "flowery": "diner-counter"
+    }
+  },
+  "initial": {
+    "phase": "roll",
+    "round": 1,
+    "rounds": 1,
+    "active": "lancer",
+    "players": [
+      {
+        "id": "lancer",
+        "space": "diner-014",
+        "coins": 10,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "susie",
+        "space": "diner-005",
+        "coins": 10,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "noelle",
+        "space": "diner-009",
+        "coins": 10,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "flowery",
+        "space": "diner-counter",
+        "coins": 10,
+        "stars": 0,
+        "items": []
+      }
+    ],
+    "remaining": 0,
+    "star": "petal-arch",
+    "options": [],
+    "encounter": null,
+    "dice": [],
+    "armedItem": null,
+    "winner": null,
+    "standings": []
+  },
+  "trace": [
+    {
+      "action": {
+        "type": "roll"
+      },
+      "events": [
+        {
+          "type": "roll",
+          "player": "lancer",
+          "values": [
+            2
+          ]
+        },
+        {
+          "type": "move",
+          "player": "lancer",
+          "from": "diner-014",
+          "to": "diner-011",
+          "remaining": 1
+        },
+        {
+          "type": "move",
+          "player": "lancer",
+          "from": "diner-011",
+          "to": "diner-016",
+          "remaining": 0
+        },
+        {
+          "type": "land",
+          "player": "lancer",
+          "space": "diner-016",
+          "kind": "blue"
+        },
+        {
+          "type": "coins",
+          "player": "lancer",
+          "amount": 3,
+          "balance": 13,
+          "reason": "blue"
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "end"
+      },
+      "events": [
+        {
+          "type": "handoff",
+          "from": "lancer",
+          "to": "susie",
+          "round": 1
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "roll"
+      },
+      "events": [
+        {
+          "type": "roll",
+          "player": "susie",
+          "values": [
+            1
+          ]
+        },
+        {
+          "type": "move",
+          "player": "susie",
+          "from": "diner-005",
+          "to": "diner-006",
+          "remaining": 0
+        },
+        {
+          "type": "land",
+          "player": "susie",
+          "space": "diner-006",
+          "kind": "blue"
+        },
+        {
+          "type": "coins",
+          "player": "susie",
+          "amount": 3,
+          "balance": 13,
+          "reason": "blue"
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "end"
+      },
+      "events": [
+        {
+          "type": "handoff",
+          "from": "susie",
+          "to": "noelle",
+          "round": 1
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "roll"
+      },
+      "events": [
+        {
+          "type": "roll",
+          "player": "noelle",
+          "values": [
+            3
+          ]
+        },
+        {
+          "type": "move",
+          "player": "noelle",
+          "from": "diner-009",
+          "to": "diner-010",
+          "remaining": 2
+        },
+        {
+          "type": "move",
+          "player": "noelle",
+          "from": "diner-010",
+          "to": "diner-counter",
+          "remaining": 1
+        },
+        {
+          "type": "move",
+          "player": "noelle",
+          "from": "diner-counter",
+          "to": "diner-012",
+          "remaining": 0
+        },
+        {
+          "type": "land",
+          "player": "noelle",
+          "space": "diner-012",
+          "kind": "event"
+        },
+        {
+          "type": "encounter",
+          "player": "noelle",
+          "id": "diner-special-pick",
+          "title": "Diner Special",
+          "lines": [
+            {
+              "speaker": "flowery",
+              "text": "Pick a menu. No peeking!"
+            }
+          ],
+          "space": "diner-012"
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "choose",
+        "option": "middle"
+      },
+      "events": [
+        {
+          "type": "coins",
+          "player": "noelle",
+          "amount": 8,
+          "balance": 18,
+          "reason": "event"
+        },
+        {
+          "type": "event-resolved",
+          "player": "noelle",
+          "id": "diner-special-pick",
+          "option": "middle"
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "end"
+      },
+      "events": [
+        {
+          "type": "handoff",
+          "from": "noelle",
+          "to": "flowery",
+          "round": 1
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "roll"
+      },
+      "events": [
+        {
+          "type": "roll",
+          "player": "flowery",
+          "values": [
+            4
+          ]
+        },
+        {
+          "type": "move",
+          "player": "flowery",
+          "from": "diner-counter",
+          "to": "diner-012",
+          "remaining": 3
+        },
+        {
+          "type": "move",
+          "player": "flowery",
+          "from": "diner-012",
+          "to": "diner-013",
+          "remaining": 2
+        },
+        {
+          "type": "move",
+          "player": "flowery",
+          "from": "diner-013",
+          "to": "diner-014",
+          "remaining": 1
+        },
+        {
+          "type": "move",
+          "player": "flowery",
+          "from": "diner-014",
+          "to": "diner-011",
+          "remaining": 0
+        },
+        {
+          "type": "land",
+          "player": "flowery",
+          "space": "diner-011",
+          "kind": "red"
+        },
+        {
+          "type": "coins",
+          "player": "flowery",
+          "amount": -3,
+          "balance": 7,
+          "reason": "red"
+        }
+      ]
+    },
+    {
+      "action": {
+        "type": "end"
+      },
+      "events": [
+        {
+          "type": "results",
+          "winner": "noelle",
+          "standings": [
+            "noelle",
+            "lancer",
+            "susie",
+            "flowery"
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "phase": "results",
+    "round": 1,
+    "rounds": 1,
+    "active": "flowery",
+    "players": [
+      {
+        "id": "lancer",
+        "space": "diner-016",
+        "coins": 13,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "susie",
+        "space": "diner-006",
+        "coins": 13,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "noelle",
+        "space": "diner-012",
+        "coins": 18,
+        "stars": 0,
+        "items": []
+      },
+      {
+        "id": "flowery",
+        "space": "diner-011",
+        "coins": 7,
+        "stars": 0,
+        "items": []
+      }
+    ],
+    "remaining": 0,
+    "star": "petal-arch",
+    "options": [],
+    "encounter": null,
+    "dice": [
+      4
+    ],
+    "armedItem": null,
+    "winner": "noelle",
+    "standings": [
+      "noelle",
+      "lancer",
+      "susie",
+      "flowery"
+    ]
+  },
+  "hashes": {
+    "board": "0ebcde7b14a3c8cdea57209e27fff0ff311fdca21d6146fdb12f7535361bda28",
+    "engine": "0b6224c04eac4ef883219eb051fe0939fd8fa6178e0cb39a1f929c220d7fe6bd"
+  },
+  "event": {
+    "player": "noelle",
+    "space": "diner-012",
+    "selected": "middle",
+    "prompt": "Pick a menu. No peeking!",
+    "options": [
+      {
+        "id": "left",
+        "label": "Menu 1",
+        "coins": 1
+      },
+      {
+        "id": "middle",
+        "label": "Menu 2",
+        "coins": 8
+      },
+      {
+        "id": "right",
+        "label": "Menu 3",
+        "coins": 20
+      }
+    ]
+  },
+  "grouping": {
+    "teamSeed": 1,
+    "teams": {
+      "lancer": "blue",
+      "susie": "blue",
+      "noelle": "blue",
+      "flowery": "red"
+    }
+  }
+}

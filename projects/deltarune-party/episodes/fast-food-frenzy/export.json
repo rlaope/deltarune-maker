@@ -1,0 +1,39 @@
+{
+  "title": "Flowery’s Diner Went Full Mario Party DS",
+  "version": "v7",
+  "edition": "vertical",
+  "asset": "fast-food-frenzy-short-v7.mp4",
+  "bytes": 37085607,
+  "sha256": "a3cc162a86f506ac8ea3b45af9eab89cf29d7a7d633d090b95fd1decee7de431",
+  "width": 2160,
+  "height": 3840,
+  "fps": 60,
+  "frames": 5107,
+  "duration_seconds": 85.116667,
+  "video": {
+    "codec": "h264",
+    "profile": "High",
+    "pixel_format": "yuv420p",
+    "color_space": "bt709",
+    "color_range": "limited"
+  },
+  "audio": {
+    "codec": "aac",
+    "profile": "LC",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "channel_layout": "stereo"
+  },
+  "verification": {
+    "delivery_record": "qa/delivery.json",
+    "manual_record": "qa/independent/v7/fast-food-v7-manual-qa.md",
+    "playback_record": "qa/independent/v7/stored-playback.json",
+    "playback_mode": "muted",
+    "playback_ended": true,
+    "decoded_frames": 5107,
+    "dropped_frames": 0,
+    "playback_errors": 0,
+    "audio_check": "technical",
+    "audio_peak_dbfs": -1.4
+  }
+}

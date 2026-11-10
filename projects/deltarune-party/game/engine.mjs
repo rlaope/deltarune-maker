@@ -113,7 +113,7 @@ export class BoardGame {
   #standings = []
   #trace = []
 
-  constructor(board, {seed = 1, rounds = 10, players = DEFAULT_PLAYERS, start} = {}) {
+  constructor(board, {seed = 1, rounds = 10, players = DEFAULT_PLAYERS, start, starts = {}} = {}) {
     requireRule(Number.isSafeInteger(seed), 'The seed must be an integer')
     requireRule(Number.isSafeInteger(rounds) && rounds > 0, 'Round count must be a positive integer')
     requireRule(Array.isArray(players) && players.length > 0 && players.every(isId) &&
@@ -124,7 +124,17 @@ export class BoardGame {
     this.#star = this.#starSpots[0] ?? null
     const startingSpace = start === undefined ? source.start : start
     requireRule(this.#spaces.has(startingSpace), `Unknown starting space: ${startingSpace}`)
-    this.#players = players.map(id => ({id, space: startingSpace, coins: STARTING_COINS, stars: 0, items: []}))
+    requireRule(starts && typeof starts === 'object' &&
+      [Object.prototype, null].includes(Object.getPrototypeOf(starts)), 'Starts must map player IDs to spaces')
+    const startingSpaces = new Map()
+    for (const id of Reflect.ownKeys(starts)) {
+      requireRule(players.includes(id), `Unknown starting player: ${String(id)}`)
+      const space = starts[id]
+      requireRule(this.#spaces.has(space), `Unknown starting space for ${id}: ${String(space)}`)
+      startingSpaces.set(id, space)
+    }
+    this.#players = players.map(id => ({id, space: startingSpaces.get(id) ?? startingSpace,
+      coins: STARTING_COINS, stars: 0, items: []}))
     this.#rounds = rounds
     this.#seed = seed >>> 0
   }

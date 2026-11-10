@@ -112,7 +112,7 @@ class PartyBoard:
         ordered = sorted(self.players, key=totals.get, reverse=True)
         return [(who, 1 + sum(other > totals[who] for other in totals.values())) for who in ordered]
 
-    def upper(self, state):
+    def upper(self, state, *, landing_colors=None):
         image = self.map.copy()
         draw = ImageDraw.Draw(image)
         paste(image, stamp('board-turn'), 71, 164)
@@ -133,6 +133,8 @@ class PartyBoard:
             index = min(range(len(self.route)),
                         key=lambda j: (pose.x - self.route[j][0]) ** 2 + (pose.y - self.route[j][1]) ** 2)
             landing = 'red' if self.spaces[index] == 'red' else 'blue'
+            if landing_colors:
+                landing = landing_colors.get(who, landing)
             tile = resized(f'board-panel-{PLAYER_COLORS[i]}-{landing}', 54, 62).copy()
             tile.putalpha(tile.getchannel('A').point(lambda value: round(value * .60)))
             paste(image, tile, x, y)

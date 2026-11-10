@@ -24,7 +24,7 @@ Download the four MP4s to one folder, then run `python3 scripts/verify_showcase.
 
 Open the repository root in Claude Code, Codex, or Hermes Agent. [AGENTS.md](AGENTS.md) holds the shared studio rules, and [CLAUDE.md](CLAUDE.md) imports them for Claude Code. For another tool, give it the shared instructions and the [production workflow](docs/workflow.md).
 
-[Deltarune Party](projects/deltarune-party/README.md) includes the shared Mario Party DS Shorts renderer and two production episodes, Boo Tag and Soap Surfers.
+[Deltarune Party](projects/deltarune-party/README.md) includes the shared Mario Party DS Shorts renderer and the Boo Tag, Soap Surfers, and [Fast Food Frenzy](projects/deltarune-party/episodes/fast-food-frenzy/README.md) production episodes.
 
 [Kris & Susie: Queen’s Inside Story](projects/queens-inside-story/README.md) is a playable Nintendo DS-style boss encounter with editable scene data and a Shorts renderer.
 

@@ -61,6 +61,26 @@ test('a scene can start at another valid space on the same board', () => {
   assert.throws(() => new BoardGame(map, {start: 'missing'}), /Unknown starting space/)
 })
 
+test('per-player starts override the common start and replay a dispersed round', () => {
+  const map = loop()
+  const setup = {rounds: 1, start: 'p8', starts: {kris: 'p1', ralsei: 'p5', gerson: 'p10'}}
+  const game = new BoardGame(map, setup)
+  const starts = ['p1', 'p8', 'p5', 'p10']
+  assert.deepEqual(game.state.players.map(player => player.space), starts)
+  for (const start of starts) {
+    assert.equal(game.dispatch(ROLL).find(entry => entry.type === 'move').from, start)
+    game.dispatch(NEXT)
+  }
+  assert.equal(game.state.phase, 'results')
+  const replay = new BoardGame(map, setup)
+  for (const {action, events} of game.trace) assert.deepEqual(replay.dispatch(action), events)
+  assert.deepEqual(replay.state, game.state)
+  assert.equal(new BoardGame(map, {starts: {susie: 'p2'}}).state.players[0].space, 'p0')
+  assert.throws(() => new BoardGame(map, {starts: null}), /Starts must map player IDs to spaces/)
+  assert.throws(() => new BoardGame(map, {starts: {lancer: 'p1'}}), /Unknown starting player: lancer/)
+  assert.throws(() => new BoardGame(map, {starts: {kris: 'missing'}}), /Unknown starting space for kris/)
+})
+
 test('branches charge on traversal and red or blue rewards only apply on landing', () => {
   const map = board([
     space('start', ['pass']),

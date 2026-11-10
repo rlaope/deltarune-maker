@@ -26,6 +26,17 @@ EPISODES = {
             'assets/mpds/double-dice-roll/01.png',
         ),
     },
+    'fast-food-frenzy': {
+        'film': 'fast_film.py',
+        'assets': (
+            'assets/boards/chapter-5/second-diner.png',
+            'assets/cast/flowery-down-0.png',
+            'assets/deltarune/jarona-aura/punch-00.png',
+            'assets/fast-food-native/motion/lower-00.png',
+            'assets/fast-food-native/rules-solo.png',
+            'assets/mpds/raw/minigame-roulettes-2.png',
+        ),
+    },
     'soap-surfers': {
         'film': 'soap_film.py',
         'mix': 'mix_soap.py',

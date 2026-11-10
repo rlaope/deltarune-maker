@@ -65,6 +65,14 @@ class BoardTurn:
         return (self.origin + self.spaces) % self.board_spaces
 
 
+def next_turn_start(turn, *, dialogue_end=None, reward_hold=1.60, dialogue_hold=.82):
+    """Allow both the landing reward and any reaction dialogue to settle before the handoff."""
+    reward_ready = turn.after_award(reward_hold)
+    if dialogue_end is None:
+        return reward_ready
+    return max(reward_ready, round(dialogue_end + dialogue_hold, 2))
+
+
 def turn_events(turn, coins):
     """Share the rendered turn's schedule with the sound mix."""
     yield dict(t=turn.banner, type='turn_banner', id=turn.who)

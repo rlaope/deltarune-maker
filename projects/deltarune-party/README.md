@@ -16,23 +16,36 @@ python3 projects/deltarune-party/render.py boo-tag --workspace /path/to/boo-work
 
 python3 projects/deltarune-party/render.py soap-surfers --workspace /path/to/soap-workspace --mix-only
 python3 projects/deltarune-party/render.py soap-surfers --workspace /path/to/soap-workspace -- --output out/final/deltarune-party-soap-surfers.mp4
+
+python3 projects/deltarune-party/render.py fast-food-frenzy --workspace /path/to/diner-workspace
 ```
 
-Boo Tag builds its own mix and writes `out/final/boo-tag-short-v5.mp4`. Soap Surfers reads `out/mix.wav` by default. The stills commands render representative frames under `qa/` for either episode. Pass episode options after `--` to the launcher.
+Boo Tag and Fast Food Frenzy build their own mixes and write `out/final/boo-tag-short-v5.mp4` and `out/final/fast-food-frenzy-short-v7.mp4`. Soap Surfers reads `out/mix.wav` by default. The `--stills` episode option renders representative frames under `qa/`. Pass episode options after `--` to the launcher.
 
 | Episode | Original asset inputs under the workspace |
 | --- | --- |
 | [Boo Tag](episodes/boo-tag/) | `assets/mpds/` (including both Double Dice cards, controls and red roll faces), `assets/deltarune/` (dialogue font), `assets/cast/`, `assets/board/courtyard.png`, `assets/boo-native/`, and `assets/audio/` |
 | [Soap Surfers](episodes/soap-surfers/) | `assets/mpds/` (including `soap/`), `assets/deltarune/`, `assets/chapter5/` (including `guests/` and `action/`), and `assets/audio/` (including `soap/` and `fight/`) |
+| [Fast Food Frenzy](episodes/fast-food-frenzy/README.md) | `assets/mpds/`, `assets/deltarune/` (including `jarona-aura/`), `assets/cast/`, `assets/boards/chapter-5/second-diner.png`, `assets/fast-food-native/`, and `assets/audio/` |
 
 Keep extracted sprites, game audio, and their provenance records in the private workspace. See the [studio asset policy](../../AGENTS.md) and the [original Mario Party DS manual](https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_ds_21/Manual_NintendoDS_MarioPartyDS_EN.pdf).
 
 ## Build the next episode
 
 1. Add a directory under `episodes/` and register its film entry point and any episode-specific asset checks in `render.py`. Use the Boo Tag entry for an episode that mixes audio and renders in one command.
-2. Give the episode a cast, map plate, board route, and space types. Pass these to `PartyBoard` and feed both screens from the same `BoardState`. Use `party_turns.py` to schedule rolls, moves, rewards, and camera handoffs. Leave room for the active player's banner and the full coin reward before the next turn or minigame draw.
+2. Give the episode a cast, map plate, board route, and space types. Pass these to `PartyBoard` and feed both screens from the same `BoardState`. Use `party_turns.py` to schedule rolls, moves, rewards, and camera handoffs. Use the reward and dialogue timing rule below to let each turn finish on screen before starting the next camera move.
 3. Use `party_items.py` for the native Double Dice selection, confirmation, and two rolls. Keep the episode's board encounter and dialogue in its own module. Connect any new effects to the same events the board uses to update the coin counters and poses.
 4. Put the minigame simulation in the episode directory and keep the native rules card and title art in the private workspace. Use `ShortsReel` for the roulette, rules, and final screen composition, the shared mixer for cue timing, and `start_encoder` for the final MP4.
 5. Render stills around each handoff before encoding the full episode. Verify the final MP4 by playing the transitions and ending and checking the export dimensions, frame rate, audio, and SHA-256.
 
-Boo Tag demonstrates a Boo encounter, native Double Dice, a three-turn board sequence, and a treasure chase. Soap Surfers demonstrates a Flower Castle event and a different minigame simulation using the same board and Shorts framing.
+### Hold the camera after a reward
+
+Use `next_turn_start` from `party_turns.py` to schedule the next pan from the current `BoardTurn` and the end time of its optional reaction. The defaults hold for at least 1.60 seconds after the coin count updates and for 0.82 seconds after a reaction finishes. The later boundary wins. Apply the same calculation to the final award before handing off to the draw.
+
+```python
+from party_turns import next_turn_start
+
+camera_start = next_turn_start(turn, dialogue_end=reaction["end"] if reaction else None)
+```
+
+[Fast Food Frenzy](episodes/fast-food-frenzy/README.md) uses this timing for Lancer and Susie's coin reactions and Noelle's covered-menu reward.
