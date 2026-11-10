@@ -24,8 +24,14 @@ DRAW = round(EVENT_END + .65, 2)
 LOCK, RULES, MATCH = (round(DRAW + gap, 2) for gap in (1.75, 4.25, 8.50))
 RACE_WINDOW = 34
 DIE_START, DIE_HIT, FACE = 1.87, 2.72, 3
+TURN_BANNER_START = .08
 STEPS = ((3.43, 4.08), (4.08, 4.73), (4.73, 5.40))
 LAND = STEPS[-1][1]
+BOARD_REACTIONS = (
+    {'speaker': 'queen', 'start': 13.10, 'end': 14.38,
+     'text': 'Excellent Security', 'portrait': 'queen-smug-face'},
+    {'speaker': 'flowery', 'start': 17.55, 'end': 18.91, 'text': 'Hey! Throw me ten!'},
+)
 COIN_FLIGHT, COIN_STAGGER, EVENT_COINS = .42, .07, 10
 BONUS = 10
 HEIGHTS = dict(queen=38, gerson=34, flowery=36, ralsei=36, seth=38, aqua=30)
@@ -49,6 +55,7 @@ def build(fps=FPS):
         raise ValueError('Final coin contact must align with the board reward')
     events = [
         dict(t=0, type='phase', phase='castle'),
+        dict(t=TURN_BANNER_START + .06, type='turn_banner', id='ralsei'),
         dict(t=DIE_START, type='die', action='start', id='ralsei'),
         dict(t=DIE_HIT, type='die', action='hit', id='ralsei', face=FACE),
         dict(t=LAND, type='board_event', action='land', id='ralsei', space=EVENT_NODE),
@@ -61,6 +68,7 @@ def build(fps=FPS):
         dict(t=RULES, type='rules', title=GAME_TITLE),
         dict(t=MATCH, type='phase', phase='soap'),
         dict(t=MATCH, type='input', action='start_minigame', id='ralsei'),
+        dict(t=round(return_time - 1 / fps, 6), type='input', action='continue_results'),
         dict(t=return_time, type='phase', phase='return'),
         dict(t=payout, type='party_reward', id=victory['id'], coins=BONUS),
     ]
@@ -98,7 +106,7 @@ def dialogue(events):
     lines = [
         {'speaker': 'ralsei', 'start': .49, 'end': 1.68, 'text': 'Alright, my turn!',
          'portrait': 'ralsei-smile-face'},
-        *EVENT_DIALOGUE,
+        *sorted((*EVENT_DIALOGUE, *BOARD_REACTIONS), key=lambda line: line['start']),
     ]
     calls = {
         'queen': ('Watch This', 'queen-smug-face'),
@@ -204,11 +212,18 @@ class Castle:
             poses['ralsei'] = Pose(x, y, lift=lift)
         if LAND <= t < EVENT_END:
             event_poses(poses, t, self.board.route_position(EVENT_NODE))
+        for line in BOARD_REACTIONS:
+            if line['start'] <= t < line['end']:
+                who = line['speaker']
+                pose = poses[who]
+                action, frames = ('laugh', 2) if who == 'queen' else ('clap', 4)
+                index = int((t - line['start']) * 10) % frames
+                poses[who] = Pose(pose.x, pose.y, sprite=f'{who}-{action}-{index}')
         if self.return_time + .88 <= t < self.return_time + 2.45:
             p = poses['flowery']
             poses['flowery'] = Pose(p.x, p.y, sprite=f'flowery-clap-{int(t * 12) % 4}')
         turn = 5 if t >= self.return_time else 4
-        return BoardState(poses, coins, dict.fromkeys(PLAYERS, 0), 'ralsei', turn, 10, roll, t - .08)
+        return BoardState(poses, coins, dict.fromkeys(PLAYERS, 0), 'ralsei', turn, 10, roll, t - TURN_BANNER_START)
 
     def screens(self, t, winner):
         state = self.state(t, winner)

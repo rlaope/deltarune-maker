@@ -50,17 +50,30 @@ def render_audio(duration, events, dialogue, text_rate):
 
     die_hit = next(event['t'] for event in events if event['type'] == 'die' and event['action'] == 'hit')
     roulette_lock = next(event['t'] for event in events if event['type'] == 'roulette' and event['action'] == 'lock')
+    skill_hit_times = {event['t'] for event in events if event['type'] == 'skill_hit'}
     jarona_calls = 0
     for event in events:
         kind, time = event['type'], event['t']
         pan = PANS.get(event.get('id'), 0)
-        if kind == 'die':
+        if kind == 'turn_banner':
+            mix.add('sound', time, 'mpds-turn-banner.wav', .49, fade=.004)
+            mix.duck(time, time + .38, .77)
+        elif kind == 'die':
             if event['action'] == 'start':
                 add('sound', time, 'mpds-dice-spin.wav', .36, die_hit - time, fade=.006)
             else:
                 add('sound', time, 'mpds-die-hit.wav', .66, fade=.002)
         elif kind == 'step':
             add('sound', time, 'mpds-board-step.wav', .32, fade=.002)
+        elif kind == 'guest_step':
+            pitch = .87 if event['id'] == 'seth' else 1.13
+            add('sound', time, 'mpds-board-step.wav', .15, .13, pitch=pitch,
+                fade=.010, pan=-.36)
+        elif kind == 'board_event' and event['action'] == 'land':
+            mix.add('sound', time + .05, 'fight/snd_power.wav', .34, .48, fade=.016)
+        elif kind == 'board_knife' and event['action'] == 'windup':
+            mix.add('sound', time, f'{ACTION_AUDIO}/aqua-knife-throw.wav', .17, .19,
+                    pitch=1.24, fade=.010, pan=pan)
         elif kind == 'board_knife' and event['action'] in BOARD_KNIFE:
             source, gain, pitch = BOARD_KNIFE[event['action']]
             mix.add('sound', time, source, gain, pitch=pitch, fade=.004, pan=pan)
@@ -77,13 +90,19 @@ def render_audio(duration, events, dialogue, text_rate):
                 add('sound', time, 'mpds-menu.wav', .53, fade=.002)
         elif kind == 'rules':
             add('sound', time, 'mpds-menu.wav', .34, fade=.002)
-        elif kind == 'input' and event['action'] == 'start_minigame':
-            add('sound', time, 'mpds-soap-confirm.wav', .43, fade=.003)
+        elif kind == 'input':
+            if event['action'] == 'start_minigame':
+                add('sound', time, 'mpds-soap-confirm.wav', .43, fade=.003)
+            elif event['action'] == 'continue_results':
+                add('sound', time, 'mpds-menu.wav', .43, fade=.003)
         elif kind == 'go':
             add('sound', time, 'mpds-soap-start.wav', .62, fade=.003)
             add('sound', time + .04, 'mpds-soap-slide.wav', .24, fade=.013)
         elif kind == 'skill_cast' and event['skill'] == 'energy':
             mix.add('sound', time, f'{ACTION_AUDIO}/queen-laser-warning.wav', .32, fade=.008, pan=pan)
+        elif kind == 'skill_cast' and event['skill'] == 'hammer':
+            mix.add('sound', time + .18, f'{ACTION_AUDIO}/gerson-hammer-swing.wav', .22, .30,
+                    fade=.023, pan=pan)
         elif kind == 'skill_release':
             skill = event['skill']
             source, gain = SKILL_RELEASE[skill]
@@ -105,8 +124,16 @@ def render_audio(duration, events, dialogue, text_rate):
         elif kind == 'skill_dodge':
             mix.add('sound', time, 'fight/snd_graze.wav', .25, fade=.004, pan=pan)
         elif kind == 'bump':
-            gain = .35 + .16 * min(1, event['speed'])
-            add('sound', time, 'mpds-soap-bump.wav', gain, fade=.003, pan=.46 * event['x'])
+            strength = event['strength']
+            pan = .46 * event['x']
+            gain = .36 if time in skill_hit_times else .30 + .34 * strength
+            add('sound', time, 'mpds-soap-bump.wav', gain, fade=.003, pan=pan)
+            if strength >= .5:
+                add('sound', time + .08, 'mpds-soap-slide.wav', .13 + .16 * strength,
+                    .28, fade=.026, pan=pan)
+        elif kind == 'save':
+            add('sound', time, 'mpds-soap-slide.wav', .25, .32, pitch=.94,
+                fade=.028, pan=.46 * event['x'])
         elif kind == 'fall':
             add('sound', time, 'mpds-soap-fall.wav', .66, fade=.004, pan=.46 * event['x'])
             mix.duck(time, time + .40, .74)

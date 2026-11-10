@@ -227,6 +227,8 @@ def draw_action(panel, camera, t, landing):
 
 def action_events():
     """Expose the same action timings and contact witness to the mix and QA."""
+    steps = ((6.27, 'seth'), (6.60, 'seth'), (6.73, 'aqua'), (7.06, 'aqua'),
+             (7.60, 'seth'), (7.93, 'seth'), (17.94, 'aqua'))
     return [
         dict(t=GUEST_ENTER, type='board_event', action='guests_enter', guests=['seth', 'aqua'],
              id='seth', edge='left'),
@@ -237,4 +239,5 @@ def action_events():
              tip=CONTACT['tip'], body=CONTACT['body']),
         dict(t=FALL, type='board_knife', action='fall', id='seth', edge='foreground'),
         dict(t=EVENT_END, type='board_event', action='guests_leave', guests=['seth', 'aqua'], id='aqua'),
+        *(dict(t=time, type='guest_step', id=who) for time, who in steps),
     ]

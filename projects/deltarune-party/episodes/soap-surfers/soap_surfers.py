@@ -50,9 +50,11 @@ STEER_PLANS = {
     'gerson': (
         (1.05, -.49, .33), (2.60, -.46, .27), (3.60, -.18, .31), (5.30, -.47, .18),
         (6.40, -.60, -.26), (7.45, -.40, -.19), (8.20, -.49, .08), (9.60, -.34, .45),
-        (11.10, -.63, .17), (12.70, -.37, .33), (14.40, -.24, .13), (15.70, -.22, .17),
+        (11.10, -.63, .17), (12.70, -.37, .33), (13.72, -.07, -.62), (14.40, -.24, .13),
+        (15.70, -.22, .17),
         (17.30, -.48, .05), (19.50, -.51, .35), (21.10, -.30, .34), (22.95, -.37, -.26),
-        (24.50, -.31, -.10), (25.60, -.18, .23), (26.50, -.13, -.14), (27.55, .28, -.15),
+        (24.31, .21, .12), (24.50, -.31, -.10), (25.60, -.18, .23), (26.50, -.13, -.14),
+        (27.55, .28, -.15),
         (28.55, .40, -.20), (30.60, -.19, .25),
     ),
     'flowery': (
@@ -66,7 +68,8 @@ STEER_PLANS = {
         (1.05, .49, .37), (2.70, .20, .28), (3.77, .18, .07), (4.68, .16, .49),
         (5.50, .40, .56), (6.75, .43, .28), (8.15, .39, .51), (10.30, .30, .43),
         (11.40, .11, .21), (12.45, .15, .21), (13.70, .57, .34), (15.80, .37, .54),
-        (17.50, .21, .17), (18.55, .25, .17), (20.35, .63, .41), (21.65, .58, .55),
+        (17.23, .29, -.35), (17.50, .21, .17), (18.55, .25, .17), (20.35, .63, .41),
+        (20.62, .77, .50), (21.65, .58, .55),
         (23.55, .64, .54), (25.10, .43, .38), (27.60, .23, .48), (30.80, .21, .38),
     ),
 }
@@ -87,6 +90,8 @@ class Rider:
     near_rim: float = 0
     recovery: float = 0
     skill_hit_t: float | None = None
+    bump_t: float | None = None
+    bump_speed: float = 0
 
     @property
     def alive(self):
@@ -96,7 +101,8 @@ class Rider:
         return dict(x=self.x, y=self.y, vx=self.vx, vy=self.vy, angle=self.angle, alive=self.alive,
                     direction=self.direction, fall_t=self.fall_t, fall_x=None if self.alive else self.x,
                     fall_y=None if self.alive else self.y, place=self.place, hit_t=self.hit_t, hit_by=self.hit_by,
-                    skill_hit_t=self.skill_hit_t)
+                    skill_hit_t=self.skill_hit_t, bump_t=self.bump_t, bump_speed=self.bump_speed,
+                    near_rim=self.near_rim)
 
 
 def _steer(t, plan, rider):
@@ -183,10 +189,16 @@ def _run(duration, *, tape=None, contacts=True, skills=True):
                     speed = _bump(rider, opponent)
                     if speed > .15:
                         x, y = (rider.x + opponent.x) / 2, (rider.y + opponent.y) / 2
-                        rider.hit_t, rider.hit_by = t, other
-                        opponent.hit_t, opponent.hit_by = t, who
-                        emit(t, 'bump', who, other=other, speed=speed, strength=min(1, speed / 1.2), x=x, y=y)
-                        effects.append(dict(t=t, x=x, y=y, speed=speed))
+                        strength = min(1, speed / 1.2)
+                        normal = (opponent.x - rider.x) / BAR_DIAMETER, (opponent.y - rider.y) / BAR_DIAMETER
+                        for participant, source in ((rider, other), (opponent, who)):
+                            participant.hit_t, participant.hit_by = t, source
+                            participant.bump_t, participant.bump_speed = t, speed
+                            if speed > .35:
+                                participant.recovery = max(participant.recovery, t + .08 + .07 * strength)
+                        emit(t, 'bump', who, other=other, speed=speed, strength=strength, x=x, y=y,
+                             impulse=speed * (1 + RESTITUTION) / 2, normal=normal)
+                        effects.append(dict(t=t, x=x, y=y, speed=speed, normal=normal))
             if skills:
                 combat.step(t, tick, riders, emit)
             fallen = []
@@ -356,7 +368,6 @@ class SoapSurfers:
         heading = round((-angle * 180 / pi + 90) / 15) * 15
         if age is not None:
             heading += tilt
-        bar = self._soap(who, heading)
         pose = self._facing(angle)
         stride = int(t * 8) % 4 if speed > .54 else 0
         lift = 0
@@ -368,6 +379,15 @@ class SoapSurfers:
         if age is None and hit is not None and 0 <= t - hit < .28:
             tilt = round(23 * (1 - (t - hit) / .28)) * (-1 if player['vx'] > 0 else 1)
             lift = round(6 * sin(pi * (t - hit) / .28))
+        bump = player['bump_t']
+        if age is None and not tilt and bump is not None and player['bump_speed'] > .35:
+            recoil = 1 - (t - bump) / .19
+            if recoil > 0:
+                sign = -1 if player['vx'] > 0 else 1
+                tilt = sign * round(20 * min(1, player['bump_speed']) * recoil)
+                heading += 15 * round(tilt / 15)
+                lift = max(lift, round(4 * sin(pi * recoil)))
+        bar = self._soap(who, heading)
         actor = self._body(who, pose, stride, tilt)
         if cast and age is None and not tilt:
             actor = self._cast_actor(cast, t)
@@ -377,8 +397,26 @@ class SoapSurfers:
             bar, actor = bar.copy(), actor.copy()
             for layer in (bar, actor):
                 layer.putalpha(layer.getchannel('A').point(lambda p: p * alpha // 255))
+        if age is None and speed > .64:
+            self._wake(image, player, sx, sy, speed)
         _center(image, bar, sx, sy)
         _paste(image, actor, sx - actor.width / 2, sy - actor.height - 1 - lift)
+
+
+    @staticmethod
+    def _wake(image, player, sx, sy, speed):
+        dx, dy = player['vx'] * 115, player['vy'] * 79
+        length = hypot(dx, dy)
+        dx, dy = dx / length, dy / length
+        span = min(24, 12 + speed * 6)
+        # Near the edge, the same wake gets brighter as the rider digs back in.
+        edge = player['near_rim'] and player['x'] * player['vx'] + player['y'] * player['vy'] < 0
+        ink = '#72b9cf' if edge else '#a0bfcb'
+        draw = ImageDraw.Draw(image)
+        for side in (-1, 1):
+            x, y = sx + side * 5 * dy, sy - side * 5 * dx
+            draw.line((x - 8 * dx, y - 8 * dy, x - span * dx, y - span * dy), fill=ink, width=2)
+            draw.point((round(x - (span + 4) * dx), round(y - (span + 4) * dy)), fill='#f6fcff')
 
     def _cast_actor(self, cast, t):
         age = t - cast['at']
@@ -529,18 +567,28 @@ class SoapSurfers:
 
     @staticmethod
     def _impact(image, game, t):
+        draw = ImageDraw.Draw(image)
         for effect in game['effects']:
             age = t - effect['t']
             if not 0 <= age < .26:
                 continue
             sx, sy = _screen_xy(effect['x'], effect['y'])
-            width = round(17 + age * 63)
+            force = min(1, effect['speed'])
+            width = round(14 + 8 * force + age * 63)
             splash = _art('splash').resize((width, width), NEAR)
             splash.putalpha(splash.getchannel('A').point(lambda p: round(p * (1 - age / .26))))
             _center(image, splash, sx, sy)
             if age < .12:
-                flash = ds_stamp('board-star').resize((13, 13), NEAR)
+                size = round(9 + 8 * force)
+                flash = ds_stamp('board-star').resize((size, size), NEAR)
                 _center(image, flash, sx, sy - 5)
+            if force > .35:
+                nx, ny = effect['normal']
+                for side in (-1, 1):
+                    vx, vy = side * ny, -side * nx
+                    reach = 5 + (18 + 46 * age) * force
+                    draw.line((sx + vx * (reach - 5), sy + vy * (reach - 5),
+                               sx + vx * reach, sy + vy * reach), fill='#74b3c9', width=2)
         for player in game['players'].values():
             fall = player['fall_t']
             if fall is not None and 0 <= t - fall < .33:
