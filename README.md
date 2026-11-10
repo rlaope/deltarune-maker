@@ -26,6 +26,8 @@ Open the repository root in Claude Code, Codex, or Hermes Agent. [AGENTS.md](AGE
 
 [Deltarune Party](projects/deltarune-party/README.md) includes the shared Mario Party DS Shorts renderer and two production episodes, Boo Tag and Soap Surfers.
 
+[Kris & Susie: Queen’s Inside Story](projects/queens-inside-story/README.md) is a playable Nintendo DS-style boss encounter with editable scene data and a Shorts renderer.
+
 For new crossovers, use original game assets from each franchise and credit their sources in the example page.
 
 Each folder under `examples/` pairs a finished video with a frame and its project notes. Keep English titles, documentation, issues, and commits together with the work.

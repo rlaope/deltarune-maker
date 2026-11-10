@@ -1,0 +1,13 @@
+{
+  "name": "queens-inside-story",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node capture.mjs serve",
+    "test": "node --test test-engine.mjs",
+    "build:game": "node bundle.mjs",
+    "test:browser": "node qa/playable.cjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}

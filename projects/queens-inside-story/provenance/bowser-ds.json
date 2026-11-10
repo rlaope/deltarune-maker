@@ -1,0 +1,714 @@
+{
+  "sheets": {
+    "battle-effects": {
+      "mirror": "https://www.mariouniverse.com/wp-content/img/sprites/ds/mlbis/battle-effects.png",
+      "catalog": "https://www.spriters-resource.com/ds_dsi/marioandluigi3/asset/21468/",
+      "sha256": "1d063e68e47650aa6749ee26197eb7cc8b5baf7dff0d6beb4428cb11619d0295"
+    },
+    "battle-ratings-status-effects": {
+      "mirror": "https://www.mariouniverse.com/wp-content/img/sprites/ds/mlbis/battle-ratings-status-effects.png",
+      "catalog": "https://www.spriters-resource.com/ds_dsi/marioandluigi3/asset/246590/",
+      "sha256": "539c34dbc1a6bc067b08cc3f322aa3e32211896a3978cc464870d4b9e0325bf3"
+    },
+    "action-icons": {
+      "mirror": "https://www.mariouniverse.com/wp-content/img/sprites/ds/mlbis/action-icons.png",
+      "catalog": "https://www.spriters-resource.com/ds_dsi/marioandluigi3/asset/186652/",
+      "sha256": "19fad9f071ec9c9db5a82fae5652d9f49ab07c102e10b1dae4b15f5da690f131"
+    },
+    "field-blocks": {
+      "mirror": "https://www.mariouniverse.com/wp-content/img/sprites/ds/mlbis/blocks.png",
+      "catalog": "https://www.spriters-resource.com/ds_dsi/marioandluigi3/asset/25130/",
+      "sha256": "ea51c276302ca55638c3e2e6d785203c21c5632f574229c4dcc8b04b81a00c2f"
+    }
+  },
+  "sprites": {
+    "jump.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        12,
+        9,
+        40,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "cb7bb099429d491c58fc38eb9ceed03ff8e49616405028869c4c364ce4ef22ce"
+    },
+    "special.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        47,
+        9,
+        75,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "5f266774a6c4e0ca3ea672eb6a40dd283b25e0027251c1c3f5c6b31e49eb2de9"
+    },
+    "item.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        82,
+        9,
+        110,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "010d7e5bfdf03648757bb1b52cca04bc3bb9bd0b48aea7e5409a29aaebb55e6d"
+    },
+    "badge.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        117,
+        9,
+        145,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "063b0d9ec621266106d00f1580ebd03850f4b020110d9b7dfae476ea7c277333"
+    },
+    "flee.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        152,
+        9,
+        180,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "2790e6ad609078ede5701d9c039a604b74d9ad907e25370ccd9dee4c5ff8da8c"
+    },
+    "hammer.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        187,
+        9,
+        215,
+        41
+      ],
+      "size": [
+        28,
+        32
+      ],
+      "sha256": "811e354eb8157f159161b8873ce61b69f4cfc57230c5d6350f2fb360d15b6264"
+    },
+    "ok.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        16,
+        64,
+        54,
+        94
+      ],
+      "size": [
+        38,
+        30
+      ],
+      "sha256": "36b431ae2ee92b37cb3fb6ce8379321e1dc41a5971c3a3bfe519f383bbf88bce"
+    },
+    "good.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        64,
+        58,
+        120,
+        94
+      ],
+      "size": [
+        56,
+        36
+      ],
+      "sha256": "ecebca0f2555a4e07f162fea4c32d1783a9773fb48abfe238f3b5cd6383dd70f"
+    },
+    "great.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        130,
+        58,
+        193,
+        94
+      ],
+      "size": [
+        63,
+        36
+      ],
+      "sha256": "c3129ad271150bc794a2798152ff1fbb9353bddc9416e1efd1b57e6d8dc9f5e5"
+    },
+    "excellent.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        205,
+        53,
+        290,
+        94
+      ],
+      "size": [
+        85,
+        41
+      ],
+      "sha256": "209e24077bfe3b7ee33aa035806e104a7a7bf88dd87fbbdfa57f334f362b0848"
+    },
+    "miss.png": {
+      "sheet": "battle-ratings-status-effects",
+      "crop": [
+        19,
+        108,
+        66,
+        134
+      ],
+      "size": [
+        47,
+        26
+      ],
+      "sha256": "fb499744e452ba4c11888740f3febbb66d4791d17a5b4ddc58f1c6d2d8581f2d"
+    },
+    "heart.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        23,
+        707,
+        34,
+        718
+      ],
+      "size": [
+        11,
+        11
+      ],
+      "sha256": "439bc71f184b162ed9c6387dd10a3f1f65e6ea224c08f0a794b4408a8b13d448"
+    },
+    "sp.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        42,
+        706,
+        54,
+        718
+      ],
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "c7007120029603fe23f9caf324cb193d5f7cb12e2046f9d5a0dbc46de818807a"
+    },
+    "a.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        81,
+        110,
+        99,
+        128
+      ],
+      "size": [
+        18,
+        18
+      ],
+      "sha256": "75edd9835d810b9ea268eb3431dd9b5bc893fa7b7d62507be7899c6d20ae84b4"
+    },
+    "b.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        14,
+        280,
+        32,
+        298
+      ],
+      "size": [
+        18,
+        18
+      ],
+      "sha256": "df2f798b7731321a60a4fd8c513a8e4d6003ee8e4f052032fc770397936720ce"
+    },
+    "a-rise.png": {
+      "sheet": "action-icons",
+      "crop": [
+        14,
+        27,
+        46,
+        72
+      ],
+      "size": [
+        32,
+        45
+      ],
+      "sha256": "1f3cdbc94ad6e8fad7a6150d427b94af88f6d197af93626f03927cbfd98106bc"
+    },
+    "b-rise.png": {
+      "sheet": "action-icons",
+      "crop": [
+        142,
+        27,
+        174,
+        72
+      ],
+      "size": [
+        32,
+        45
+      ],
+      "sha256": "56b172c54ae5910b4b3d82d4a12e100c8ca099e1f82222c13b4053252d14e18c"
+    },
+    "ab-rise.png": {
+      "sheet": "action-icons",
+      "crop": [
+        17,
+        103,
+        70,
+        160
+      ],
+      "size": [
+        53,
+        57
+      ],
+      "sha256": "9881756bf4f7d7e69ea6528ff79f4e857abf756f5cc638fd01293a25116cc53e"
+    },
+    "action-arrow.png": {
+      "sheet": "action-icons",
+      "crop": [
+        10,
+        1000,
+        31,
+        1031
+      ],
+      "size": [
+        21,
+        31
+      ],
+      "sha256": "31e7bef7ed95ece5f167bb3fcc21ac82385cfec0360c70929edc81917a7cd459"
+    },
+    "a-press.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        12,
+        115,
+        30,
+        128
+      ],
+      "size": [
+        18,
+        13
+      ],
+      "sha256": "87a8e7d8dc55e1faa4e9d135bcfd756dd03619d050d1f880c50ff4b65d1eed1a"
+    },
+    "b-press.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        83,
+        285,
+        101,
+        298
+      ],
+      "size": [
+        18,
+        13
+      ],
+      "sha256": "fec9c2454e6b1b4bf3aef052056610a16ddd1d1033c823178f2264723227c129"
+    },
+    "item-mushroom.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        19,
+        644,
+        35,
+        660
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "6509282f37f90ad8cc865e6b79d7be9cdeb290b69580e2da34db3df4a0db876e"
+    },
+    "field-question.png": {
+      "sheet": "field-blocks",
+      "crop": [
+        9,
+        32,
+        31,
+        62
+      ],
+      "size": [
+        22,
+        30
+      ],
+      "sha256": "2858418a8947c6f22cc8f0ef4dfdaa48105af811961e4ca803720395e8a47834"
+    },
+    "field-spent.png": {
+      "sheet": "field-blocks",
+      "crop": [
+        9,
+        65,
+        31,
+        95
+      ],
+      "size": [
+        22,
+        30
+      ],
+      "sha256": "fd4d15f52aff02937b134f7f2611399ba1d7c764b6d3d363f7fd077390679480"
+    },
+    "flee-arrow.png": {
+      "sheet": "action-icons",
+      "crop": [
+        299,
+        1000,
+        317,
+        1008
+      ],
+      "size": [
+        18,
+        8
+      ],
+      "sha256": "77869b45a1405b74697b78eedab7ce12e723d658e11650b47d242f149599d5d4"
+    },
+    "cursor.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        20,
+        619,
+        31,
+        630
+      ],
+      "size": [
+        11,
+        11
+      ],
+      "sha256": "cdf016d42fdb30c06bc7231d3955d825d0098b1207ece887182e816b116aa8d1"
+    },
+    "hp-slash.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        186,
+        790,
+        195,
+        803
+      ],
+      "size": [
+        9,
+        13
+      ],
+      "sha256": "c50877ed8cecd04afba709eb81a90fb79477e811f09a5545d98fb852d5df8e46"
+    },
+    "hp-0.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        18,
+        787,
+        30,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "e172de4804396bc5c39bc73181a221f540d7eb56ca9a9c0a849d69f1ca2dd51d"
+    },
+    "hp-1.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        35,
+        787,
+        44,
+        803
+      ],
+      "size": [
+        9,
+        16
+      ],
+      "sha256": "e88db49f2c491a1030c26bbc7b9133a546841de08974896eb671c8172ec98e16"
+    },
+    "hp-2.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        48,
+        787,
+        60,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "f01dcd299d3d6a0cca033fa2ea447af4c990bf00c951174c4b95d11f8f46fba0"
+    },
+    "hp-3.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        64,
+        787,
+        76,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "150bbf83f26c236fa2e40474393dbaea0441a03274b49c438e0b7ab236f6d8bc"
+    },
+    "hp-4.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        81,
+        787,
+        94,
+        803
+      ],
+      "size": [
+        13,
+        16
+      ],
+      "sha256": "336969b89252c8ad032c02eeeb3f532ed8d34f2300da44bf9c662803efbd6a86"
+    },
+    "hp-5.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        100,
+        787,
+        112,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "212eef2f06dd4272057a3dbd0486b33236c8bf6bee6eafb7fb365fd0750860a3"
+    },
+    "hp-6.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        118,
+        787,
+        130,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "fc6874820e2dd8b5eeb984fe915c1ae787afb5ee7defe72d07f69accfb152ba1"
+    },
+    "hp-7.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        136,
+        787,
+        147,
+        803
+      ],
+      "size": [
+        11,
+        16
+      ],
+      "sha256": "32ee16f1a41b78496e95deb9bffbf88f2637e84b5354c4d81ff8578ba83e7fdd"
+    },
+    "hp-8.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        152,
+        787,
+        164,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "3682f9c16bea61109463faba5264babead63b2c2f9d6c5ccaaf2152cdb173cf1"
+    },
+    "hp-9.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        169,
+        787,
+        181,
+        803
+      ],
+      "size": [
+        12,
+        16
+      ],
+      "sha256": "e3b9ddc33952b982b7fc6c32256c6e19fb9e873ab2681ef1233c36c7a2723f12"
+    },
+    "damage-0.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        19,
+        729,
+        33,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "f68fa6cb97953d76f9a0e10200179879db03292e55382dd5ebaa6f42b2285fd5"
+    },
+    "damage-1.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        40,
+        729,
+        50,
+        749
+      ],
+      "size": [
+        10,
+        20
+      ],
+      "sha256": "b7d93aaa71a32ad206b0c5417b040aaa2148aba95112be2c2f2dc4fd02974447"
+    },
+    "damage-2.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        56,
+        729,
+        70,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "a9eb63be40a20e34cf94ce49054d15fa197b7d8b645ad367ecd27bf4d394b1ba"
+    },
+    "damage-3.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        76,
+        729,
+        90,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "82ecafbd8539f9d99f5a4771a40cb8803fab28c90049e42e18b40d282998abdb"
+    },
+    "damage-4.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        96,
+        729,
+        110,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "3729af16474896d7bd2d90916df2f3534f8ea7317ca0621f6fcd10d1535fa6d1"
+    },
+    "damage-5.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        118,
+        729,
+        132,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "42b9633637e9ff83f654b1917b2fdbb363d84efd65ff10ba435c7d8ba34044aa"
+    },
+    "damage-6.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        139,
+        729,
+        153,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "162cd2018308b4a72c2e6707a393ff052ca3ae902db2443d4488346ab28f67ae"
+    },
+    "damage-7.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        160,
+        729,
+        174,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "41db170a5e224d318b24d471f3c48ed137c3438013289fa5e52571a9933058fd"
+    },
+    "damage-8.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        180,
+        729,
+        194,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "5d7dd15fe085c0464df90d0921fccf77183b071372f72f6f627eb13ae1123a2c"
+    },
+    "damage-9.png": {
+      "sheet": "battle-effects",
+      "crop": [
+        201,
+        729,
+        215,
+        749
+      ],
+      "size": [
+        14,
+        20
+      ],
+      "sha256": "bd9e4e793769536e5043e7ebd626cb9e42130390af947bd1c800f7957b9a4011"
+    }
+  },
+  "boss_defeat": {
+    "source": "https://tasvideos.org/4071M",
+    "sourceVideo": "https://archive.org/download/mlbis-tas-vince1919/mlbis-tas-vince1919_512kb.mp4",
+    "sourceFirstTimestamp": 2765.1667,
+    "sourceAudioTimestamp": 2765.2204,
+    "width": 256,
+    "height": 192,
+    "fps": 30,
+    "frames": 115,
+    "anchor": [
+      187,
+      104
+    ],
+    "audioStartFrame": 2,
+    "burstFrame": 60,
+    "method": "Native gameplay frames, original effect timing and silhouettes. The arena/actors were matted out from comparison plates; obscured ray samples interpolate along the observed beam. Star colors are matched to the native BDfx-00 texture palette.",
+    "romTextureSource": "CLJE SHA-1 099b07d55c43601c4866d475032ab9431356cc5d / BRfx BDfx-00",
+    "artifacts": {
+      "ui/boss-defeat-0.png": "c8631cc692014b4dc3b109a5e966bd257b5fb21beccfd719c8b75ed6d4d16a6f",
+      "ui/boss-defeat-1.png": "d5dc8f0baa1d3bcc479ff98ad5748508279fd7b3b9e9c38a24182007b9ad67db",
+      "ui/boss-defeat-2.png": "267334386b111b36810d5821eb4282b26740f8ce745b7a7daf3f8d670df898b3",
+      "ui/boss-defeat-3.png": "d010a786f5878bb1bf672fcb8eb2e6332c723d4e7fb6b77494edd00b1a003960",
+      "ui/boss-defeat-4.png": "1f2b4d47947022326991d5bdb82488e85b447c9df717b1f6f0716bd3ec1c951b",
+      "ui/boss-defeat-5.png": "bbdb049f7e73eeb1c0e3a8a3910fd228e033ea0809722af954db37f5d5b98e76",
+      "ui/boss-defeat-6.png": "d3cccdef772cc71cdceacdb9ec522217c4b868cae6e806a85d485823df6950e3",
+      "ui/boss-defeat-7.png": "ec927a82462bbce2cd8aff7b91e3b1fc64baacce4b235c81abdd95aeee61e656",
+      "defeat-source/scutlet-frames.mkv": "69798ab2009120d991cc59517cc493f0914957bc2f6f732b96cca4764fc05eac",
+      "defeat-source/BDfx-00.png": "290c9a87e5700f4338a76ad77bc794da1959c41a1ec9086714e90e8b27330a87"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kris &amp; Susie: Queen’s Inside Story</title>
+<style>
+html,body{margin:0;background:#080e19;color:#dfedf6;font:15px system-ui;min-height:100%;display:grid;place-items:center}
+main{width:min(100vw,1060px);text-align:center}
+canvas{image-rendering:pixelated;width:100%;height:auto;display:block;background:#080e19;touch-action:none}
+.controls{display:flex;justify-content:center;align-items:center;gap:.45em;flex-wrap:wrap;padding:12px}
+button{color:inherit;background:#132537;border:1px solid #426079;border-radius:4px;font:inherit;padding:.5em .75em;cursor:pointer;touch-action:none}
+button:active{background:#335978}
+</style>
+<main>
+<canvas aria-label="Kris and Susie: Queen’s Inside Story" width="480" height="270"></canvas>
+<div class="controls" aria-label="Game controls">
+<button data-start>Play</button>
+<button data-key="left" aria-label="Left">◀</button><button data-key="up" aria-label="Up">▲</button><button data-key="down" aria-label="Down">▼</button><button data-key="right" aria-label="Right">▶</button>
+<button data-key="a">A · Kris</button><button data-key="b">B · Susie</button>
+<button data-key="cancel">L · Cancel</button><button data-replay>Watch replay</button><button data-mute>Mute</button>
+</div>
+</main>
+<script type="module" src="./app.mjs"></script>
+</html>

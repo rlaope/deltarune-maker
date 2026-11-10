@@ -1,0 +1,110 @@
+const {resolve}=require('node:path');
+const {pathToFileURL}=require('node:url');
+const assert=require('node:assert/strict');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+
+(async()=>{
+  const browser=await chromium.launch({executablePath:process.env.CHROMIUM,headless:true,args:['--mute-audio']});
+  try{
+    const page=await browser.newPage();
+    const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+    const url=process.env.QUEEN_PLAY_URL||pathToFileURL(resolve('out/queens-inside-story-play.html')).href;
+    await page.goto(url);
+    await page.waitForFunction(()=>typeof window.inspectGame==='function');
+    await page.clock.install();
+    const get=()=>page.evaluate(()=>window.inspectGame());
+    const run=ms=>page.clock.runFor(Math.max(0,Math.round(ms)));
+    const click=sel=>page.locator(sel).evaluate(el=>el.click());
+    const hold=async(k,ms)=>{await page.keyboard.down(k);await run(ms);await page.keyboard.up(k);};
+    const tap=async(k)=>{await page.keyboard.press(k);await run(40)};
+    await click('[data-mute]');await click('[data-start]');
+    const walkRightTo=async x=>{
+      await page.keyboard.down('ArrowRight');
+      for(let i=0;i<110&&(await get()).map.x<x;i++)await run(34);
+      await page.keyboard.up('ArrowRight');
+      assert.ok((await get()).map.x>=x);
+    };
+    await walkRightTo(154);
+    await tap('a');await run(120);
+    const reward=await get();
+    assert.equal(reward.inventory.mushrooms,1);
+    assert.ok(reward.map.block.used);
+    assert.ok(reward.map.pickup.age<.12);
+    assert.equal(reward.events.find(e=>e.type==='fieldBlock').t,reward.events.find(e=>e.type==='fieldPickup').t);
+    await walkRightTo(220);
+    await hold('ArrowUp',1000);await walkRightTo(463);await hold('ArrowUp',430);
+    const map=(await get()).map;
+    await tap('a');
+    assert.equal((await get()).scene,'dialogue');
+    for(let i=0;i<4;i++){await run(2240);await tap('a');}
+    assert.equal((await get()).scene,'transition');
+    await run(2220);
+    assert.equal((await get()).scene,'battle');
+    for(const [time,key] of [[1.97,'a'],[3.95,'b']]){
+      await run((time-(await get()).battle.phaseClock)*1000);
+      await tap(key);
+    }
+    await run(500);
+    const manual=await get();
+    assert.deepEqual(manual.events.filter(e=>e.type==='dodge'&&e.target!=null).map(e=>e.target),[0,1]);
+    await run((12.27-manual.battle.phaseClock)*1000);
+    const firstMenu=(await get()).battle;
+    assert.equal(firstMenu.phase,'command');
+    assert.ok(firstMenu.players[0].x>83&&firstMenu.players[0].x<96);
+    assert.equal(firstMenu.players[1].x,113);
+    await hold('ArrowRight',90);
+    assert.equal((await get()).battle.command,'hammer');
+    await hold('ArrowLeft',90);
+    assert.equal((await get()).battle.command,'jump');
+    await tap('a');
+    assert.equal((await get()).battle.phase,'bump');
+    await run(390);
+    const targeted=(await get()).battle;
+    assert.equal(targeted.phase,'target');
+    await tap('a');
+    assert.equal((await get()).battle.phase,'stomp');
+    assert.equal((await get()).battle.stomp.startX,targeted.players[0].x);
+    for(const stage of ['first','rebound']){
+      const e=(await get()).battle.stomp;
+      assert.equal(e.stage,stage);
+      await run((e.duration-e.elapsed-.058)*1000);
+      await tap('a');
+      await run(85);
+    }
+    const grades=(await get()).events.filter(e=>e.grade).map(e=>e.grade);
+    assert.deepEqual(grades,['GOOD!','EXCELLENT!']);
+    await run(910);
+    const susieMenu=(await get()).battle;
+    assert.equal(susieMenu.phase,'command');
+    assert.equal(susieMenu.turn,1);
+    await hold('ArrowRight',90);
+    assert.equal((await get()).battle.command,'hammer');
+    await tap('b');await run(390);
+    assert.equal((await get()).battle.phase,'target');
+    await tap('b');
+    const axe=(await get()).battle.stomp;
+    assert.equal(axe.weapon,'axe');
+    await run((.85-axe.elapsed)*1000);
+    await page.keyboard.down('b');
+    await run((1.42-(await get()).battle.stomp.elapsed)*1000);
+    await page.keyboard.up('b');
+    await run(250);
+    const axeHit=(await get()).events.find(e=>e.weapon==='axe'&&e.type==='excellent');
+    assert.ok(axeHit);
+    await click('[data-replay]');await run(60300);
+    const replay=await get();
+    assert.equal(replay.result,'win');
+    assert.deepEqual(replay.battle.hp,[42,40]);
+    assert.equal(replay.battle.qhp,0);
+    assert.equal(replay.battle.items,1);
+    assert.equal(replay.events.filter(e=>e.type==='fieldBlock').length,1);
+    assert.equal(replay.events.filter(e=>e.type==='fieldPickup').length,1);
+    assert.equal(replay.events.find(e=>e.type==='fieldBlock').t,replay.events.find(e=>e.type==='fieldPickup').t);
+    assert.equal(replay.events.filter(e=>e.type==='fieldPower').length,1);
+    assert.ok(replay.events.some(e=>e.type==='line'&&e.scene==='transition'&&e.text==="Let's go!"));
+    assert.equal(replay.events.filter(e=>e.type==='jump'&&e.mode==='field').length,4);
+    assert.equal(replay.events.filter(e=>e.weapon==='axe'&&e.type==='excellent').length,1);
+    assert.deepEqual(errors,[]);
+    console.log(JSON.stringify({file:url,interactive:{map:[map.x,map.y],enteredBattle:true,fieldMushrooms:reward.inventory.mushrooms,dodged:[0,1],selected:['hammer','jump'],grades,axeGrade:axeHit.grade},replay:{result:replay.result,seconds:replay.t,hp:replay.battle.hp,queenHP:replay.battle.qhp},errors},null,2));
+  }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

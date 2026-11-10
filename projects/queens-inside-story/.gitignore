@@ -1,0 +1,7 @@
+/assets
+/out/
+/node_modules/
+/.venv/
+/qa/*.png
+/qa/*.json
+__pycache__/
