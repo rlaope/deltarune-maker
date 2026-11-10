@@ -1,8 +1,8 @@
-"""Shared DS rules presentation and vertical framing."""
+"""Shared DS minigame selection, rules, and vertical framing."""
 
 from PIL import Image, ImageDraw
 
-from mpds_ui import checkered, resized
+from mpds_ui import checkered, ds_text, resized, stamp
 from party_board import PLAYER_COLORS
 from reel_art import NEAR, SIZE, Text, centered, paste, smooth, stylus
 
@@ -18,6 +18,34 @@ class PartyReel:
         draw = ImageDraw.Draw(self.background)
         for y in (38, 257):
             draw.rectangle((13, y - 2, 256, y + 181), outline='#57424b')
+
+    def roulette(self, lower, title, elapsed, lock_at, *, selected_row=0):
+        """Slide in the native four-player draw and reveal the selected title."""
+        y = 90 - 166 * (1 - smooth(elapsed / .34))
+        centered(lower, resized('roulette-frame', *SIZE), 120, y)
+        centered(lower, stamp('four-player'), 120, y - 59)
+        centered(lower, resized('roulette-players', 112, 27), 120, y + 61)
+        if elapsed < .30:
+            return lower
+        locked = elapsed >= lock_at
+        if locked:
+            active_row = selected_row
+        else:
+            turns = 10
+            spin = (elapsed - .30) / (lock_at - .30)
+            advances = int(turns * (1 - (1 - spin) ** 1.35))
+            active_row = (selected_row + advances - turns) % 4
+        centered(lower, resized('roulette-slots', 172, 72), 120, y)
+        for index in range(4):
+            row = y - 26 + 17 * index
+            active = index == active_row
+            if active:
+                centered(lower, resized('roulette-selected', 168, 16), 120, row)
+            reveal = locked and active
+            label = title if reveal else '? ' * 12
+            ds_text(lower, label, 120, row - (9 if reveal else 6), height=12 if reveal else 8,
+                    color='#31220a' if active else '#e3cf97', middle=True)
+        return lower
 
     def rules(self, preview, title, rules, players, time_until_start):
         lower = rules.resize(SIZE, NEAR).convert('RGB')

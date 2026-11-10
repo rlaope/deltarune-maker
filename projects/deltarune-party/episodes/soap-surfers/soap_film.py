@@ -8,37 +8,38 @@ import subprocess
 
 from PIL import Image, ImageDraw
 
-from mpds_ui import resized
+from mpds_ui import ds_text, number, resized
 from party_board import BoardState, CASTLE_LOOP, CASTLE_SPACES, PartyBoard, Pose, Roll
 from party_reel import PartyReel
 from reel_art import CHAPTER5, NEAR, ROOT, centered, mix, point, smooth, sprite, stylus
 from study_cast import PLAYERS
 
 
-TITLE = 'Flowery Waxed the Floor in Mario Party DS'
+TITLE = 'Ralsei Found a Lucky Space in Mario Party DS'
+GAME_TITLE = 'Soap Surfers'
 FPS = 60
 DIALOGUE_RATE = 31
-RULES, MATCH, RETURN, DURATION = 9.2, 12, 31.5, 36.5
-DIE_START, DIE_HIT = 1.78, 2.56
-SLIDE, CATCH = 3.65, 5.82
+DRAW, LOCK, RULES, MATCH, RETURN, DURATION = 11.2, 12.95, 15.25, 19, 40.75, 45
+DIE_START, DIE_HIT, FACE = 1.87, 2.72, 3
+STEPS = ((3.43, 4.08), (4.08, 4.73), (4.73, 5.40))
+LAND = STEPS[-1][1]
+GUEST_ENTER, GUEST_LEAVE = 5.58, 10.18
+COIN_DROP, COIN_FLIGHT, COIN_STAGGER, EVENT_COINS = 8.43, .42, .07, 10
+COIN_RECEIVE = round(COIN_DROP + COIN_FLIGHT + (EVENT_COINS - 1) * COIN_STAGGER, 2)
 DIALOGUE = (
-    {'speaker': 'flowery', 'start': .32, 'end': 1.73, 'text': 'I waxed the whole hall!'},
-    {'speaker': 'ralsei', 'start': 1.85, 'end': 3.27, 'text': "It's very shiny, Flowery.", 'portrait': 'ralsei-smile-face'},
-    {'speaker': 'queen', 'start': 4.16, 'end': 5.30, 'text': 'My Throne Is Slipping', 'portrait': 'queen-shocked-face'},
-    {'speaker': 'gerson', 'start': 5.44, 'end': 6.68, 'text': "That's soap, Your Majesty.", 'portrait': 'gerson-laugh-face'},
-    {'speaker': 'ralsei', 'start': 6.80, 'end': 7.72, 'text': "Let's all try it!", 'portrait': 'ralsei-smile-face'},
-    {'speaker': 'flowery', 'start': 7.85, 'end': 9.08, 'text': 'Last one floating wins!'},
-    {'speaker': 'flowery', 'start': 14.74, 'end': 15.67, 'text': 'Hee hee!'},
-    {'speaker': 'ralsei', 'start': 17.1, 'end': 18.40, 'text': "Whoa, I'm still going!", 'portrait': 'ralsei-surprised-face'},
-    {'speaker': 'gerson', 'start': 23.28, 'end': 24.60, 'text': 'Easy does it, kids.'},
-    {'speaker': 'flowery', 'start': 32.08, 'end': 33.60, 'text': 'Next round, the stairs!'},
-    {'speaker': 'ralsei', 'start': 34.12, 'end': 36.26, 'text': "Let's start with a towel."},
+    {'speaker': 'seth', 'start': 6.10, 'end': 7.25, 'text': 'The toll is ten coins.'},
+    {'speaker': 'aqua', 'start': 7.37, 'end': 8.42, 'text': 'No, we pay HIM!'},
+    {'speaker': 'flowery', 'start': MATCH + 2.74, 'end': MATCH + 3.67, 'text': 'Hee hee!'},
+    {'speaker': 'ralsei', 'start': MATCH + 5.10, 'end': MATCH + 6.40,
+     'text': "Whoa, I'm still going!", 'portrait': 'ralsei-surprised-face'},
+    {'speaker': 'gerson', 'start': MATCH + 11.28, 'end': MATCH + 12.60, 'text': 'Easy does it, kids.'},
+    {'speaker': 'flowery', 'start': RETURN + 1.38, 'end': RETURN + 2.70, 'text': 'Best two outta three?'},
 )
-HEIGHTS = dict(queen=38, gerson=34, flowery=36, ralsei=36)
+HEIGHTS = dict(queen=38, gerson=34, flowery=36, ralsei=36, seth=38, aqua=30)
 STARTING_NODES = dict(queen=7, gerson=10, flowery=9, ralsei=1)
 START_COINS = dict(queen=14, gerson=16, flowery=27, ralsei=19)
-WIN_SCREEN, PAYOUT, BONUS = 30.2, 30.52, 10
-STEPS = ((3.12, 3.70), (3.70, 4.24), (4.24, 4.80))
+EVENT_NODE = (STARTING_NODES['ralsei'] + FACE) % len(CASTLE_LOOP)
+WIN_SCREEN, PAYOUT, BONUS = MATCH + 18.2, MATCH + 18.78, 10
 SOAP_ART = ROOT / 'assets/mpds/soap'
 
 
@@ -50,16 +51,24 @@ def build(fps=FPS):
     events = [
         dict(t=0, type='phase', phase='castle'),
         dict(t=DIE_START, type='die', action='start', id='ralsei'),
-        dict(t=DIE_HIT, type='die', action='hit', id='ralsei', face=3),
-        dict(t=SLIDE, type='soap_slide', id='flowery'),
-        dict(t=CATCH, type='soap_catch', id='ralsei'),
+        dict(t=DIE_HIT, type='die', action='hit', id='ralsei', face=FACE),
+        dict(t=LAND, type='board_event', action='land', id='ralsei', space=EVENT_NODE),
+        dict(t=GUEST_ENTER, type='board_event', action='guests_enter', guests=['seth', 'aqua']),
+        dict(t=COIN_DROP, type='board_event', action='coins_drop', id='ralsei'),
+        dict(t=COIN_RECEIVE, type='board_reward', id='ralsei', coins=EVENT_COINS),
+        dict(t=GUEST_LEAVE + .62, type='board_event', action='guests_leave', guests=['seth', 'aqua']),
+        dict(t=DRAW, type='phase', phase='selection'),
+        dict(t=DRAW + .30, type='roulette', action='start'),
+        dict(t=LOCK, type='roulette', action='lock', title=GAME_TITLE),
         dict(t=RULES, type='phase', phase='rules'),
-        dict(t=RULES, type='rules', title='Soap Surfers'),
+        dict(t=RULES, type='rules', title=GAME_TITLE),
         dict(t=MATCH, type='phase', phase='soap'),
         dict(t=MATCH, type='input', action='start_minigame', id='ralsei'),
         dict(t=RETURN, type='phase', phase='return'),
-        dict(t=32.25, type='soap_drop', id='ralsei'),
     ]
+    for index in range(EVENT_COINS):
+        contact = round(COIN_DROP + index * COIN_STAGGER + COIN_FLIGHT, 2)
+        events.append(dict(t=contact, type='coin_contact', id='ralsei'))
     for step, (_, time) in enumerate(STEPS, 1):
         events.append(dict(t=time, type='step', id='ralsei',
                            space=(STARTING_NODES['ralsei'] + step) % len(CASTLE_LOOP)))
@@ -70,8 +79,10 @@ def build(fps=FPS):
     game_frames = []
     for i in range(round(DURATION * fps)):
         t = i / fps
-        if t < RULES:
+        if t < DRAW:
             phase = 'castle'
+        elif t < RULES:
+            phase = 'selection'
         elif t < MATCH:
             phase = 'rules'
         elif t < RETURN:
@@ -89,31 +100,31 @@ def soap_art(name):
     return Image.open(SOAP_ART / f'{name}.png').convert('RGBA')
 
 
-def walking(t, duration, start, end):
-    u = smooth(t / duration)
-    x, y = point(start, end, u)
-    if 0 < u < 1:
-        facing = 'right' if end[0] > start[0] else 'left'
-        return Pose(x, y, facing, int(t * 15) % 4, abs(sin(t * 13)) * 5)
-    return Pose(x, y)
+@lru_cache(maxsize=32)
+def episode_sprite(name, height):
+    if not name.startswith(('seth-', 'aqua-')):
+        return sprite(name, height)
+    with Image.open(CHAPTER5 / 'guests' / f'{name}.png') as source:
+        image = source.convert('RGBA')
+    image = image.crop(image.getbbox())
+    return image.resize((round(image.width * height / image.height), height), NEAR)
 
 
 class Castle:
     def __init__(self):
         with Image.open(CHAPTER5 / 'board.png') as plate:
-            self.board = PartyBoard(plate, CASTLE_LOOP, CASTLE_SPACES, PLAYERS, sprite, HEIGHTS)
+            self.board = PartyBoard(plate, CASTLE_LOOP, CASTLE_SPACES, PLAYERS, episode_sprite, HEIGHTS)
+        if CASTLE_SPACES[EVENT_NODE] != 'event':
+            raise ValueError('The toll only triggers on the question-mark space')
 
     def state(self, t, winner):
         spots = {who: self.board.route_position(node) for who, node in STARTING_NODES.items()}
         poses = {who: Pose(*xy) for who, xy in spots.items()}
         coins = START_COINS.copy()
+        if t >= COIN_RECEIVE:
+            coins['ralsei'] += EVENT_COINS
         if t >= PAYOUT:
             coins[winner] += BONUS
-        if t >= RETURN:
-            poses.update(queen=Pose(249, 82, 'left'), gerson=Pose(161, 94, 'right'),
-                         ralsei=walking(t - 33.88, .77, (203, 111), (228, 104)),
-                         flowery=walking(t - 32.24, 1.25, (199, 89), (280, 106)))
-            return BoardState(poses, coins, dict.fromkeys(PLAYERS, 0), 'ralsei', 5, 10)
 
         roll = None
         for i, (start, end) in enumerate(STEPS):
@@ -122,59 +133,70 @@ class Castle:
                 u = (t - start) / (end - start)
                 x, y = self.board.route_position(node, smooth(u))
                 poses['ralsei'] = Pose(x, y, 'right', int(t * 15) % 4, 12 * sin(pi * u))
-                roll = Roll(3, t - DIE_HIT, 3 - i)
+                roll = Roll(FACE, t - DIE_HIT, FACE - i)
         if DIE_START <= t < STEPS[0][0]:
-            face = (4, 8, 2, 6, 9, 7, 5)[floor((t - DIE_START) * 13) % 7] if t < DIE_HIT else 3
+            face = (4, 8, 2, 6, 9, 7, 5)[floor((t - DIE_START) * 13) % 7] if t < DIE_HIT else FACE
             roll = Roll(face, t - DIE_HIT)
             jump = 15 * max(0, 1 - abs(t - DIE_HIT) / .23)
             poses['ralsei'] = Pose(*spots['ralsei'], lift=jump)
-        if t >= STEPS[-1][1]:
-            last = self.board.route_position(STARTING_NODES['ralsei'] + 3)
-            poses['ralsei'] = walking(t - STEPS[-1][1], CATCH - STEPS[-1][1], last, (230, 111))
-
-        if t >= SLIDE:
-            poses['queen'] = walking(t - SLIDE, .77, spots['queen'], (247, 73))
-            poses['gerson'] = walking(t - 4.22, 1.4, spots['gerson'], (168, 89))
-        if 3.11 <= t < 5.3:
-            poses['flowery'] = walking(t - 3.11, SLIDE - 3.11, spots['flowery'], (154, 100))
-        elif t >= 5.3:
-            poses['flowery'] = walking(t - 5.3, 1.55, (154, 100), (245, 83))
-        if .32 <= t < 1.73 or 7.85 <= t < 9.08:
+        if t >= LAND:
+            x, y = self.board.route_position(EVENT_NODE)
+            lift = 7 * sin(pi * (t - COIN_RECEIVE) / .32) if COIN_RECEIVE <= t < COIN_RECEIVE + .32 else 0
+            poses['ralsei'] = Pose(x, y, lift=lift)
+        if GUEST_ENTER <= t < GUEST_LEAVE + .62:
+            enter = smooth((t - GUEST_ENTER) / .55)
+            leave = smooth((t - GUEST_LEAVE) / .62)
+            progress = enter - leave
+            for who, origin, target, inbound, outbound in (
+                ('seth', (119, 87), (158, 104), 'right', 'left'),
+                ('aqua', (266, 85), (237, 107), 'left', 'right'),
+            ):
+                x, y = point(origin, target, progress)
+                hop = sin(pi * progress) * (8 if who == 'aqua' else 3)
+                direction = outbound if leave else inbound
+                stride = int(t * 12) % 4 if progress < 1 else 0
+                poses[who] = Pose(x, y, direction, stride, hop)
+        if RETURN + 1.26 <= t < RETURN + 2.75:
             p = poses['flowery']
-            poses['flowery'] = Pose(p.x, p.y, lift=abs(sin(t * 17)) * 2,
-                                    sprite=f'flowery-clap-{int(t * 12) % 4}')
-        return BoardState(poses, coins, dict.fromkeys(PLAYERS, 0), 'ralsei', 4, 10, roll, t - .08)
-
-    @staticmethod
-    def bar(image, x, y, color, t):
-        bar = soap_art(f'soap-{color}')
-        bar = bar.resize((21, max(5, round(bar.height * 21 / bar.width))), NEAR)
-        centered(image, bar.rotate(round(15 * sin(t * 13)), NEAR, expand=True), x, y)
+            poses['flowery'] = Pose(p.x, p.y, sprite=f'flowery-clap-{int(t * 12) % 4}')
+        turn = 5 if t >= RETURN else 4
+        return BoardState(poses, coins, dict.fromkeys(PLAYERS, 0), 'ralsei', turn, 10, roll, t - .08)
 
     def screens(self, t, winner):
         state = self.state(t, winner)
         focus = state.poses['ralsei'].x
         if t >= RETURN:
-            focus = mix(focus, state.poses['flowery'].x, .56)
+            focus = mix(focus, 166, smooth((t - RETURN - .20) / 1.08))
         panel, camera = self.board.lower(state, t, focus=focus)
-        if SLIDE <= t < CATCH:
-            slide = (t - SLIDE) / (CATCH - SLIDE)
-            x, y = point((154, 104), (230, 107), 1 - (1 - slide) ** 1.28)
+        x, y = self.board.route_position(EVENT_NODE)
+        x -= camera
+        if LAND <= t < GUEST_ENTER + .31:
+            age = t - LAND
+            radius = 12 + 20 * age
             draw = ImageDraw.Draw(panel)
-            for shift in (0, 6, 12):
-                draw.line((x - camera - 15 - shift, y + 4 + shift / 5,
-                           x - camera - 5 - shift, y + 4 + shift / 5), fill='#edb1a7')
-            self.bar(panel, x - camera, y, 'yellow', t)
-        elif CATCH <= t < RULES:
-            self.bar(panel, 236 - camera, 85, 'yellow', 0)
-            if t - CATCH < .23:
-                for dx in (-12, 12):
-                    centered(panel, resized('star', 8, 8), 236 + dx - camera, 78 - 20 * (t - CATCH))
-        if 32.25 <= t < 33.57:
-            u = (t - 32.25) / 1.32
-            self.bar(panel, mix(212, 291, u) - camera,
-                     101 - 17 * abs(sin(u * 2 * pi)) * (1 - u), 'yellow', t)
+            draw.arc((x - radius, y - radius / 3 - 1, x + radius, y + radius / 3 + 1),
+                     9, 172, fill='#c9f4a4', width=2)
+            ds_text(panel, '?', x, y - 58 - 12 * age, height=15, middle=True, outline='#315434')
+            for side in (-1, 1):
+                centered(panel, resized('star', 7, 7), x + side * (14 + 18 * age), y - 9 - 23 * age)
+        if COIN_DROP <= t < COIN_RECEIVE + .85:
+            self.coin_award(panel, x, y, t)
         return panel, self.board.upper(state)
+
+    @staticmethod
+    def coin_award(panel, x, y, t):
+        for index in range(EVENT_COINS):
+            age = (t - COIN_DROP - index * COIN_STAGGER) / COIN_FLIGHT
+            if 0 <= age < 1:
+                dx = (index % 5 - 2) * 11 * (1 - age)
+                width = 3 + round(7 * abs(sin((age + index / 4) * 2 * pi)))
+                centered(panel, resized('coin', width, 12), x + dx, mix(y - 93, y - 21, age * age))
+        age = t - COIN_RECEIVE
+        if 0 <= age < .85:
+            offset = 47 + 12 * smooth(age / .26)
+            centered(panel, resized('coin', 12, 15), x - 16, y - offset)
+            centered(panel, resized('board-plus', 10, 12), x - 2, y - offset)
+            number(panel, EVENT_COINS, x + 15, y - offset - 8, height=16, kind='coins')
 
 
 class Film:
@@ -184,7 +206,7 @@ class Film:
         self.frames, self.events = build()
         self.castle = Castle()
         self.game = SoapSurfers(sprite)
-        self.layout = PartyReel(sprite, DIALOGUE_RATE)
+        self.layout = PartyReel(episode_sprite, DIALOGUE_RATE)
         self.winner = next(event['id'] for event in self.events if event['type'] == 'win')
         self.preview, _ = self.game.screens(self.frames[round(MATCH * FPS)])
 
@@ -204,6 +226,8 @@ class Film:
                                              PLAYERS, MATCH - t)
         else:
             lower, upper = self.castle.screens(t, self.winner)
+            if phase == 'selection':
+                self.layout.roulette(lower, GAME_TITLE, t - DRAW, LOCK - DRAW)
         return self.layout.compose(lower, upper, t, (RULES, MATCH, RETURN), DIALOGUE)
 
 
