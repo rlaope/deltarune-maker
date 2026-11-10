@@ -15,6 +15,18 @@ VOICES = {"gerson": ("gerson-text.wav", .93), "queen": ("queen-text.wav", .95),
           "flowery": ("flowery-text-1.wav", .88), "ralsei": ("ralsei-text.wav", .91)}
 
 
+def missing_sound_cues(events, cues, expected_sources):
+    """Find required action sounds missing from the mix receipt at their event times."""
+    mixed = {(round(cue["t"], 6), cue["source"]) for cue in cues
+             if cue["stem"] == "sound" and cue["gain"] != 0}
+    missing = []
+    for event in events:
+        source = expected_sources.get(event["type"])
+        if source is not None and (round(event["t"], 6), source) not in mixed:
+            missing.append((event["t"], event["type"], source))
+    return missing
+
+
 class Mixer:
     def __init__(self, duration):
         self.stems = {name: np.zeros((round(duration * RATE), 2), dtype=np.float32)
