@@ -2,6 +2,8 @@
 
 Render Mario Party DS crossover episodes as 9:16 Shorts from the same board, HUD, and export code. The shared framing keeps the two 240 × 180 DS screens, their borders, and the dialogue gap in the same positions in every episode. The exporter scales the pixel art to 2160 × 3840 at 60 fps and adds stereo audio.
 
+The [playable board game](game/README.md) contains five large chapter maps, local four-player turns, and a deterministic rules engine for staging future episodes.
+
 ## Render an episode
 
 Use Python 3.10 or newer, Pillow, NumPy, and FFmpeg. Run these commands from the repository root. Each workspace is a private directory containing the prepared `assets/` for that episode. The renderer loads the episode code and shared modules from this checkout and writes outputs under the workspace.

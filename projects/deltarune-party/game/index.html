@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100f1d">
+  <title>Deltarune Party</title>
+  <link rel="icon" href="/assets/mpds/board-star.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="console">
+    <header class="console-header">
+      <h1>Deltarune <span>Party</span></h1>
+      <div class="utility">
+        <button id="trace-button" class="shell-button" type="button" aria-label="Save replay" hidden>Replay</button>
+        <button id="boards-button" class="shell-button" type="button" hidden>Boards</button>
+      </div>
+    </header>
+    <section class="screen-well top-well" aria-label="Board overview and standings">
+      <canvas id="overview" width="240" height="180" aria-label="Overview map"></canvas>
+      <section id="board-menu" class="board-menu" aria-labelledby="board-menu-title">
+        <h2 id="board-menu-title">Choose a chapter</h2>
+        <div id="chapters" class="chapters"></div>
+        <label class="rounds">Rounds <select id="rounds" aria-label="Number of rounds">
+          <option value="5">5</option><option value="10" selected>10</option><option value="15">15</option>
+        </select></label>
+      </section>
+    </section>
+    <div class="hinge" aria-hidden="true"><i></i></div>
+    <section class="screen-well board-well" aria-label="Playfield">
+      <canvas id="board" width="240" height="180" aria-label="Board playfield"></canvas>
+      <aside id="prompt" class="prompt" aria-live="polite" hidden></aside>
+      <div id="map-tools" class="map-tools" hidden>
+        <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+        <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+      </div>
+    </section>
+    <section class="controls" aria-label="Game controls">
+      <div class="control-line">
+        <span id="status" role="status">Loading boards…</span>
+        <div class="utility">
+          <button id="map-button" type="button" class="shell-button" aria-pressed="false" hidden><kbd>Y</kbd> Map</button>
+          <button id="sound-button" type="button" class="shell-button" aria-pressed="false" hidden>Sound off</button>
+        </div>
+      </div>
+      <div id="actions" class="actions"></div>
+      <p id="asset-note" class="asset-note" hidden></p>
+    </section>
+  </main>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
