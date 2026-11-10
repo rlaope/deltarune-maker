@@ -2,11 +2,12 @@
 
 from functools import lru_cache
 import json
+from os import environ
 from pathlib import Path
 
 from PIL import Image, ImageDraw
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(environ.get('DELTARUNE_PARTY_WORKSPACE') or Path(__file__).parent).expanduser().resolve()
 ART = ROOT / 'assets/deltarune'
 CHAPTER5 = ROOT / 'assets/chapter5'
 NEAR = Image.Resampling.NEAREST

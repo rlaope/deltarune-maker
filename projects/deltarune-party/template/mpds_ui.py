@@ -2,15 +2,15 @@
 
 from functools import lru_cache
 import json
-from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw
 
-ART = Path(__file__).resolve().parent / 'assets/mpds'
+from reel_art import NEAR, ROOT, SIZE
+
+
+ART = ROOT / 'assets/mpds'
 FONT = json.loads((ART / 'font.json').read_text())['glyphs']
-NEAR = Image.Resampling.NEAREST
-SIZE = (240, 180)
 COLORS = ('#4386df', '#e46356', '#64b773', '#e1bf43')
 
 SPRITES = {

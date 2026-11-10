@@ -3,7 +3,6 @@
 from mix import Mixer, ROOT, VOICES
 
 
-AUDIO = ROOT / 'assets/audio/soap'
 OUTPUT = ROOT / 'out/mix.wav'
 PANS = {'queen': -.40, 'gerson': -.16, 'flowery': .16, 'ralsei': .40, 'seth': .21, 'aqua': -.28}
 FLOWER_VOICE = '../chapter5/guests/flower-text.wav'
@@ -156,7 +155,9 @@ def render_audio(duration, events, dialogue, text_rate):
         if blips:
             mix.duck(blips[0], min(blips[-1] + .17, line['end']), .54)
 
-    mix.write(OUTPUT, AUDIO / 'mix-receipt.json')
+    receipt = ROOT / 'qa/mix.json'
+    receipt.parent.mkdir(exist_ok=True)
+    mix.write(OUTPUT, receipt)
 
 
 def main():

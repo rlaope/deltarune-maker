@@ -4,11 +4,11 @@ from dataclasses import dataclass
 from functools import lru_cache
 from itertools import combinations
 from math import atan2, ceil, cos, exp, hypot, pi, sin
-from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
 from mpds_ui import ds_text, stamp as ds_stamp
+from reel_art import ROOT
 from soap_skills import SKILLS, SkillRound
 from study_cast import PLAYERS
 
@@ -29,7 +29,6 @@ ARENA_SIZE = (268, 194)
 ARENA_CENTER = (120 * ARENA_SIZE[0] / SIZE[0], 96 * ARENA_SIZE[1] / SIZE[1])
 PX_X = 115 * ARENA_SIZE[0] / SIZE[0] / RIM
 PX_Y = 79 * ARENA_SIZE[1] / SIZE[1] / RIM
-ROOT = Path(__file__).resolve().parent
 ART = ROOT / 'assets/mpds/soap'
 ACTION = ROOT / 'assets/chapter5/action'
 NEAR = Image.Resampling.NEAREST

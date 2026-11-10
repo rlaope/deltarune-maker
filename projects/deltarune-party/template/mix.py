@@ -2,14 +2,13 @@
 
 import hashlib
 import json
-from pathlib import Path
 import subprocess
 import wave
 
 import numpy as np
 
+from reel_art import ROOT
 
-ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets/audio"
 RATE = 48000
 VOICES = {"gerson": ("gerson-text.wav", .93), "queen": ("queen-text.wav", .95),

@@ -89,3 +89,45 @@ class PartyReel:
         for i, row in enumerate(rows):
             self.font.draw(image, row[:max(0, visible)], 57, y + 5 + i * 13)
             visible -= len(row) + 1
+
+
+class ShortsReel(PartyReel):
+    """Frame the original Shorts grid with an empty upper margin."""
+
+    upper_position = (15, 38)
+    lower_position = (15, 254)
+
+    def __init__(self, sprite, text_rate):
+        super().__init__(sprite, text_rate)
+        self.background = Image.new('RGB', self.size, '#0e0b16')
+        frame = ImageDraw.Draw(self.background)
+        for x, y in (self.upper_position, self.lower_position):
+            frame.rectangle((x - 1, y - 1, x + SIZE[0], y + SIZE[1]), outline='#3a3554')
+
+    def compose(self, lower, upper, t, cuts=(), dialogue=()):
+        fade = min((smooth(abs(t - cut) / .18) for cut in cuts), default=1)
+        if fade < 1:
+            blank = Image.new('RGB', SIZE, '#110d19')
+            lower = Image.blend(blank, lower, fade)
+            upper = Image.blend(blank, upper, fade)
+        image = self.background.copy()
+        image.paste(upper, self.upper_position)
+        image.paste(lower, self.lower_position)
+        for cue in dialogue:
+            if cue['start'] <= t < cue['end']:
+                self._dialogue(image, cue, t)
+        return image
+
+    def _dialogue(self, image, cue, t):
+        rows = self.font.wrap(cue['text'], 185)
+        height = max(29, 10 + 12 * len(rows))
+        x, y = self.upper_position
+        left, top = x + 3, y + SIZE[1] + (36 - height) // 2
+        ImageDraw.Draw(image).rectangle((left, top, left + 233, top + height),
+                                        fill='black', outline='#f9f8f9', width=2)
+        face = cue.get('portrait', f"{cue['speaker']}-face")
+        centered(image, self.sprite(face, 23), left + 19, top + height / 2)
+        visible = 1 + int((t - cue['start']) * self.text_rate)
+        for i, row in enumerate(rows):
+            self.font.draw(image, row[:max(0, visible)], left + 38, top + 6 + i * 12)
+            visible -= len(row) + 1

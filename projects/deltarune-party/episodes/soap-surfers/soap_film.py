@@ -4,15 +4,15 @@ import argparse
 from functools import lru_cache
 from math import floor, pi, sin
 from pathlib import Path
-import subprocess
 
 from PIL import Image, ImageDraw
 
 from board_event import COIN_DROP, COIN_RECEIVE, EVENT_DIALOGUE, EVENT_END, action_events, draw_action, event_poses
 from mpds_ui import ds_text, number, resized
 from party_board import BoardState, CASTLE_LOOP, CASTLE_SPACES, PartyBoard, Pose, Roll
-from party_reel import PartyReel
+from party_reel import ShortsReel
 from reel_art import CHAPTER5, NEAR, ROOT, centered, mix, smooth, sprite, stylus
+from shorts_export import start_encoder
 from study_cast import PLAYERS
 
 
@@ -278,7 +278,7 @@ class Film:
         self.dialogue = dialogue(self.events)
         self.castle = Castle(self.return_time, self.payout)
         self.game = SoapSurfers(episode_sprite)
-        self.layout = PartyReel(episode_sprite, DIALOGUE_RATE)
+        self.layout = ShortsReel(episode_sprite, DIALOGUE_RATE)
         self.winner = self.win['id']
         self.preview, _ = self.game.screens(self.frames[round(MATCH * FPS)])
 
@@ -309,22 +309,17 @@ def main():
     parser.add_argument('--audio', type=Path, default=ROOT / 'out/mix.wav')
     parser.add_argument('--output', type=Path)
     options = parser.parse_args()
+    if not options.stills and not options.output:
+        parser.error('--output is required')
     film = Film()
     if options.stills:
+        (ROOT / 'qa').mkdir(exist_ok=True)
         for time in options.stills:
             frame = film.frames[min(len(film.frames) - 1, max(0, round(time * FPS)))]
             film.render(frame).resize((540, 960), NEAR).save(ROOT / f'qa/soap-{time:05.2f}.png')
         return
-    if not options.output:
-        parser.error('--output is required')
-    command = ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-n', '-f', 'rawvideo', '-pix_fmt', 'rgb24',
-               '-s', '270x480', '-r', str(FPS), '-i', '-', '-i', str(options.audio),
-               '-vf', 'scale=2160:3840:flags=neighbor:in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p',
-               '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '15',
-               '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv',
-               '-bsf:v', 'h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1:video_full_range_flag=0',
-               '-c:a', 'aac', '-b:a', '320k', '-movflags', '+faststart', str(options.output)]
-    with subprocess.Popen(command, stdin=subprocess.PIPE) as encoder:
+    options.output.parent.mkdir(parents=True, exist_ok=True)
+    with start_encoder(options.output, options.audio, fps=FPS) as encoder:
         for i, frame in enumerate(film.frames):
             encoder.stdin.write(film.render(frame).tobytes())
             if i % 360 == 0:

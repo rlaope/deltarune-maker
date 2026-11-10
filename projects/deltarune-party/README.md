@@ -1,48 +1,36 @@
 # Deltarune Party
 
-Deltarune Party is the studio's reusable Mario Party DS production project. The modules under `template/` share the DS board, player panels, dice, minigame roulette, rules, results, and vertical layout. The episode supplies the cast, story cues, map plate, and minigame.
+Render Mario Party DS crossover episodes as 9:16 Shorts from the same board, HUD, and export code. The shared framing keeps the two 240 × 180 DS screens, their borders, and the dialogue gap in the same positions in every episode. The exporter scales the pixel art to 2160 × 3840 at 60 fps and adds stereo audio.
+
+## Render an episode
+
+Use Python 3.10 or newer, Pillow, NumPy, and FFmpeg. Run these commands from the repository root. Each workspace is a private directory containing the prepared `assets/` for that episode. The renderer loads the episode code and shared modules from this checkout and writes outputs under the workspace.
 
 ```sh
-cp projects/deltarune-party/template/*.py /path/to/episode/
+python3 -m pip install Pillow NumPy
+
+python3 projects/deltarune-party/render.py boo-tag --workspace /path/to/boo-workspace -- --stills 8.9 11.5 17.6 23
+python3 projects/deltarune-party/render.py boo-tag --workspace /path/to/boo-workspace
+
+python3 projects/deltarune-party/render.py soap-surfers --workspace /path/to/soap-workspace --mix-only
+python3 projects/deltarune-party/render.py soap-surfers --workspace /path/to/soap-workspace -- --output out/final/deltarune-party-soap-surfers.mp4
 ```
 
-Use Python 3.10 or newer with Pillow and NumPy. The module copies read assets from the episode directory.
+Boo Tag builds its own mix and writes `out/final/boo-tag-short-v5.mp4`. Soap Surfers reads `out/mix.wav` by default. The stills commands render representative frames under `qa/` for either episode. Pass episode options after `--` to the launcher.
 
-| Input | Location or interface |
+| Episode | Original asset inputs under the workspace |
 | --- | --- |
-| Original DS panels, fonts, dice, and controls | `assets/mpds/`, including `font.json` and `raw/` |
-| Original DELTARUNE sprites and dialogue font | `assets/deltarune/`, including `font.json` |
-| Original Chapter 5 cast sprites and Castle plate | `assets/chapter5/`, with Seth and Aqua sprites, mini-faces, and shared text sound under `guests/` |
-| Original DS effects and episode sound mix inputs | `assets/audio/`, including `mpds-roulette.wav`, `mpds-coin-contact.wav`, `mpds-coin.wav`, and the `soap/` sounds and music |
-| Soap Surfers attack art and sound | `assets/chapter5/action/` and `assets/audio/fight/`, with the original knife, fire, lasers, hammers, and Jarona voice clips |
-| Episode assets and simulation | The episode supplies native rules, title, preview, and rendered minigame screens |
+| [Boo Tag](episodes/boo-tag/) | `assets/mpds/` (including both Double Dice cards, controls and red roll faces), `assets/deltarune/` (dialogue font), `assets/cast/`, `assets/board/courtyard.png`, `assets/boo-native/`, and `assets/audio/` |
+| [Soap Surfers](episodes/soap-surfers/) | `assets/mpds/` (including `soap/`), `assets/deltarune/`, `assets/chapter5/` (including `guests/` and `action/`), and `assets/audio/` (including `soap/` and `fight/`) |
 
-## Soap Surfers example
+Keep extracted sprites, game audio, and their provenance records in the private workspace. See the [studio asset policy](../../AGENTS.md) and the [original Mario Party DS manual](https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_ds_21/Manual_NintendoDS_MarioPartyDS_EN.pdf).
 
-[Soap Surfers Got Out of Hand in Mario Party DS](episodes/soap-surfers/) is a reference episode. Ralsei lands on a question-mark space in Flower Castle, ducks Aqua's knife, and collects ten coins after it sends Seth over the edge. The board turn ends and the four-player roulette draws Soap Surfers. The four players share one steering and collision model. Queen fires a laser, Ralsei casts fire, Gerson throws a hammer, and Flowery calls Jarona before a dash. [Original Mario Party DS manual](https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_ds_21/Manual_NintendoDS_MarioPartyDS_EN.pdf)
+## Build the next episode
 
-From the repository root, copy the shared modules and example into a local production directory containing the asset folders above.
+1. Add a directory under `episodes/` and register its film entry point and any episode-specific asset checks in `render.py`. Use the Boo Tag entry for an episode that mixes audio and renders in one command.
+2. Give the episode a cast, map plate, board route, and space types. Pass these to `PartyBoard` and feed both screens from the same `BoardState`. Use `party_turns.py` to schedule rolls, moves, rewards, and camera handoffs. Leave room for the active player's banner and the full coin reward before the next turn or minigame draw.
+3. Use `party_items.py` for the native Double Dice selection, confirmation, and two rolls. Keep the episode's board encounter and dialogue in its own module. Connect any new effects to the same events the board uses to update the coin counters and poses.
+4. Put the minigame simulation in the episode directory and keep the native rules card and title art in the private workspace. Use `ShortsReel` for the roulette, rules, and final screen composition, the shared mixer for cue timing, and `start_encoder` for the final MP4.
+5. Render stills around each handoff before encoding the full episode. Verify the final MP4 by playing the transitions and ending and checking the export dimensions, frame rate, audio, and SHA-256.
 
-```sh
-cp projects/deltarune-party/template/*.py /path/to/episode/
-cp projects/deltarune-party/episodes/soap-surfers/*.py /path/to/episode/
-cd /path/to/episode
-mkdir -p out/final
-python3 mix_soap.py
-python3 soap_film.py --output out/final/deltarune-party-ds-flower-short-v7.mp4
-```
-
-Install FFmpeg for audio mixing and export. Keep the extracted assets and their source records in the local production directory. The repository carries the production code and documentation.
-
-## Shared interfaces
-
-- Create `PartyBoard(background, route, spaces, players, sprite, heights)` with a board plate 180 pixels high and at least 240 pixels wide. Pass `CASTLE_LOOP` and `CASTLE_SPACES` for the established 12-space Castle map. Custom routes use one `blue`, `red`, or `event` entry per coordinate. The renderer connects the final space to the first.
-- Use `route_position(space, progress)` for movement. A full step after the final space wraps to the first. Store each player's world position in `Pose`. Both screens derive positions from that state.
-- Pass current poses, coins, stars, active player, and turn totals in `BoardState`. Set `Roll` during dice input and movement. `markers` accepts optional space index and asset pairs for episode mechanics.
-- Call `upper(state)` for the minimap and standings and `lower(state, t)` for the board view and camera offset. Apply rewards once in the episode's timeline, then pass the updated state to `results(state, winner, award)` and the next turn.
-- Use `PartyReel.roulette(lower, title, elapsed, lock_at)` after the board turn. Leave time between locking the title and opening `PartyReel.rules`, which renders the native rules and preview. `PartyReel.compose` frames the two 240 × 180 DS screens and dialogue in the 270 × 480 vertical composition. The episode supplies the minigame frames and transition times.
-- Keep board cameos in an episode module such as `board_event.py`. Use the same projectile path for contact and drawing. The Soap Surfers example samples steering, skill input, impacts, and ring-outs at a fixed tick rate and uses the resulting event times for the edit and audio.
-- Start the original DS turn jingle with the banner entrance. In the minigame, use the measured impact strength to set the contact sound level and add a short skid for harder bumps.
-- In Soap Surfers, the sink plate is scaled into a wider arena and the camera follows the riders. Steering, skill geometry, wakes, and the visible rim share the same projection.
-
-Copy from this template when starting an episode. Make shared UI changes here and copy them into the episode before rendering.
+Boo Tag demonstrates a Boo encounter, native Double Dice, a three-turn board sequence, and a treasure chase. Soap Surfers demonstrates a Flower Castle event and a different minigame simulation using the same board and Shorts framing.
