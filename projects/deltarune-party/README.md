@@ -71,6 +71,33 @@ camera_start = next_turn_start(turn, dialogue_end=reaction_end)
 
 Initialize `ShortsReel` with `dialogue.text_rate`, call `dialogue.validate_fit(reel.font)` after scheduling, and pass `dialogue.cues` to `compose`. Call `dialogue.mix(mixer)` after adding music and action cues. The box and voice blips use the same schedule, and the voice mix ducks music while leaving the action stem audible. For minigame chatter, pass `until` with the time of the next protected cue or cut. The exchange must fit before that time, including the last line's reading hold.
 
+### Stage the speakers and hand off to the next turn
+
+Use `ConversationShot` from `party_staging.py` for a stationary pair on the board. Construct it with the cues for one exchange and the two player IDs. Supply native body animation names when a speaker should laugh or react.
+
+```python
+from party_staging import ConversationShot
+
+shot = ConversationShot(
+    dialogue.cues, ("susie", "lancer"),
+    reactions={"lancer": ("lancer-laugh-0", "lancer-laugh-1")},
+)
+staged, focus = shot.apply(board, state, t, default_focus, moving=moving_players)
+lower, camera = board.lower(staged, t, focus)
+```
+
+The shot eases in over 0.35 seconds before the first line and stays through the last reply plus 0.82 seconds. It uses the original body sizes and turns stationary participants toward each other. Both bodies, including every supplied reaction frame, must fit inside the 240 × 180 board view. Pass the currently moving player IDs, including their stride-zero frames. Rolls, banners, jumps, and movement take priority. Use `handoff_focus` for the next camera move, beginning at `next_turn_start` with the final reply's end time.
+
+Run the full integration check with the prepared Fast Food Frenzy assets. Use a new output directory for each check.
+
+```sh
+python3 projects/deltarune-party/rehearse.py \
+  --workspace /path/to/diner-workspace \
+  --output /path/to/diner-workspace/qa/conversation-check-01
+```
+
+This renders Lancer's roll, movement, and +3 reward, Susie's reply, and the camera handoff into Susie's turn. It uses the shared board, HUD, dialogue, staging, native cue map, mixer, and 2160 × 3840/60 fps exporter. The output directory contains the check MP4, two reply stills, timeline, source-bound mix receipt, WAV, and export receipt. The check verifies that dialogue leaves the action stem sample-identical and that mapped action cues occur at the event times. The executable scene lives in `template/party_rehearsal.py`.
+
 ### Review the picture, action sounds, and reactions
 
 | Feedback | What the existing episodes show | Gate for the next episode |
