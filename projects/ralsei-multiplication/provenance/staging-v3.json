@@ -1,0 +1,566 @@
+{
+  "rightsHolder": "Toby Fox and DELTARUNE contributors",
+  "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+  "sprites": {
+    "ralseiRoll": {
+      "sourceName": "spr_ralsei_roll",
+      "width": 33,
+      "height": 47,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/1035615b-f3ca-44d3-8d00-13af5c7b4802.png",
+          "sha256": "13f28308b20d272def30189f35fe584e6c8e52ac3dd2b7e87561c58a47cb71a0",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            3,
+            6,
+            30,
+            46
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/d9dff884-ccb1-49eb-b80c-fe6a76c016ae.png",
+          "sha256": "4b03824ad9000a1672245bc47e8aa1c03c340586df397ae61a748244a07ca1e3",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            0,
+            1,
+            33,
+            41
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/23453601-037c-4485-8cea-c3841814bf6a.png",
+          "sha256": "26f69d9ab083bb9c301695a4c9a86d037f498bd0a3768e54503a45645211025b",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            1,
+            4,
+            33,
+            41
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/40e919fe-2dd0-4c3e-b052-49d838d2b5bb.png",
+          "sha256": "c07a0a8e582cd6a099c2a4e3d057631d80af2a515d96a6f3feb4bb3f4bcb0a18",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/60378115-e2d7-4fed-b8e8-6467136e2b57.png",
+          "sha256": "db5ae7c4e18dd78e9e4da3fdca6494d101a04bdb91822fbebc2913f82845f091",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/d862a481-0f5c-4a5a-8ee6-9491c4ee0930.png",
+          "sha256": "c07a0a8e582cd6a099c2a4e3d057631d80af2a515d96a6f3feb4bb3f4bcb0a18",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/5ec8330a-7f06-40d1-892a-dee7e93c1555.png",
+          "sha256": "db5ae7c4e18dd78e9e4da3fdca6494d101a04bdb91822fbebc2913f82845f091",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/18b5fb40-0bd3-4544-8eec-c18975928a00.png",
+          "sha256": "c07a0a8e582cd6a099c2a4e3d057631d80af2a515d96a6f3feb4bb3f4bcb0a18",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/eb7c5bbd-0aba-4481-9fc1-40f1a2cbe89f.png",
+          "sha256": "db5ae7c4e18dd78e9e4da3fdca6494d101a04bdb91822fbebc2913f82845f091",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/183218e2-bbc2-417d-a603-2197a7e188cc.png",
+          "sha256": "c07a0a8e582cd6a099c2a4e3d057631d80af2a515d96a6f3feb4bb3f4bcb0a18",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_roll/5ca742b6-58e8-42b0-90b6-01479dff9764.png",
+          "sha256": "db5ae7c4e18dd78e9e4da3fdca6494d101a04bdb91822fbebc2913f82845f091",
+          "footAnchor": [
+            16.5,
+            47
+          ],
+          "opaqueBounds": [
+            7,
+            14,
+            27,
+            34
+          ]
+        }
+      ]
+    },
+    "ralseiThrown": {
+      "sourceName": "spr_ralsei_thrown",
+      "width": 43,
+      "height": 26,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_thrown/aa229696-ec6a-43c0-9bc6-4856d7ce4ec6.png",
+          "sha256": "98bea75fd43e4cd6ab7a647c644bad1faa5e6cbc5d3d266559c10afc14d09ed1",
+          "footAnchor": [
+            21.5,
+            26
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            43,
+            26
+          ]
+        }
+      ]
+    },
+    "ralseiSlide": {
+      "sourceName": "spr_ralsei_slide",
+      "width": 26,
+      "height": 38,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_slide/54bb40b5-8970-4666-b193-db2ab25d6908.png",
+          "sha256": "b3a73072b453cbdccd7f951db527760d219844a827b6547e9a44ac31f6b42ed9",
+          "footAnchor": [
+            13.0,
+            38
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            26,
+            38
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_slide/68097097-3bec-46d2-9d6c-ea0c4ee462b4.png",
+          "sha256": "eab8e9240513818e60b7f7cd42d5a57b948a8a65b881838ded3cdefe36c132fb",
+          "footAnchor": [
+            13.0,
+            38
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            26,
+            38
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_slide/38c925e5-aad2-40b5-b428-07ba4cbb3908.png",
+          "sha256": "9ac94877c93c2721e82e09330db822b2a8be20991990bebe6baed96ee4d17a06",
+          "footAnchor": [
+            13.0,
+            38
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            26,
+            38
+          ]
+        }
+      ]
+    },
+    "ralseiSplat": {
+      "sourceName": "spr_cutscene_10_ralsei_splat",
+      "width": 47,
+      "height": 30,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_cutscene_10_ralsei_splat/9586fd81-df1b-46d6-b91b-5e4d51c3e4fe.png",
+          "sha256": "03838c6c403fc50df94b0dbfd086940e139916b50e10cd514d2f77b0c406ed70",
+          "footAnchor": [
+            23.5,
+            30
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            47,
+            30
+          ]
+        }
+      ]
+    },
+    "ralseiSplatHappy": {
+      "sourceName": "spr_cutscene_24e_ralsei_splat_happy",
+      "width": 41,
+      "height": 36,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_cutscene_24e_ralsei_splat_happy/deb89b2a-4c7d-4883-b3f3-1130c8f18c44.png",
+          "sha256": "812781c53aeb4777136f6f35de68aca7de86c946e91c411ba355fd287579c50f",
+          "footAnchor": [
+            20.5,
+            36
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            41,
+            36
+          ]
+        }
+      ]
+    },
+    "nativeStars": {
+      "sourceName": "spr_cyber_starry_stars",
+      "width": 200,
+      "height": 80,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_cyber_starry_stars/41fc153a-f47c-4e31-a399-5c122d3b4471.png",
+          "sha256": "ecacafe90f56e28828e4133cf6b82911385774275a1454c9dbb32f91c2a65633",
+          "footAnchor": [
+            100.0,
+            80
+          ],
+          "opaqueBounds": [
+            10,
+            10,
+            183,
+            73
+          ]
+        }
+      ]
+    },
+    "nativeExplosion": {
+      "sourceName": "spr_realisticexplosion",
+      "width": 71,
+      "height": 100,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/e1b7157d-f333-4cbf-8b09-d0deef428cf9.png",
+          "sha256": "ce19677bdfa4c60b7315d19188dc7472cc95c283bc7563b8fe316bb1f190c5b0",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            29,
+            49,
+            40,
+            61
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/e254860e-8d8e-46b2-a02a-ced55c044ade.png",
+          "sha256": "383e9c076ef13c2c72396f17776fc75a092b0c24970de1847144a0352a433a7c",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            12,
+            36,
+            49,
+            69
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/c88225b8-16ac-462d-a9f0-17c822f046c3.png",
+          "sha256": "de38453c95f74df9a4e810188c867f88711f255bd360fa56cfbd03d257bde978",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            10,
+            18,
+            53,
+            73
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/55f6ea45-28c3-4add-81e1-e0d0f29623d4.png",
+          "sha256": "77bd78201caa39ae67343acf06ca50edc08d32af0cb3f6edf824c2ee8b33f950",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            4,
+            61,
+            98
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/e2645777-7703-4993-b454-b8e923d23dc7.png",
+          "sha256": "31ac25ae27af2ffc4e2238eb4104f74bc8bebff843cd7a319b0d6951d3a43680",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            1,
+            67,
+            78
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/81ed5398-a9b6-4ae4-9aa4-2c13e849728c.png",
+          "sha256": "904f31d5116f142f70c832582ff60169bce919ad39a00e8d38460773f38a0c2d",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            8,
+            2,
+            65,
+            79
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/b7536e94-c8a3-4e10-9685-a200ab71806a.png",
+          "sha256": "29327c5969d34c1ec5abca0e413fa6ca0f5cbc52c1a2297d65e9a9ba36142a49",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            8,
+            0,
+            71,
+            84
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/85e634c7-510f-44ac-9c5e-bf76dc5a9878.png",
+          "sha256": "36515e17a763a5177d172bafe927f49e9f583a9b27d497e2d285d42c4bcb68c4",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            6,
+            0,
+            71,
+            88
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/e16ba403-9d19-4dca-a770-03a1642cedec.png",
+          "sha256": "6fa47da9626d01e4f9ede0514e2ea98a092792f4e4f0b0d023af78db0acd45f6",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            6,
+            0,
+            68,
+            86
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/f2269f80-7e25-4b68-9a60-e8bca55c9021.png",
+          "sha256": "03bd26b88b8d550cc06f15aa79efeeff456732bb71b70785be9ddb47de9c7faf",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            6,
+            0,
+            68,
+            89
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/7e0612a5-3f89-4a85-9824-e546c9136199.png",
+          "sha256": "d794494e22e8d4ea43a5ee6ba01f7d17559c5edf341b6ed1075e5e9e3d59a5d3",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            0,
+            65,
+            82
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/55eab95e-49e9-4ef1-b9e5-e5f38f76dca9.png",
+          "sha256": "9e3351fcb4339149d4029fad90ae18f04f64250ed5a7cf656a8163c1a3f725d4",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            5,
+            58,
+            85
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/a8e3fe9e-0f7a-484b-aa8d-42d0d401d448.png",
+          "sha256": "04d9be6421f5b5d81a367073bfb3dba994f08faecd05c82a3af330f42b981f1c",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            3,
+            56,
+            88
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/9e2b7e9b-7306-4d66-b66b-e73fe4f0c47f.png",
+          "sha256": "164cfc1d71305fc702eb2f6bbebfc77fbc643e4aa2b2873eae8ae1e263e2abe0",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            8,
+            2,
+            53,
+            92
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/cf38363b-e53a-4044-8b28-92bbaa2ceeb8.png",
+          "sha256": "c0af18bec4c99fe0aedfc38fc3cd6368effbae84991788f585a5d465b95a3d37",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            7,
+            2,
+            61,
+            95
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/0603b572-50a7-45b2-9edf-6d60adf24016.png",
+          "sha256": "217013bacb79f057df2cf474b481f460de3245c0214c00e03ab1901ccd919d0d",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            11,
+            0,
+            57,
+            16
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_realisticexplosion/0859b4aa-2adb-4438-aec1-ccd5ab1d3adc.png",
+          "sha256": "6cd92db196081b0a2e47ab1b6442f7df77da96723ebd6aa40facda110415f5bc",
+          "footAnchor": [
+            35.5,
+            100
+          ],
+          "opaqueBounds": [
+            13,
+            1,
+            60,
+            12
+          ]
+        }
+      ]
+    },
+    "ralseiDummy": {
+      "sourceName": "spr_dummynpc",
+      "width": 27,
+      "height": 45,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_dummynpc/0131d97c-82c5-4111-ac68-723091ccd0c1.png",
+          "sha256": "892557ff5885c149f8b338966f6b213ef3e3ae94c2274b4d2eb881c0b760ff78",
+          "footAnchor": [
+            13.5,
+            45
+          ],
+          "opaqueBounds": [
+            0,
+            0,
+            27,
+            45
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "What If Ralsei Kept Multiplying?",
+  "version": "v3",
+  "artifact_type": "rendered fan film",
+  "exports": [
+    {
+      "edition": "short",
+      "asset": "ralsei-multiplication-short-v3.mp4",
+      "sha256": "97876f83b9cf185dd1d1d2095f5c82f4501918c1b906f888c495840f9eb2fa4a",
+      "bytes": 331924136,
+      "width": 2160,
+      "height": 3840,
+      "fps": 60,
+      "frames": 7080,
+      "duration_seconds": 118.0,
+      "video": {
+        "codec_name": "h264",
+        "profile": "High",
+        "pix_fmt": "yuv420p",
+        "color_space": "bt709",
+        "color_range": "tv"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo"
+      }
+    },
+    {
+      "edition": "gameplay",
+      "asset": "ralsei-multiplication-gameplay-v3.mp4",
+      "sha256": "669d18b857bd9bfdfaa976ccc9cde6af96356fabf803ff6a286b436ec20b36f8",
+      "bytes": 281175650,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60,
+      "frames": 7080,
+      "duration_seconds": 118.0,
+      "video": {
+        "codec_name": "h264",
+        "profile": "High",
+        "pix_fmt": "yuv420p",
+        "color_space": "bt709",
+        "color_range": "tv"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo"
+      }
+    }
+  ],
+  "rebuild_note": "Current source preserves the approved Shorts RGB branch; gameplay adds a native sprite minimum sampling footprint and a separate counter/ground layout. Re-encoding is not promised to reproduce approved MP4 bytes across encoder builds. Approved binaries must be copied verbatim."
+}

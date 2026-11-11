@@ -1,0 +1,181 @@
+{
+  "audio": {
+    "tennaVoice4": {
+      "sourceName": "snd_tv_voice_short_4",
+      "sha256": "ab6b7aa7a88e21d03f79c3b25d640334c24924ffbeacc86c2de60c6f96c68d6d",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 367,
+      "audio_offset": 122184852,
+      "audio_length": 12864
+    },
+    "push": {
+      "sourceName": "snd_board_blockpush",
+      "sha256": "228888d0eb477862736de1abcf17867a95645a554f67ae3fb0686d44c15f24de",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 50,
+      "audio_offset": 74663452,
+      "audio_length": 47438
+    },
+    "tennaVoice6": {
+      "sourceName": "snd_tv_voice_short_6",
+      "sha256": "3600b9e3f86e5bf07b5aa65cd7347ce6f485f6f9926bb106cefc3eede35ce096",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 369,
+      "audio_offset": 122216116,
+      "audio_length": 10274
+    },
+    "queenVoice": {
+      "sourceName": "snd_txtq_2",
+      "sha256": "5b22bcfc248115d409f18c20042600290b7c98ec6407eac1e2c5c0bfe9e3d837",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 377,
+      "audio_offset": 122707336,
+      "audio_length": 13776
+    },
+    "fall": {
+      "sourceName": "snd_fall",
+      "sha256": "7726f0418cdf0bc2d59f2f873f1b9b038ce814760a9c6979c54ed3fa055cfb94",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 154,
+      "audio_offset": 88565948,
+      "audio_length": 77484
+    },
+    "bump": {
+      "sourceName": "snd_bump",
+      "sha256": "32a9a6f218ec5fdeeb2af0e53fdf5e01c1a6edc64b56d51837aa4d4dc229b2df",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 101,
+      "audio_offset": 79160224,
+      "audio_length": 14232
+    },
+    "tennaVoice5": {
+      "sourceName": "snd_tv_voice_short_5",
+      "sha256": "c89dce5f6356fa89453f5d7f897dc13c93395925ac9f7b039197a2f8caffdc3c",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 368,
+      "audio_offset": 122197720,
+      "audio_length": 18390
+    },
+    "absorb": {
+      "sourceName": "snd_ominous_cancel",
+      "sha256": "a044ebdeaf8c88b78a4cdd276cfcadf5c9aeedb6648e917ea5ce3cdf96adcfd9",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 240,
+      "audio_offset": 104877276,
+      "audio_length": 186206
+    },
+    "ominous": {
+      "sourceName": "snd_ominous",
+      "sha256": "0efd6c3b5fd27bdd14f12eec22e47132284a81cb66fe3feafdc72fc404d848e3",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 239,
+      "audio_offset": 104691064,
+      "audio_length": 186206
+    },
+    "explosion": {
+      "sourceName": "snd_explosion",
+      "sha256": "d2dfc01d5ee5bb85293486717b97fc0c8e67e8b14ff4976590ee11feb83bfc45",
+      "nativeWriterSample": false,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 147,
+      "audio_offset": 87421160,
+      "audio_length": 353708
+    },
+    "tennaVoice3": {
+      "sourceName": "snd_tv_voice_short_3",
+      "sha256": "e47633cdc3f6616ff5901737c1458663dbf6492588e28904e233cdbbf7211cf3",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 366,
+      "audio_offset": 122172688,
+      "audio_length": 12158
+    },
+    "tennaVoice8": {
+      "sourceName": "snd_tv_voice_short_8",
+      "sha256": "7ac0e36f5202286465ea0afe20f9ef7baa2f1dd0f6e38c1f818aca52a1542dd9",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 371,
+      "audio_offset": 122235032,
+      "audio_length": 10512
+    },
+    "tennaVoice2": {
+      "sourceName": "snd_tv_voice_short_2",
+      "sha256": "0a26f4b1ce63e6da240251a7648e8de15d7836b2a46eade6d701c49dfeed7a6c",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 365,
+      "audio_offset": 122160524,
+      "audio_length": 12158
+    },
+    "tennaVoice9": {
+      "sourceName": "snd_tv_voice_short_9",
+      "sha256": "0a898f2f3d91fe67ec215e58ee4825d7fc8ec09903cf05be18164971b218d2d1",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 372,
+      "audio_offset": 122245548,
+      "audio_length": 6630
+    },
+    "tennaVoice": {
+      "sourceName": "snd_tv_voice_short",
+      "sha256": "921c5d4fc40278ba3d0e0ad8e7a61caaca9c42f1a2d1188b03d0d244692d7e6c",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 363,
+      "audio_offset": 122135260,
+      "audio_length": 10274
+    },
+    "tennaVoice7": {
+      "sourceName": "snd_tv_voice_short_7",
+      "sha256": "986f01848d76a4882b84c0a209966cc3f59515ebf5d21b3c317e5150ece52d2c",
+      "nativeWriterSample": true,
+      "source": "Native compiled chapter3 SOND/AUDO, unmodified embedded bytes",
+      "url": "https://github.com/skidding-code/deltarune/tree/ef740ba51dc15fb87f59432e258b2c6e3829f5d1/chapter3",
+      "bundle_sha256": "e5de20a44633ead0aac210586d9c026ba30e9321e8782c41ded0588d7816302b",
+      "audio_id": 370,
+      "audio_offset": 122226396,
+      "audio_length": 8630
+    }
+  },
+  "revision": "ef740ba51dc15fb87f59432e258b2c6e3829f5d1"
+}

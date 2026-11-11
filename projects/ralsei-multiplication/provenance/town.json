@@ -1,0 +1,329 @@
+{
+  "source": {
+    "chapter": 2,
+    "repository": "https://github.com/TeamBlossomDevs/DeltaruneDecomp_beta",
+    "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba"
+  },
+  "sprites": {
+    "gigaQueen": {
+      "kind": "native-sprite",
+      "name": "spr_bqueen_idle",
+      "size": [
+        99,
+        152
+      ],
+      "origin": [
+        58,
+        150
+      ],
+      "frames": [
+        {
+          "gitBlob": "a82c12ee5cdd1e92e873b37312921cf56ddc8383",
+          "sha256": "cc0ce64528f969c4de2d658b6e6a19968a6fda00f753510818173f5ba7e5cb6c",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_idle/48f9f397-99ba-4f67-b8e0-6b9c546fa808.png",
+          "bytes": 1980,
+          "visibleBounds": [
+            36,
+            37,
+            91,
+            148
+          ],
+          "footAnchor": [
+            58,
+            148
+          ]
+        },
+        {
+          "gitBlob": "59e7c17c4a5c4a36f6f17e46acf92d77b26e3241",
+          "sha256": "8f68c6d98f749d14c56035cc75a5f7f6258bcd265acde16804960e2a3b2b58a1",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_idle/cb47dd92-4e61-4643-8127-9af5a8f10649.png",
+          "bytes": 2046,
+          "visibleBounds": [
+            36,
+            37,
+            91,
+            152
+          ],
+          "footAnchor": [
+            58,
+            152
+          ]
+        }
+      ],
+      "footAnchor": [
+        58,
+        148
+      ],
+      "gameDrawScale": [
+        2,
+        2
+      ],
+      "drawScaleProof": {
+        "gitBlob": "5c2fc2613d5103d8e5da95288a0ffc0bbf91d4b0",
+        "sha256": "d90f74d2e996f2d1e846a01eef72388840937d09a7807e7b46b6660c5b2da9c6",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Create_0.gml",
+        "bytes": 2832
+      },
+      "encounterCode": {
+        "gitBlob": "02b4f066f436dc8b75438fdf5584cdac2e784420",
+        "sha256": "a948b53de88d8516b4a2739575825a496c9d07e81cc256f34f51ba80b6fa7237",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Step_0.gml",
+        "bytes": 78278
+      }
+    },
+    "gigaQueenLaugh": {
+      "kind": "native-sprite",
+      "name": "spr_bqueen_laugh",
+      "size": [
+        99,
+        150
+      ],
+      "origin": [
+        58,
+        150
+      ],
+      "frames": [
+        {
+          "gitBlob": "9a83fe907a4634abecaa1bed95bf2368da57eb9f",
+          "sha256": "b49dbd787530341fc3e5e81906473a4abc880f89a136c8b3162004284c670b9b",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_laugh/8495dc38-1872-4fb8-8b57-ab6a95a09973.png",
+          "bytes": 1933,
+          "visibleBounds": [
+            15,
+            32,
+            76,
+            147
+          ],
+          "footAnchor": [
+            58,
+            147
+          ]
+        },
+        {
+          "gitBlob": "1f5359ac5e7af83c3302169da4af92e174ed7394",
+          "sha256": "33f13a6c8bcf7fcc3930917e99adc4d1043eb6eb5a08b5966403fe90739f2581",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_laugh/2f95c08f-c7a8-4d3a-be5d-4e252f2f4ae9.png",
+          "bytes": 1958,
+          "visibleBounds": [
+            15,
+            30,
+            76,
+            147
+          ],
+          "footAnchor": [
+            58,
+            147
+          ]
+        }
+      ],
+      "footAnchor": [
+        58,
+        147
+      ],
+      "gameDrawScale": [
+        2,
+        2
+      ],
+      "drawScaleProof": {
+        "gitBlob": "5c2fc2613d5103d8e5da95288a0ffc0bbf91d4b0",
+        "sha256": "d90f74d2e996f2d1e846a01eef72388840937d09a7807e7b46b6660c5b2da9c6",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Create_0.gml",
+        "bytes": 2832
+      },
+      "encounterCode": {
+        "gitBlob": "02b4f066f436dc8b75438fdf5584cdac2e784420",
+        "sha256": "a948b53de88d8516b4a2739575825a496c9d07e81cc256f34f51ba80b6fa7237",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Step_0.gml",
+        "bytes": 78278
+      }
+    },
+    "gigaQueenDizzy": {
+      "kind": "native-sprite",
+      "name": "spr_bqueen_dizzy",
+      "size": [
+        100,
+        150
+      ],
+      "origin": [
+        50,
+        150
+      ],
+      "frames": [
+        {
+          "gitBlob": "f3d7de0bfe69a404bd29e217d5a7b6d2bcde3057",
+          "sha256": "85e09456fd1a5d01845f3a015818a4866fbe31e09bcec3ed0c4608c5dd470cdb",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_dizzy/a0797e1d-90e7-40af-b3cb-da1996c8ee01.png",
+          "bytes": 2171,
+          "visibleBounds": [
+            24,
+            40,
+            75,
+            139
+          ],
+          "footAnchor": [
+            50,
+            139
+          ]
+        },
+        {
+          "gitBlob": "8f9670c4aed0369f6b80272a11053dee3cb13347",
+          "sha256": "a996e06f94353a979a4297ad7683e3eb63bc012c9dcd00c5a9edc8b5a4dcbf2e",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_bqueen_dizzy/bb966cf0-6f8e-4f77-ae91-787ecff06b7c.png",
+          "bytes": 2101,
+          "visibleBounds": [
+            24,
+            39,
+            76,
+            139
+          ],
+          "footAnchor": [
+            50,
+            139
+          ]
+        }
+      ],
+      "footAnchor": [
+        50,
+        139
+      ],
+      "gameDrawScale": [
+        2,
+        2
+      ],
+      "drawScaleProof": {
+        "gitBlob": "5c2fc2613d5103d8e5da95288a0ffc0bbf91d4b0",
+        "sha256": "d90f74d2e996f2d1e846a01eef72388840937d09a7807e7b46b6660c5b2da9c6",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Create_0.gml",
+        "bytes": 2832
+      },
+      "encounterCode": {
+        "gitBlob": "02b4f066f436dc8b75438fdf5584cdac2e784420",
+        "sha256": "a948b53de88d8516b4a2739575825a496c9d07e81cc256f34f51ba80b6fa7237",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/objects/o_boxingqueen/Step_0.gml",
+        "bytes": 78278
+      }
+    },
+    "castleFacade": {
+      "kind": "native-sprite",
+      "name": "bg_darkcastle_front",
+      "size": [
+        660,
+        480
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "frames": [
+        {
+          "gitBlob": "b453d374dce21e5db7b645048c2028e4a08bc355",
+          "sha256": "0e98026ebd59ae8153d0266be58de070b7a76c6e4eb15b7673df2aa211a2c96d",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/bg_darkcastle_front/1d445413-bcc1-41d1-8372-614ddc82c254.png",
+          "bytes": 8800,
+          "visibleBounds": [
+            6,
+            0,
+            654,
+            302
+          ]
+        }
+      ]
+    },
+    "preTransformationTown": {
+      "kind": "native-sprite",
+      "name": "bg_darktown",
+      "size": [
+        640,
+        1160
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "frames": [
+        {
+          "gitBlob": "3c6afe9b87c7ead57370ff5b27f58d0ced3e582a",
+          "sha256": "3f40f4ee4bda656d8056df2e3db7992a2aa9b641712d23b17b57e8c42cf14eb1",
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/bg_darktown/ecaa1e03-26df-49c8-9385-a6c4544eed87.png",
+          "bytes": 27129,
+          "visibleBounds": [
+            0,
+            0,
+            640,
+            1160
+          ]
+        }
+      ]
+    }
+  },
+  "rooms": {
+    "castleTown": {
+      "kind": "derived-static-composite",
+      "sha256": "cb575ba6484333de04825f5bdb3ff5e63a67ab5b6c7fc5f4579509cc34eeb98a",
+      "room": {
+        "gitBlob": "b33087b2b21437c0e1d457c8d742eacfccd0a6d4",
+        "sha256": "43ef9857ff11ad727450365f5a7c4a6fa69b72cc3891a2675a715608cd621ce3",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/rooms/room_dw_castle_area_2_transformed/room_dw_castle_area_2_transformed.yy",
+        "bytes": 163724
+      },
+      "size": [
+        1520,
+        1600
+      ],
+      "nativeUnitPerRoomPixel": 0.5,
+      "omitted": [
+        "player",
+        "NPCs",
+        "save point",
+        "interactive and collision instances"
+      ],
+      "suggestedFootPositions": {
+        "ralsei": [
+          760,
+          900
+        ],
+        "gigaQueen": [
+          900,
+          900
+        ],
+        "smallActorBand": [
+          [
+            710,
+            900
+          ],
+          [
+            810,
+            900
+          ]
+        ]
+      }
+    },
+    "castleFront": {
+      "kind": "derived-static-composite",
+      "sha256": "7a03d41394ac08d35c1f72bff2f1a0a8cfee2be03287569051a39d0545894db9",
+      "room": {
+        "gitBlob": "dd5c9b64a10427998aef0520576e9503676d3249",
+        "sha256": "2403d9a4fe3c2887d72f7c4ddcbd6521d986a1a9088fe112b42db82ade77bc3a",
+        "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/rooms/room_dw_ralsei_castle_front/room_dw_ralsei_castle_front.yy",
+        "bytes": 125969
+      },
+      "size": [
+        1000,
+        1000
+      ],
+      "nativeUnitPerRoomPixel": 0.5,
+      "omitted": [
+        "player",
+        "NPCs",
+        "save point",
+        "interactive and collision instances"
+      ],
+      "suggestedFootPositions": {
+        "ralsei": [
+          505,
+          550
+        ]
+      }
+    }
+  }
+}

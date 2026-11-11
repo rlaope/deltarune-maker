@@ -1,0 +1,6547 @@
+{
+  "provenance": "Original DELTARUNE assets via pinned native archive or game-sprite reference captures",
+  "rightsHolder": "Toby Fox and DELTARUNE contributors",
+  "redistribution": "Original asset bundle remains in private production workspace; credit is not redistribution permission",
+  "sprites": {
+    "tennaIdle": {
+      "sourceName": "Tenna_battle",
+      "width": 165,
+      "height": 255,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 33.333333333333336,
+      "playbackSpeedType": 0,
+      "frames": [
+        {
+          "sha256": "33d308d96509b89bfe1b01c541874e54e36c6936b921535bde676aea9ae577a4",
+          "bytes": 4810,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            14,
+            165,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 0,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a90ecedda402ecee96cc25f9a6d666c9b6b27305cecadbe0acdafbc6ce5248ab",
+          "bytes": 4823,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            17,
+            165,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 1,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3e142e3a4764bb326e5aa33fafac10fa8f05edbfd3bdfe4221d0b19c8714fde6",
+          "bytes": 4821,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            15,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 2,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "619213adaa3e339427bda0c2ca32b5313e22a8a494aa6888b4c844510bf50a71",
+          "bytes": 4848,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            14,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 3,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "99060037a9f8062be38dafbb1b29a511fabd810ebad2b5adc7184e5d6b645087",
+          "bytes": 4811,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            12,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 4,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c51d9523cdd17def5be2f86948699a4e4d7bece9fbbe29d329e9b4d081c67eba",
+          "bytes": 4774,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            12,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 5,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "743de5963d1db61d5526a67f90484bc75f2377e03840b53d3d1b457ea4d3376d",
+          "bytes": 4720,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            6,
+            12,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 6,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "cd2517c4d7be354950e0886ee043ce7baf132af3db4f73c1167bda9206bd3248",
+          "bytes": 4724,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            12,
+            12,
+            161,
+            253
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 7,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "2dc06fd6f53d6adf6550658386999184cf1e7e8e98f9f998bc3a7b46c1d05ab3",
+          "bytes": 4820,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            9,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 8,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4e12161241d3ca3f300fb2452ec9e12c3efe9249aa5235546fc5c8640ec627ee",
+          "bytes": 5061,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            5,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 9,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "14a36767ee23538f4dbf7985b4b235ce4108f48051088d6179fb2c15b08cb005",
+          "bytes": 5013,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 10,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3726392d40248f6477550ee4b7acb7dc37dcc3482bb6b7fe87267ddeefcf69f7",
+          "bytes": 5005,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 11,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c04127f1886bf4f04426a1c3e994748c881a3a8e0b7c2f2182f4caee2c85183a",
+          "bytes": 5035,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            3,
+            156,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 12,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "798655546ea87e18d21ca555436e2777cb4b0cabcbc7efd2d4aeaf0ad13221c6",
+          "bytes": 4807,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            5,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 13,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "b102adb8f8a29e9b2f7b924ff28cd54fc8bea87b1e6242b4a9883a3ed501a72e",
+          "bytes": 4889,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            6,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 14,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d9ba94b00fddb4ffe3f7547e015207bb08f41f465e806dd409ee138543ee814f",
+          "bytes": 5112,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            5,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 15,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d6d20898af0b94e00867880587bf4ea2e0e5887d3af184f890cfc9df0a1d9386",
+          "bytes": 4870,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            6,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 16,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "041a601b211cc9e15058198a567ab1efb4a3833a5b413bad350353d5f2c5eaa0",
+          "bytes": 4979,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            9,
+            162,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 17,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "fd281faaf90d984a04a516bf9aa79d6f036df77a857dd6849a36ed4843eec9ff",
+          "bytes": 5007,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            13,
+            162,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 18,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "82486d79e6ca95882f1b54b8aa04d30bb8db2c540d41e3e21d123466552fb955",
+          "bytes": 4886,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            16,
+            165,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 19,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "77f09162a5081facba83edc8f2937aac2f28d3933e81fb06a9b335b2add24a26",
+          "bytes": 4860,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            16,
+            165,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 20,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "40eef904fd1be6ee18621aa8e6e0abfdbb309b406f9ea1d2dda08d75f6d475c7",
+          "bytes": 4773,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            14,
+            165,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 21,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "384af27889ee49fb15952f43ea13e9e3dffc5fd3661e28b9bcbd21a6d9532395",
+          "bytes": 4676,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 22,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "dc2dc4a7f4d4d8fd78f19c9e3c7fec96b31d28f176d242fbd6b97b0073f0c616",
+          "bytes": 4757,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            12,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 23,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "76667863d558cc66214b0a3daad74c218c0c15b0448c1f061113a27c4d6494e5",
+          "bytes": 4793,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            11,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 24,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d215f7e650e7933938ea4a5a3ac9e8cc8f686e1e8dbb2cafe33ee1d17391721b",
+          "bytes": 4704,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            12,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 25,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c4eaea37af1a42ef472af5cb17c3e056af288e2f9e7f9bc4e07c7da9aa61c60c",
+          "bytes": 4778,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            10,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 26,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "927da80a9815e77c69159c8219cdb199e4ab8096eda3c83057b81900d367eba1",
+          "bytes": 4901,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            6,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 27,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "38e7372bd721d6ee57f7eb5718eb47b65af60ac1548f994f3d31648f8bfd9e81",
+          "bytes": 4919,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            3,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 28,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3ed59fbe887b0676b107098e7e6a81d3524368cac8335bb2807230cb5fef9082",
+          "bytes": 5065,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 29,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0e65b74ff4386dc04a2ade16e33ac723009b54a6939bf9005c6656c19315428e",
+          "bytes": 5092,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 30,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "7763ae86dcfe3678eb210d863939dd3f9bbd4ce83d5f82d0d86ff8bdd9996a5e",
+          "bytes": 5131,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            4,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 31,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "9f2781a53266fe660e7b68426dede9f9cbf1d29ddc28ce19c3d13c9769bf27cf",
+          "bytes": 5309,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            3,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 32,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0649c7f80adb2a0a5418a07678ed88bdd3fd1ab253b503d57293850cc0d6f238",
+          "bytes": 5242,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            2,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 33,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "380a197bcb4df9dba084bd1bff0ddc146e808c14cd815b06ecfb3af218f07704",
+          "bytes": 4871,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            4,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 34,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "be074ec1200638368a3579ae9e1278f3ee66a48e45a3c95af1afb3b0d8bb1fd8",
+          "bytes": 4884,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            5,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 35,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "03ea3beeadef0f2db3ef78d7cfd10bac5bad426324d75f4977ca3073ca40e0f9",
+          "bytes": 4955,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            10,
+            7,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 36,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "eed64e42276cd1d65f5fd658eda1795797c4ea9159c67797bd7b604f96db0117",
+          "bytes": 5107,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            11,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 37,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "7eba9c6543950597ee9631e33715de281b4d7d522561ef9cb294aaedcd960ff6",
+          "bytes": 5068,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            15,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 38,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "26d0573fac0c3e0b575b74960f14057c437dae17efd57efee110a582598d003c",
+          "bytes": 4943,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 39,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "9e48fdb92242e78e3084f4cd874e29717918124d9126427d50f96c048e624ef5",
+          "bytes": 4843,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            12,
+            165,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 40,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "278ff4ff54f73018c4d19e5f9a4d811277dc475e73611277054413d3b85d6d63",
+          "bytes": 4988,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            10,
+            165,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 41,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "42011e71ba10457acc03278b18b7d85bebe5f011feb5b1a72519573120c63c40",
+          "bytes": 5038,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            10,
+            164,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 42,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3e60d7760a3b793768fbcba5dd6948c071455bc300ab959ff6293951781c249b",
+          "bytes": 4827,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            10,
+            10,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 43,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5f96869b11fe912afdce2836b1d854191a68dea5a92f70abb3e577574537687a",
+          "bytes": 4869,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            10,
+            157,
+            253
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 44,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "b4d57709d76e8d0ec10f86830041b7e33a136dd7a0e83719084931a976b13ccd",
+          "bytes": 5332,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            3,
+            156,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 45,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f5e7c90c1edccb0b8f258d568b68f5e6adccaf8e96c509a72ee713e9abba3452",
+          "bytes": 5135,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            0,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 46,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "2cb93b8c8ba968e8bad8b2e2e469be11a8527cf40f832ab60dfe03cb45620a29",
+          "bytes": 5031,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 47,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "19845c1c7e2697be3caa01ae2e0621b41a692ebe570bdbb4997cb20e6c17953a",
+          "bytes": 4896,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 48,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f3868f3e380bb40f0e7bb11e8e8b05a2782f74c76102edcf179af23b2c23b905",
+          "bytes": 5022,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            3,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 49,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "b8a52f435b856bfdea719e10d64bd37a996e9c01b5b2baf96e5985d084af4605",
+          "bytes": 4891,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 50,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "cc94e00e6dbb1c25b0fce9db41b85ce8f440e0e8e51fce7e6d74b03a426b1685",
+          "bytes": 4799,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 51,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "ef3c2e963b1efbdc321effafcef182636f5f8ca75f35721b75424773a9ed4e1a",
+          "bytes": 5071,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            5,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 52,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "383dbde1581e7eae3501b0e095166ef8dc8ef5706bcb9d54e809885669b3c959",
+          "bytes": 4929,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 53,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a661a299067630cbf35fff3e3d26a9a5f74f671979d14231d24d90bbef3beabb",
+          "bytes": 4803,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            9,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 54,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a9ca302257efff5c9253682e056bb5d42b0bfe15a093a544199ad4b80769b008",
+          "bytes": 5011,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            12,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 55,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "aa5a28b6161328ac887a056ce303419441d19bced8d6bd852332382613f5f6fb",
+          "bytes": 4793,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            15,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 56,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1a9ed7a5539271f42b0ee3df2d3a9b8760129ee074d4c456b871e17112cb1a39",
+          "bytes": 4872,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            16,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 57,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0d711dbdb9bbd9482d1b3f0fcd24b90fb1f2341bef46c97681a521e47c85f87e",
+          "bytes": 4817,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            0,
+            15,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 58,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "6561ecc659b544a4ef222b2d66ad50fcff38fee2cd3e9a43011deee6a5181ad3",
+          "bytes": 4738,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 59,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f6966984d5f9b2ccfd8841dd72bc4b16f01546e3ac36aa36af90bf5e47f7adf1",
+          "bytes": 4805,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            12,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 60,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0458bf55f0da6e1a9f694d6b82e092063278687c6caff75d29f97b55f1a116f9",
+          "bytes": 4812,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            11,
+            164,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 61,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "54a3e113366cdc9372ec716e43c560d557a1ad58e15a5e0142fa3ca080b77e15",
+          "bytes": 4673,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            12,
+            164,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 62,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "524810e91b39c3fb71bc992e792e178780e46f5bb08ff74dd1481fdb2c3cba67",
+          "bytes": 4751,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            11,
+            163,
+            253
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 63,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "81b9ab23edbb94c30bca0e8f533272d5b61977d55bc0d466719ff46861e8cbae",
+          "bytes": 5130,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            7,
+            156,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 64,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "be6188d4367e5fc6113d43a618769356407b9e68e9777677cf7ffec89ec7fa1b",
+          "bytes": 5055,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            3,
+            155,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 65,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "60cfe75ad98522b651aeb6d5f9f2cd82d4f4eadfeb9351d1335bb7d6668485ff",
+          "bytes": 5196,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            155,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 66,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "306a0b63a1b44df84056193fd1d25913ca80a1e6a3b9f8c526efc5fbb6446fd6",
+          "bytes": 5063,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 67,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "866dd55a2c1d061029b9ebd04da48b178af2551c6db55697d9865a05a35bae93",
+          "bytes": 5055,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            4,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 68,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "48ea91836e3707175d09b696d7107fe10402e4080dd159dc3da66626e5384926",
+          "bytes": 4825,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 69,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a8dbb937d1cbc681cf73bbed8140fe8b781407b981c028b7138674afb9cabe39",
+          "bytes": 5015,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            5,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 70,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4dc6a937f46a20a61c8d06478d042e7b945404722147dc7aebeae726eb4a3803",
+          "bytes": 4810,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            6,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 71,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "99703679731a9f56893632fa49598188f760798b46821c30541bae7cb8e060de",
+          "bytes": 4890,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            12,
+            8,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 72,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "240d0be8aecaa517651bd8121591a1f274dbe65fbf61ebfca61c608c38d280f9",
+          "bytes": 4963,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            11,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 73,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d2b91e80413a3e76fe4e02f874c8c3ff67a898869427caa1dd693302b7a723f0",
+          "bytes": 4839,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            14,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 74,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c25099d391ce8691f9b1e5a2fe80ac91512916dcf3471f0af2faa942f83d229e",
+          "bytes": 4866,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            17,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 75,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "615da0f3b68f83a4c073fd5366344455eae91ec28a40c10194589626b76068cb",
+          "bytes": 4859,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            15,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 76,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "619c02555872a8881342e141c9b12d38c340c205609ed3a50eda8b82d7bc486f",
+          "bytes": 4844,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 77,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "dfd67afc0d68020242eab30186c3e9f4297daca2b0936980af9918eec0b2c6fc",
+          "bytes": 4943,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            12,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 78,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f4ffc362ea63bdf2c61d958dd2a161ed182c274f8f570bfd894b3527d4f98de9",
+          "bytes": 4880,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            12,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 79,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3e7cff60ec97f4ff6ade5c05d97b5233048adb6cf3edf01d8b271b1ea5a64aed",
+          "bytes": 4932,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            6,
+            12,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 80,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4748f8b6c35a6ce72614b45a905e27dc03e6d2190ed40cfbee7dffa6b8eb16ef",
+          "bytes": 4702,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            12,
+            163,
+            255
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 81,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f592026ec5bad1052030e83158c7ec4f30a2ff30780c53f73cd586cb9af2dbcb",
+          "bytes": 4732,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            8,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 82,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "817d1f3e636ae444c7335749950df80f966e506955f686c1755d94c2116cd201",
+          "bytes": 5079,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            4,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 83,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "31725812a76ccbf061966590c018cd74e63b2f74413958432713573e24a62d60",
+          "bytes": 5125,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 84,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1cb37dab5fabbdeea2ceaa4081aacb0dfd9bb613afe70769182f844150c4a0ae",
+          "bytes": 5133,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 85,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3074b6725ecbe9c6739e015526591bf7bd79d314d9bbd6a9ada6c0b3a072c286",
+          "bytes": 5011,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            3,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 86,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d648bf2203f33aa6a65ce277deefdb529d180e2b75c81a11b5a95cdb10aa88ab",
+          "bytes": 4732,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            5,
+            159,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 87,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "cf8a700990ff5846e92929ea684ca780022a3046a4b2a69cade32da172ee54b3",
+          "bytes": 5143,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            2,
+            159,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 88,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "6a096f767f66593d9ba21a971d74fbc240e8d403b05b13024dab7c9636a2df03",
+          "bytes": 5123,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            4,
+            160,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 89,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5ac2bb92ee016b79ba3346c6719f88cc811092c7b18f8aaa86fcaa2d2302e3c5",
+          "bytes": 4872,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            5,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 90,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5710f4f1667648f114bc15ac13857f709ce8b967c7d2b244bea7c185bc365faf",
+          "bytes": 5065,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            10,
+            8,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 91,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "ee31d89d9e1d6d540847d3faabe3105afb1541e0b23beb0f6ec66b2679f6250d",
+          "bytes": 5005,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            11,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 92,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f65b019f4c01d6bf3cf2684fcd4e01d372977e28141d827b032ddedaa10552a3",
+          "bytes": 5018,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            15,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 93,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3357aea1c7f5fa1cbd2df12648c6a1666f15ef50e344230ac4b1252b334cdc37",
+          "bytes": 5066,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            14,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 94,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a1a81a2c6aa1a7d47578a440ecd2322f746ebb11e62d5095556d32a3568dc3ec",
+          "bytes": 5058,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            12,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 95,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "b12fb3e985f85790e6d1748280035e755a53209e2b979f53980230d906150f44",
+          "bytes": 5053,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            11,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 96,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "39e3882335a3c6f6c5ed6b5a72efaff07d35fe7874f57b076c4443cb755b4c9b",
+          "bytes": 5012,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            10,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 97,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1c1c7c913a21668fdf7e072083befc9b9080792c67bd66ce4d5ba4364bf883d4",
+          "bytes": 5006,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            10,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 98,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a48614d14409b62496fadf97e82defa05241847cf78d6db407b3416a4e251103",
+          "bytes": 5003,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            12,
+            10,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 99,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c83366f67acbeda14e09c330361d9042ddbaf0c5f71e361058e88ca98307921d",
+          "bytes": 5099,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            8,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 100,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1136e383aa5011342f058643b55dd2d9703326b51ca151e1a94052a59ef8d117",
+          "bytes": 5228,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            2,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 101,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1cdf72a7b76bb4fadac9590645100b34820d07153b27e3c805956afc9056ede0",
+          "bytes": 4936,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            3,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 102,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "359a3742509b492bc87be546e1eb4589ef7634e2a28e10b7b9b1d19fc8addb17",
+          "bytes": 5005,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 103,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "e132761fc1294f67032ba434ef088cf7018543fea2a5b1a6b4b315a9b3a53a19",
+          "bytes": 4986,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 104,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "faec5eef75195581f274594e29e3f877a2d6a1571fe5fd9bba1c0b7faf86a75e",
+          "bytes": 4938,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            4,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 105,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "aae9b4dd5627a9f49ed78aa3b9990b004494b34fa0298fe0ae53cf9647f4e0e3",
+          "bytes": 5003,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            6,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 106,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3b5fe5208ccf3036e403e5a0a82f0d63ac4f746a4249e57c15dbc7d8bf0562d5",
+          "bytes": 5020,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            6,
+            156,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 107,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "616cb12f43eab360bec26069dc23b50f0d25931463bfcf8a0abd77bec7c6c7d9",
+          "bytes": 4839,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            6,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 108,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3723b895ae28dbe6e38cf9b2b15655dfb5bb855a3a834a343e25969fdb5c8890",
+          "bytes": 4664,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            7,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 109,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "28cb9f00f9510dcc450dd6e533230dbb7fd7ad6154b81c06a5d2d0f975b6add7",
+          "bytes": 4878,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            6,
+            10,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 110,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "ed7fffc3756c2fc48527e577126ddbb8dfff6fb3eb99c2dec8da9e10baa87f21",
+          "bytes": 4906,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            13,
+            163,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 111,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f8f7e5cbbb27afde6215a70a093ca553eb70e019b6d8238bb766181cc4492895",
+          "bytes": 4956,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            17,
+            163,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 112,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "7c1d0a79b7ff11715f7471bb9d02ccac2edcbb6413b34ccd7cde15b62237a613",
+          "bytes": 4917,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            16,
+            163,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 113,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5034f8af672b976074c24d3e1f102647c876c4669499f17d590edb114d35e82c",
+          "bytes": 4972,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            14,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 114,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1ec1e0490c5acafd6e5854164bf5b6b9f38534d86a6ee38cd9c4421aa895846e",
+          "bytes": 4933,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            12,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 115,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "6c7bda2b9c98c222d9aac7b8e817e9db5111270ba8847acdb6d93c1686b68afe",
+          "bytes": 4964,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            12,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 116,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "bb686aef9219000393debdba3921f249374053eadd7ad5699b2511cfa54a5b9f",
+          "bytes": 4710,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            12,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 117,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "e0c625854bca98843259311ec6f9d1aae064e3f32ba3c83560a980cf563406ca",
+          "bytes": 4848,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            11,
+            159,
+            253
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 118,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0f77a3d13471531fdc4f8afb03ef27cc2cf8d42e3a7c20cc2d21e1d8eb3e5f0f",
+          "bytes": 5116,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            7,
+            160,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 119,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c5f7995da1b68377ef7776ef11b2452f6ef589f777b04e3f0fb1fdc3a3430625",
+          "bytes": 5165,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            4,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 120,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "8154255cb99b84629d0c84a8af9785aa392049d1db88077405ea659ec1804570",
+          "bytes": 5213,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 121,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5a3e247683fdddf23a64e3d97143473cdc38b0b0a16e8c12817401d94a62b9e3",
+          "bytes": 5094,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 122,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "499093926671cbb88680263f1e51632e1c45e710ac869d09b739077ea688a1e6",
+          "bytes": 5029,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            3,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 123,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "f64b00fdd8f8b36e8338c53aeeb74ed652572996e737a431e7e187fdb6581cf5",
+          "bytes": 4953,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            6,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 124,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "60e9fca2733cb56f3ab651940e4cfeb3da9bae7d30cd86febef196b8a873d690",
+          "bytes": 4993,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            6,
+            155,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 125,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "fdb84b0ab9bed2c91aea67ab9c7944d18956e3ecfab6951a74ac67986b48c26e",
+          "bytes": 5061,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            6,
+            156,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 126,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "9d48c05aa8ec4522573582eaa19ceeb4d368a32872765b141c63fe56312911cb",
+          "bytes": 4792,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            7,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 127,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "2cd19808cea618f9f3f007fb2e0daa8de414f77d8790b9f1feb1a1089d85636a",
+          "bytes": 4801,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            9,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 128,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "ad3c92ab40d58162ecdfae2782f5b0e93df0e70ed36d2dbd0fd9b300aaaab409",
+          "bytes": 4826,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            12,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 129,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c79db37624d52aeedb4950b677d20adb0b084d7cbcf12984ededb55e21d06d50",
+          "bytes": 4635,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            16,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 130,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a8ecc09013dbc0256c1c07cac6822d63c11b2cdc61cd60a0201ced1fa2a72d78",
+          "bytes": 4819,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            16,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 131,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "90ba7a00d459a6ed88976b840d4dddff7d7735b0f2820cbe617bd14beb829070",
+          "bytes": 4705,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            0,
+            14,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 132,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0e1758a40789775c998110583e71151151411ccad692d882d4cf4892cc0ad4dd",
+          "bytes": 4676,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 133,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "68adc36a4fa74a1ac3989ebfcd7cd14cb48ab6a07ada652f5782271f47609f7c",
+          "bytes": 4939,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            12,
+            161,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 134,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a7333d334706809dafe8ae1a76c81e8bf5dffc6886a9598e43669ca885cf68c0",
+          "bytes": 5032,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            11,
+            160,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 135,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4c0ba91c29bc6c44cb1dba1cd64608947eb3b193547159c4eda550d5e3f085af",
+          "bytes": 5007,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            11,
+            12,
+            160,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 136,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "abc2e5983fe3e1ab0362e151b18fca607f189db2a4ad3644416ee5986bc9da1a",
+          "bytes": 4947,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            14,
+            10,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 137,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5766ae480b1acb4573dbf95e02d5502e0dd8ec097006a11e2d831e21d73791d3",
+          "bytes": 5092,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            17,
+            6,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 138,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "188bee3a87bd2b4c67b471eb2899357d6e40a9343f540cf4cf6f7f8063d45c51",
+          "bytes": 5123,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            3,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 139,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0e821d93d3400e56bc0f29574996e97dc0deaa9312cb5bdf2128baa1d8d78231",
+          "bytes": 5182,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 140,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "6c969d301effcb772833cc417e2a6742f399e8feb405437239492276b1ca1460",
+          "bytes": 5055,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            3,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 141,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "0d670af51888b16eb23c9325a896341607034cf89a3f269f34eef413c4d8f1f2",
+          "bytes": 4864,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            5,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 142,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "808971cff34f984cdaab2bb4556f29bd7f7908ddb4c51f05eed915ef0ee3f046",
+          "bytes": 5205,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            2,
+            161,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 143,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "af2867f94fbb17b5054defe11eaaf100311afd89da07342439c2766e03529af0",
+          "bytes": 5225,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            2,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 144,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "6ca2d5d610693e31a6f5c8eccee10c060e3212fc1b603e7798fcec5b0d6c0baf",
+          "bytes": 5027,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            4,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 145,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c7b9e8bbc3fccce93f2b74d4da2b6790096742b81c5a1a07f275bbd1197ff08b",
+          "bytes": 4890,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            12,
+            6,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 146,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "d05c7e744e5ae9f4fd772076cf5518ad246180285a25b8f3439ced691595e3d3",
+          "bytes": 4957,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            9,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 147,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "84ae53e3298b899d016fe8fe1d33cd3a8252f9321d44b84bad07b1122a23caab",
+          "bytes": 4929,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            3,
+            13,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 148,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3abfd1f21e27d5b3db56f67a85d0bc76daaf004a7d49dd66919545a215c26a43",
+          "bytes": 4786,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            15,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 149,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "45b506910960de7ae45f45f346a7b1eb509e4ed93c355ae6834eba391494ccd8",
+          "bytes": 4844,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            13,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 150,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4d4a003ffa03b704635d3c1af409af738af3609452ce7a82da2b07013f229c4d",
+          "bytes": 4851,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            1,
+            12,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 151,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "8540cf80ea005cf7b8b021a9d84f4319911a5428c81c54564a5652c56a6ab3de",
+          "bytes": 4940,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            2,
+            10,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 152,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "453a82efc1c7d5cf4efefdde377f0e68f6cbf7a7fc303bb6ddd1575da7d094fc",
+          "bytes": 4967,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            4,
+            10,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 153,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "5eebda954dfb09c061ca37b3c82cb580c612e2256199ad01ed532c2806ea03e9",
+          "bytes": 4855,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            10,
+            10,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 154,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "1e97e5a727879bc4924fa522662842b6726bdac2ddb89e44832b48bfb5da0abb",
+          "bytes": 4928,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            10,
+            159,
+            253
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 155,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a062f610602cc59a527e3ede722ac04dd326fc5fe4b07748d9049d6ddd8f97ed",
+          "bytes": 5075,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            16,
+            4,
+            158,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 156,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "21d8771a27a116b52d8379c963aaab3e3679cc532fe8a04337334d56604ab7da",
+          "bytes": 5337,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            0,
+            157,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 157,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "30beb7dfa8478e5531b40b9a494c96aefe967bf570f94940e055f0b9e98434db",
+          "bytes": 5197,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            20,
+            2,
+            157,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 158,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "3acafd1afb138abe5e27ce4d8bd0c23386ffda9330f0e4fea562f99b7e061881",
+          "bytes": 5175,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            2,
+            157,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 159,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "eb1bc3da18d5a2d5c64748ad7d58af1ebd512c0fb81466bce1f46614574982e8",
+          "bytes": 5107,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            21,
+            3,
+            157,
+            254
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 160,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "cacd92b85176e7dfbdc13d2aff2192b299f89cf2c3c9c480e500cfbc57777520",
+          "bytes": 5178,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            19,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 161,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "ce44efe533ac3d981a4a174afa81c53960e6f46acde3acb4730230ae8a974b95",
+          "bytes": 4974,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            18,
+            6,
+            159,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 162,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "a41840631b40cfce18d3a82f335e9d5794b11d7617be1f8871dcc5166838fdd9",
+          "bytes": 4953,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            15,
+            6,
+            162,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 163,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "c684468982c01850c941a3d24e5d1e644a93b0732777e65956e54a8c18706cf6",
+          "bytes": 4749,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            13,
+            7,
+            163,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 164,
+          "length": 0.06,
+          "duration": 0.06
+        },
+        {
+          "sha256": "4d43e45f14f4432df68897ffb4c25922dd0bdad25b3cdb95f23a1849588ed3f6",
+          "bytes": 4928,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            6,
+            10,
+            164,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 165,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "cf2c6582f38f261d26c781e637e95fa217da2accd00f64660e46d9066395a848",
+          "bytes": 4801,
+          "width": 165,
+          "height": 255,
+          "opaqueBounds": [
+            5,
+            11,
+            164,
+            252
+          ],
+          "footAnchor": [
+            82.5,
+            252
+          ],
+          "key": 166,
+          "length": 0.03,
+          "duration": 0.03
+        }
+      ],
+      "source": {
+        "sha256": "bde9654ff3254cd2466cfedfd48355438e80dc10f812a86944388dbe33439c97",
+        "bytes": 631163,
+        "url": "https://deltarune.wiki/images/Tenna_battle.gif"
+      },
+      "derivation": "Lossless RGBA decoding of original game frame canvases; no rescaling or recoloring"
+    },
+    "tennaPoint": {
+      "sourceName": "Tenna_overworld_point_forward",
+      "width": 164,
+      "height": 242,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 16.666666666666668,
+      "playbackSpeedType": 0,
+      "frames": [
+        {
+          "sha256": "31e2e7f5beef4db180fe99d7f6ccfb2b5c3e61e8217597ae3bea80e999769f23",
+          "bytes": 4474,
+          "width": 164,
+          "height": 242,
+          "opaqueBounds": [
+            0,
+            0,
+            164,
+            242
+          ],
+          "footAnchor": [
+            82.0,
+            239
+          ],
+          "key": 0,
+          "length": 0.06,
+          "duration": 0.06
+        }
+      ],
+      "source": {
+        "sha256": "f37175ccd731a9394f988edaf1deb6ff03e35350513b27bc4892c8a5f9d30c87",
+        "bytes": 1664,
+        "url": "https://deltarune.wiki/images/Tenna_overworld_point_forward.png"
+      },
+      "derivation": "Lossless RGBA decoding of original game frame canvases; no rescaling or recoloring"
+    },
+    "tennaLaugh": {
+      "sourceName": "host-laugh",
+      "width": 226,
+      "height": 250,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 8.333333333333334,
+      "playbackSpeedType": 0,
+      "frames": [
+        {
+          "sha256": "ca7ee272e74de79ab010c460bb7e4a0e6647e67de41850ed9bb1d1bba1f8fb5f",
+          "bytes": 4226,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            76,
+            0,
+            226,
+            250
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 0,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "38fbf252e7797243866bb4ad8a204a6206d0f9164abc212a0a0407097c31ef0a",
+          "bytes": 4374,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            58,
+            4,
+            214,
+            246
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 1,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "0c2e8159ef69defb4368c4e022f8386bf6f020b75afd44880863436f39d3b34d",
+          "bytes": 4365,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            60,
+            18,
+            212,
+            246
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 2,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "8a1f8d7f1e8f5d3a59b6068f34ce02bb70058744c4b51e2c4aed76831c1ce88e",
+          "bytes": 3953,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            0,
+            34,
+            204,
+            246
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 3,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "8956594539482a93dd97efd4c2f6d7470d2c0c846139bcf5ad58fedcc0187c91",
+          "bytes": 3194,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            34,
+            96,
+            210,
+            246
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 4,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "d067a582d64db27ec3e054e0e12d69a4962996ed077be93d856ef804a1af7013",
+          "bytes": 3161,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            28,
+            98,
+            214,
+            248
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 5,
+          "length": 0.12,
+          "duration": 0.12
+        },
+        {
+          "sha256": "5e635bc05272760c7207be56c94488748f224c40cfaf1b8a8307d4bd1957f61c",
+          "bytes": 3455,
+          "width": 226,
+          "height": 250,
+          "opaqueBounds": [
+            20,
+            92,
+            220,
+            248
+          ],
+          "footAnchor": [
+            113.0,
+            247
+          ],
+          "key": 6,
+          "length": 0.12,
+          "duration": 0.12
+        }
+      ],
+      "source": {
+        "sha256": "7a1c90e3405223c2194b30955fbccf66b1f31c351cc1d15f69e19c87515d4d00",
+        "bytes": 21901,
+        "url": "https://deltarune.wiki/images/Tenna_overworld_laugh.gif?cb=q9atkv&h=thumb.php&f=Tenna_overworld_laugh.gif"
+      },
+      "derivation": "Lossless RGBA decoding of original game frame canvases; no rescaling or recoloring"
+    },
+    "tennaFreakout": {
+      "sourceName": "host-freakout",
+      "width": 258,
+      "height": 304,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 4.0,
+      "playbackSpeedType": 0,
+      "frames": [
+        {
+          "sha256": "83f073f49091668fce2a20476cc9f3e65f998bd49209ac8ddd96c3bdb9e37792",
+          "bytes": 3714,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            2,
+            38,
+            154,
+            208
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 0,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f24d9a8fa7b46023a41f46323cf541e97b447b33e99b62f0b6e42db51cec0416",
+          "bytes": 3820,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            0,
+            42,
+            154,
+            222
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 1,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "298da766be1e54574845dedd33348a18286e0b65aeefde4d50bdc95d429e6bc1",
+          "bytes": 3592,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            2,
+            48,
+            158,
+            228
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 2,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "51494411c5e28d6d3e7ee5fb227571faf6f7087c7abeec9369c1a3fceae2dc38",
+          "bytes": 3975,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            4,
+            58,
+            162,
+            260
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 3,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "142e865a62da9d72a0537b0e9928a2adebc54bbd1b4fa05c88d5550b2475e7d4",
+          "bytes": 4236,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            6,
+            68,
+            166,
+            276
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 4,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "a8d91e84ac0e209c4ad5ea23bee9d3a3cf29959e0ef1c6d102ee9395f60a4669",
+          "bytes": 4152,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            12,
+            72,
+            172,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 5,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "abf67c234b591582f1792df60aa681435a3c12cf5e6bc04340b88a87b9814f36",
+          "bytes": 4133,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            20,
+            70,
+            180,
+            292
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 6,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f38e4210e834ebae27a6c04b6ae76f00f6fc27268335e736d2a18be1f872a3e0",
+          "bytes": 4164,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            30,
+            72,
+            188,
+            288
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 7,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "b836656a8a10505046651853009b7908f5eebf931ae837ef7857c57add3eff3d",
+          "bytes": 4167,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            38,
+            70,
+            194,
+            272
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 8,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "c50d2c2b71560b10b52d14b930967b62164f9d776ba3f0ce62594f3e8785b7f9",
+          "bytes": 3946,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            46,
+            70,
+            200,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 9,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "2db745dcf0486e500596f863b345fb42b7f2451bacd5a97b3f3a73439f8ae69b",
+          "bytes": 3956,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            52,
+            74,
+            204,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 10,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "dddcd8fc00419b3fb7ec4164109591c48145419317c3f993144067de8ca50f87",
+          "bytes": 3999,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            50,
+            78,
+            202,
+            268
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 11,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f2804a44be02dffaec68c87480f77f9e095fe2d3e787ec403acfd9db9b3b2489",
+          "bytes": 4270,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            56,
+            64,
+            200,
+            270
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 12,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "849e9194e4ead37b771378a6209dd3fc6350fdd479f9857abbe0e4c36eba2b58",
+          "bytes": 4426,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            66,
+            206,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 13,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d040a4f0faf461e1e9d3b2d01d706b359950960c1334137b436a9270f41c7e1b",
+          "bytes": 4883,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            66,
+            52,
+            214,
+            298
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 14,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "1a76769745da1e270350afd92c72e5a3a377669bce34b767bfed1c9ebcb3d4e2",
+          "bytes": 5516,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            58,
+            36,
+            218,
+            304
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 15,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "9d31c95f2d2b7a38998d03673374788545cd419fc445d5c5b7db5409f1c8e479",
+          "bytes": 5839,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            54,
+            16,
+            218,
+            298
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 16,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d12f9403042b1703cc9122aae32069caf7ffd2f160bf5e4afef766e4915c7318",
+          "bytes": 5841,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            56,
+            6,
+            222,
+            288
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 17,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "e54b65bdee0e2685324371d3c73620c599a2c066860bcd4de7749a56729276d3",
+          "bytes": 5819,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            58,
+            2,
+            234,
+            284
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 18,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "fcc61db35ce9cf024e22712ac8018dd511aeddf0f35f00f5e52107332e601919",
+          "bytes": 5801,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            56,
+            2,
+            246,
+            280
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 19,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ed335d997eef55a90cd1dbf5589493d9d55bf087eefd5a46a574811cf88b03d2",
+          "bytes": 5830,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            54,
+            0,
+            248,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 20,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ea1cfbdd99d3df1b3dedf1113cf6a202f7e2f35ee94f3923ce34b5f7fd4ffe9d",
+          "bytes": 5707,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            48,
+            0,
+            248,
+            280
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 21,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "deab8d34b2add1cad3e7a5f06311d13a0acac71c10a8ca40184c87fdd1bd32a3",
+          "bytes": 5627,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            46,
+            0,
+            254,
+            276
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 22,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "83b6baa327461cd5c1e7f360fbf51274b67de9b6ca8ce90592c81d33951121d5",
+          "bytes": 5622,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            44,
+            0,
+            258,
+            274
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 23,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "1da10242a7c2ac88fc43c3bdcbe27cbb3ea33e48e05c841b3e88bf9699e165a0",
+          "bytes": 5718,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            44,
+            0,
+            258,
+            272
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 24,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "362f67cc5ae9ce3b667934b5ec04d76dddb66c5bd4dd4e1b824455191e8c9aa3",
+          "bytes": 5785,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            44,
+            0,
+            258,
+            274
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 25,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "605e0fd53506ecc23f09136068d3e9e297f18d3a1c1fe2cf987b1ca83435e7e5",
+          "bytes": 5633,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            42,
+            0,
+            258,
+            274
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 26,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "6e854ca12142afbb3170c34f498a771ffbde2f2bc41dda613f84fe01a8330edf",
+          "bytes": 5693,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            42,
+            0,
+            256,
+            276
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 27,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5d78ea921e2e59b22b2391df40da2ac5f226eebb7692fbddc5cb4f56a55ec76c",
+          "bytes": 5627,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            40,
+            2,
+            256,
+            276
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 28,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f265aebbbeec3d19a04cd83e9f1f60629754582ca92d0a03305210fd2bc7ce3e",
+          "bytes": 5723,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            40,
+            4,
+            256,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 29,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "22720063bc85c24c6c8d3a48560669cf400900b2069b0bd9116daa62b110c3a5",
+          "bytes": 5508,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            44,
+            4,
+            254,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 30,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "83053650bda28bb4d192d85b0db4c645ea71eccf2c28dae36a1bab87ff414b4e",
+          "bytes": 5491,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            46,
+            6,
+            254,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 31,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "368926447b147c7cf5c3be71579cd0f4e6970385a4528b0f9653de7937099acd",
+          "bytes": 5499,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            50,
+            8,
+            254,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 32,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "572c000c29db2d0bf6e44dc56022956cf2aff7656f365ffc39bc177e57fcecf3",
+          "bytes": 5676,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            52,
+            10,
+            254,
+            280
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 33,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d7e4229f754004716fd3ab5e7460493d038655ca25c0467936e76942b1597886",
+          "bytes": 5575,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            54,
+            12,
+            254,
+            280
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 34,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "dcb61daab7f574233661d14fe626e02abae7f380f21c9944db6f973ad633f01b",
+          "bytes": 5607,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            54,
+            14,
+            252,
+            280
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 35,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "31a1e7d664bce6207542af735129cba44f2672843c25073e7c1d546233dab167",
+          "bytes": 5651,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            54,
+            16,
+            250,
+            282
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 36,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8546255443327db1268ff44a6ab0fe7cf1e8a8f6d5032090bbcc91ac7fcf5db8",
+          "bytes": 5508,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            56,
+            18,
+            250,
+            284
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 37,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ab8a1f391ccbc15e72ec2fd4a57e2662b45e3838a0676cba0188e5f17cd24698",
+          "bytes": 5493,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            58,
+            18,
+            246,
+            284
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 38,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f790703f048d9918cf30a5c220f6bda2c7dcc40f34a561bcc36cc049f16008c4",
+          "bytes": 5699,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            60,
+            18,
+            244,
+            284
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 39,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "be23e1def497a125975d25482c6b4a89e226e1cb40498392c7a3419161e6d110",
+          "bytes": 5613,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            66,
+            18,
+            236,
+            282
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 40,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "a72e43c9b9f3688cf496a9fcf14ba788742c4df089387f95d1260a13626a3728",
+          "bytes": 5363,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            20,
+            234,
+            278
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 41,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "61704b088ccc86ebeca408bf0536d6af6ba2dae0a9703ad4e349d7575f1d930e",
+          "bytes": 5126,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            86,
+            20,
+            234,
+            272
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 42,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "cf71f6aa15062fbf1200b24a0e523ba4027af4f20c140b8690ee6e0aa8daba30",
+          "bytes": 4730,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            88,
+            20,
+            234,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 43,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f32578c2f9cc03e0559664f4d1431bf90fd3d935088696c88cc80cc1df1ef4d1",
+          "bytes": 4819,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            80,
+            20,
+            234,
+            254
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 44,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "b477c3b1d45929f4808766309d029e826d9bb74a3c0c272576532d4dd6faecc8",
+          "bytes": 4853,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            16,
+            232,
+            250
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 45,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "87057bc58ba3395da2c9084624d4c6b71c7bfa2412a9aab66eabea0f9796e810",
+          "bytes": 4903,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            74,
+            14,
+            234,
+            252
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 46,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "618783673da3da2e89ab668473fc8ecbfac657807a8888bb541c8de4e39ccf53",
+          "bytes": 4902,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            14,
+            234,
+            248
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 47,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7f905ddccb5ea23cf148543d65aaafa502bf90768a0be40ec9dbf57a6cffdd92",
+          "bytes": 4783,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            12,
+            232,
+            242
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 48,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "66a6bfbf97eed0873e43b5dd38e1505304029846213c1cce994b1d2bde553983",
+          "bytes": 4729,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            16,
+            232,
+            234
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 49,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "bff280e0e1867344fe0f3bfe3af114e0dba6c09a69aff4200b0cbb63f898fa8c",
+          "bytes": 4619,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            20,
+            232,
+            228
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 50,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ada48fccddd78d42a427cbf545c47b520a90f2612dd2b1356aafc260b5dd2f38",
+          "bytes": 4572,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            78,
+            24,
+            232,
+            224
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 51,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7d1b31fbdc12906154e2104dbb287eb3de9490a9955543ace4c71033ac14543a",
+          "bytes": 4388,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            30,
+            232,
+            218
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 52,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5403571c43f6ed5b029a22e7913da6f412e300158db9afcf5a4ae66e92231ffd",
+          "bytes": 4297,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            34,
+            230,
+            216
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 53,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "9023a1fc2dc5a9b0f1526aba7f3d082df54e85bcc50df8ec1b7ace17c017b605",
+          "bytes": 4142,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            38,
+            226,
+            212
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 54,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "06d7bfc3be3644bba31b4b589f4ae5f17528e5b828ab0db8a5fe0a6848c3338b",
+          "bytes": 3977,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            78,
+            40,
+            226,
+            210
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 55,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7224e4876beb5f45b66a759d003a053ceada364225ad812da8e9f97d170c58af",
+          "bytes": 4061,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            78,
+            40,
+            224,
+            208
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 56,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8c6cc979c9ee85601f5c95be901b2e973cb687daf4065857e6ce62128cb7bd0b",
+          "bytes": 3920,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            76,
+            40,
+            222,
+            208
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 57,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d809b68a6810f47e34d7e5e487e9f09211e01a1376df99fcc5eb6fde4a38d26a",
+          "bytes": 4145,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            72,
+            36,
+            222,
+            208
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 58,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "171d8d5f354c0f873b87e5d51510a09a4fea602476c54224c36f5729726b90ed",
+          "bytes": 4165,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            70,
+            32,
+            224,
+            210
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 59,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "66c9bb9f1e80885e988591a66f90be3ed70ff2a559942f24422c652dddbddfbc",
+          "bytes": 4139,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            70,
+            28,
+            226,
+            212
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 60,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "e6297e5d809c9b144c5a7c4ce6de1a4d5ede08c1ba85f7c1cbceed9e6d8ffa7d",
+          "bytes": 4293,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            68,
+            20,
+            228,
+            216
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 61,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7100596a4d32c3e3aa49d6cfb07156863448df08c5259fdc1fc60b5b78555ca4",
+          "bytes": 4316,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            70,
+            14,
+            228,
+            220
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 62,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "b6df2abf57b865a04b2f3d1fccd5e5d783fff33571104a0e9ede0472f1c9de2e",
+          "bytes": 4442,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            74,
+            10,
+            228,
+            224
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 63,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "a587f979979c78847599f58fe3d37c5f5f8987c5ba6716ebeead4f2b39acc784",
+          "bytes": 4479,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            78,
+            6,
+            230,
+            230
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 64,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "4fb77618f9d4dba4504545341d1a4d952cb94f2d8fa6651506271075a9e1d6e4",
+          "bytes": 4514,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            86,
+            4,
+            230,
+            236
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 65,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7a385b3f7e28bf9d241aa30bec163ebb14ea1f507badfd87b1d36e3fc926ce93",
+          "bytes": 4742,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            98,
+            6,
+            234,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 66,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "2e70ae07d73217a5ea784e5e35b5f6765795b9bcd94d58f155c1b730dad98303",
+          "bytes": 4776,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            110,
+            8,
+            236,
+            268
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 67,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "9ed5fec70401b70acebd00107fecc997574c92cea69b153799495d4ecfa15271",
+          "bytes": 4755,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            112,
+            12,
+            244,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 68,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5f007351a15a96a4abcef3fcbc40384db1357b0fc2c80c2e3387bbb242434b89",
+          "bytes": 4947,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            110,
+            16,
+            250,
+            260
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 69,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "79a32b1f6117cbd980cc606a455fe221f504f2b5c76dc5d80032ee88c55ec514",
+          "bytes": 4987,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            110,
+            18,
+            250,
+            262
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 70,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d42445f570f5d2d540752e50b9d8fc4664f59d8a35cb9c0a23b1417b31ff0670",
+          "bytes": 4916,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            110,
+            18,
+            250,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 71,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "782fa2ac4e214bad6c6ad299c3200c77589e11d9cc6ca37be4382ddd0ae074e5",
+          "bytes": 5074,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            112,
+            18,
+            246,
+            266
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 72,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5069a8d771520620c6cac81c87d3698673e94aae01ea31db5c23af12e2e6cae7",
+          "bytes": 4989,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            112,
+            18,
+            246,
+            266
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 73,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "338e17201391834a74deec581955aca098c546cfcdbfc10087cecbae6851257a",
+          "bytes": 5096,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            18,
+            246,
+            266
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 74,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7c3892ed2a551905c149527931f2907ce726dc3dc93f51b3abf8d222062d9ee2",
+          "bytes": 4959,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            266
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 75,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "614847950b8228bdb43e5975a8781347889dae730e69e89cef9f88f42be186c8",
+          "bytes": 4975,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 76,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "1b5e14e83d8e0dba9b2b9d0e89d914f49ae8948119418604bf3e035876cc75c5",
+          "bytes": 5011,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 77,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "2accb9276501ebac8f1d60d1301003e8e0e88d22824e2516ad7e561e03863682",
+          "bytes": 4935,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 78,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "9f29dd706421cc4b2521605c39b02758057e79d0de987d6df3db773afad6a42b",
+          "bytes": 5013,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 79,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "73c48df87a9e3c2626f1cb83009c015a35daba1254eb308836dcf0070614da5e",
+          "bytes": 5005,
+          "width": 258,
+          "height": 304,
+          "opaqueBounds": [
+            114,
+            16,
+            246,
+            264
+          ],
+          "footAnchor": [
+            129.0,
+            301
+          ],
+          "key": 80,
+          "length": 0.25,
+          "duration": 0.25
+        }
+      ],
+      "source": {
+        "sha256": "dfb935fc3943398d240fedb45c0cebdc60549ad3976b1fb96e32423b90f50799",
+        "bytes": 314079,
+        "url": "https://deltarune.wiki/images/Tenna_overworld_freakout.gif?cb=jy1tym&h=thumb.php&f=Tenna_overworld_freakout.gif"
+      },
+      "derivation": "Lossless RGBA decoding of original game frame canvases; no rescaling or recoloring"
+    },
+    "tennaFace": {
+      "sourceName": "Tenna_face",
+      "width": 124,
+      "height": 113,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 33.333333333333336,
+      "playbackSpeedType": 0,
+      "frames": [
+        {
+          "sha256": "76db13ea2b59765ac467daca7252c8358f614356f40b1f46e511d85cc990d39c",
+          "bytes": 2691,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 0,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "dcc04a6b01404e96935707d57ef9c137b7ad880117b3d5bbd9b3ac1ebb4ff9fd",
+          "bytes": 2654,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            1,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 1,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8bf095265120324e54e34e33dabc706c25d8002dff96eaae9a6fa6f8f12dc52d",
+          "bytes": 2591,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            4,
+            2,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 2,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8129f40d6926cf85c5fb29b2518ac4e248c95fbcbe1397dd323af73a313a36d4",
+          "bytes": 2352,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            7,
+            1,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 3,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "a770bbbe9904bd9a0b0c68c3c6520a47dab13671a565c5190859c36c0d3547f2",
+          "bytes": 2626,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            11,
+            0,
+            121,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 4,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "81455377fa2a60c0ac09ee4d1637e22c9ecb9552f77bd534571885655d9734cb",
+          "bytes": 2672,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            13,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 5,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "177e14767367348e2de149ef591e11f795a1eb0dd86242ec6c78ae7b581136da",
+          "bytes": 2787,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            124,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 6,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8519f09ebc46ece43df0524980e7d4d45c720c26de047cf2e03d2d74c6254359",
+          "bytes": 2734,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            13,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 7,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "863345bb941df4a2f674f272e39f81077990040ccac47572e29f976b40ce1d73",
+          "bytes": 2636,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            11,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 8,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ed87f8a528934c4f7de1a39de3ddf36e67fd7e5c2ad71ee75f880b6546e455a0",
+          "bytes": 2357,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            8,
+            1,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 9,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d2ae6e4e95eed8a41e5fb21b6b9371e7546224646209f4f48948e84eaca9eb09",
+          "bytes": 2552,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            4,
+            2,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 10,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "34a92761c16576ece31d9142706168cb555650708b2053d249f7a196a6f77961",
+          "bytes": 2719,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 11,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f10683fb514c9ab8b1c963c0bf0ca28782773da0569a4c4a42f51f6889df712d",
+          "bytes": 2721,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 12,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7c4475652a2cdedf33df2c885506068f52a7d3a2ee8d3a791b39496298929d43",
+          "bytes": 2571,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            2,
+            2,
+            118,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 13,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5414699f279fcae9c8ae54fb09d06c05e1e59e42626db08837f6c51f6ce2e303",
+          "bytes": 2369,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            5,
+            1,
+            118,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 14,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "400da4bb3dea5622943bb17adc12f53ef0a2b3871ad3ca98c0eebfb8e08f27b3",
+          "bytes": 2390,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            9,
+            1,
+            120,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 15,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "71dbad31261747a921ff88cc0289f61613f2eb07928dbd17e09eb03ed5eacfc3",
+          "bytes": 2614,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            12,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 16,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "61694d91be6db5e380436709e7c00956d993e313a559eeab7f12237bc1346739",
+          "bytes": 2709,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 17,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "cd5155ae6e2d0d8d9256517ab45cf3dd5a81cf0209ecda7bbdcdc406a9a762cd",
+          "bytes": 2844,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 18,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "2c25ffc19d7b786f58beac1dc1a463e695565f61295a1f36a2b184bd53c75bda",
+          "bytes": 2602,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            13,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 19,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7e65d02456d6cc869e0ab6062155de48cfde12374c825325e7a03e72f3e1ad82",
+          "bytes": 2615,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            10,
+            0,
+            121,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 20,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "abd8bcab5e1d8d4927875353d2137c801a160b8c7770af7fe32f8f4288d23c41",
+          "bytes": 2327,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            6,
+            1,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 21,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "53239fd5167ad8a8e24dd8d5a9983cd77d37ae1eb30ffd7a29bdd47708eeb758",
+          "bytes": 2660,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            3,
+            2,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 22,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8a82b01a2e0bb29f1d3616787fcaebe9c51363ba2c57bd33c0cd4d8471ff22c2",
+          "bytes": 2694,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 23,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8a82b01a2e0bb29f1d3616787fcaebe9c51363ba2c57bd33c0cd4d8471ff22c2",
+          "bytes": 2694,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 24,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "b0e0dc48cd5405e1b4f31a3a6c52eaa7ef30373e2fe044dae69761cb40f903d0",
+          "bytes": 2672,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            1,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 25,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "c53dbc585483bc09331c031ac14dbd33d9d6769037e2436708f78b431a2f9f92",
+          "bytes": 2575,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            3,
+            2,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 26,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8129f40d6926cf85c5fb29b2518ac4e248c95fbcbe1397dd323af73a313a36d4",
+          "bytes": 2352,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            7,
+            1,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 27,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "1bf6570d0b36c22fd7e8193c0b3833c24291766ddab19027a5cd17c410588798",
+          "bytes": 2647,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            10,
+            0,
+            121,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 28,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "d56d9890a66b98a81bc35b4dae36c9a986fdc01e40dbe0613a93df1f585cbd05",
+          "bytes": 2636,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            13,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 29,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "79bd2383dfa9411556867dbed824df3cb973db0cc316bd85b4de2ee566be9f46",
+          "bytes": 2796,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            124,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 30,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "25d4f1c5709b5411ec9acbd3bf9c9b8f0e6b9e2af9a7a3ffce6b75714b2cb461",
+          "bytes": 2693,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 31,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "fed9b3eb6b859d38d71925d7f8f89e4be7e7fc3b3ec9f38399bee4f176291049",
+          "bytes": 2638,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            11,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 32,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "4873a7827b5e330e938447edd0b49e3d4d75c960890e3c1c3ed8e1b5d72e8a34",
+          "bytes": 2345,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            8,
+            1,
+            120,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 33,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "3a723e71148e69cdb26608c89da18c6abc1abbe3d64ba69ba8df5543e6deb41e",
+          "bytes": 2525,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            5,
+            1,
+            120,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 34,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "da12809082f964206b0f73aadd50ec0c4ae0ac2329773f3c7cd3dbfca6b72f3b",
+          "bytes": 2626,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            2,
+            2,
+            118,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 35,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "7bc6aad6068a8a74e95d8f68a6f76a85309e53c9894adf74490c5f279ac9db87",
+          "bytes": 2758,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 36,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "c8798343bf4762ed88d9c7fe8bd9a130d570efb0aa4cf5e32a9b6e6dc1329019",
+          "bytes": 2750,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            0,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 37,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "c59da1a1e17fa9cd04534a0334aefd0d4e00269568be1196a15217e77cead3d2",
+          "bytes": 2657,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            2,
+            2,
+            118,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 38,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "c659df4de898a8d55d5a88b7bcac95451364dcf89a632e7e0834e5bcbd7aec0b",
+          "bytes": 2457,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            5,
+            1,
+            120,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 39,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "4873a7827b5e330e938447edd0b49e3d4d75c960890e3c1c3ed8e1b5d72e8a34",
+          "bytes": 2345,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            8,
+            1,
+            120,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 40,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "65f529d1dcd83bf307faed55269a971963c02afe2e640cafbcc77d650219b811",
+          "bytes": 2641,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            11,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 41,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "9dfc012facb07431ac04027151dca965d90fcf7d667bbd1f945b91c59e8de6bf",
+          "bytes": 2703,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            123,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 42,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "968f4928e89bbf411784915a24613841545165e77ca3fac141969ef26da40d33",
+          "bytes": 2789,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            14,
+            0,
+            124,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 43,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "ecb516f6ced430a265cdbd5a24a881e079efe266cbef791d0aac3a77510a5d98",
+          "bytes": 2645,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            13,
+            0,
+            122,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 44,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "786a25e5dab376acecc6e7eacc98afd3d409ec377f4c0dbcf729c85e1bceb41b",
+          "bytes": 2646,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            10,
+            0,
+            121,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 45,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "8129f40d6926cf85c5fb29b2518ac4e248c95fbcbe1397dd323af73a313a36d4",
+          "bytes": 2352,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            7,
+            1,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 46,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "5bdf03bc985a2ad259c90bcfee8843ece0de467b4165dabfb2272d81c5600c5a",
+          "bytes": 2553,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            3,
+            2,
+            119,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 47,
+          "length": 0.03,
+          "duration": 0.03
+        },
+        {
+          "sha256": "f7fa4a85af26e5923c455dd7fa76441e7d90484fffffd4f37386bbc535816fc2",
+          "bytes": 2667,
+          "width": 124,
+          "height": 113,
+          "opaqueBounds": [
+            1,
+            2,
+            117,
+            113
+          ],
+          "footAnchor": [
+            62.0,
+            110
+          ],
+          "key": 48,
+          "length": 0.03,
+          "duration": 0.03
+        }
+      ],
+      "source": {
+        "sha256": "85591b7211b8c12da1287ec0d63345c98fac16d2cd6dc20cc23637407c9195b8",
+        "bytes": 99225,
+        "url": "https://deltarune.wiki/images/Tenna_face.gif"
+      },
+      "derivation": "Lossless RGBA decoding of original game frame canvases; no rescaling or recoloring"
+    },
+    "starwalkerIdle": {
+      "sourceName": "spr_npc_originalstarwalker",
+      "width": 37,
+      "height": 36,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "sha256": "6602b829bf1959b363e793c4d63bc6b83ae0bf54817da46f970936c89895d32a",
+          "bytes": 594,
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_npc_originalstarwalker/91c8286c-6786-46d3-bea1-3f38cb1b345b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "width": 37,
+          "height": 36,
+          "opaqueBounds": [
+            0,
+            0,
+            37,
+            36
+          ],
+          "footAnchor": [
+            18.5,
+            36
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "starwalkerFace": {
+      "sourceName": "spr_npc_originalstarwalker",
+      "width": 37,
+      "height": 36,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "sha256": "6602b829bf1959b363e793c4d63bc6b83ae0bf54817da46f970936c89895d32a",
+          "bytes": 594,
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_npc_originalstarwalker/91c8286c-6786-46d3-bea1-3f38cb1b345b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "width": 37,
+          "height": 36,
+          "opaqueBounds": [
+            0,
+            0,
+            37,
+            36
+          ],
+          "footAnchor": [
+            18.5,
+            36
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ],
+      "usage": "Untouched body icon, not a claimed native dialogue portrait"
+    },
+    "ralseiHug": {
+      "sourceName": "spr_ralsei_hug",
+      "width": 22,
+      "height": 43,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug/b7503330-6148-4c0c-8f02-4cfa83721f16.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "e65e7df46aa35fcd380bb4dd7a7c3929b0f87318c8fccd7f9c57b3c29dbf76b4",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            21,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug/15cb3b1f-cc06-463f-a981-d964a7a9d8fa.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "cc69c51339152cd2f84ed40dae5273f6723053e33d95da68647397517cbc1be1",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug/50d60f18-c193-4dbe-bb04-e684020a9618.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "3885ae2eea4a4399c37206675a6bb2b007e24df8a1f3adf0ab3dd826fc30c847",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug/0757fda6-3bc3-4e85-aa26-72132c970437.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "cc69c51339152cd2f84ed40dae5273f6723053e33d95da68647397517cbc1be1",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiHugStop": {
+      "sourceName": "spr_ralsei_hug_stop",
+      "width": 22,
+      "height": 43,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug_stop/14f14281-8d62-40dc-9338-ab893a872c91.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "e65e7df46aa35fcd380bb4dd7a7c3929b0f87318c8fccd7f9c57b3c29dbf76b4",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            21,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug_stop/445f5ced-b9a5-4c59-8c85-1f9c5cf2ccd6.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "cc69c51339152cd2f84ed40dae5273f6723053e33d95da68647397517cbc1be1",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug_stop/04b06935-e925-4593-b5f5-0f2bda63dc15.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "3885ae2eea4a4399c37206675a6bb2b007e24df8a1f3adf0ab3dd826fc30c847",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_ralsei_hug_stop/adc448cc-96d9-4882-8291-c962cf56a8b6.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "cc69c51339152cd2f84ed40dae5273f6723053e33d95da68647397517cbc1be1",
+          "width": 22,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.0,
+            43
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "krisHug": {
+      "sourceName": "spr_kris_hug_left",
+      "width": 25,
+      "height": 40,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_kris_hug_left/a39f93eb-06a1-4cab-b7ff-5639f2d36e15.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "b5a9ab4cec2b52f4474e4ce7f8c0678a1737cd368b23fe7cc437bbe735136127",
+          "width": 25,
+          "height": 40,
+          "opaqueBounds": [
+            4,
+            1,
+            23,
+            38
+          ],
+          "footAnchor": [
+            12.5,
+            38
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_kris_hug_left/67f5fd72-3768-4466-b790-f8d45f8cfb06.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "b4bf7d3d44cd83e6eeb586cc221a95a587e80641b22b3d4715f8d9123be65ae6",
+          "width": 25,
+          "height": 40,
+          "opaqueBounds": [
+            0,
+            1,
+            22,
+            38
+          ],
+          "footAnchor": [
+            12.5,
+            38
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_kris_hug_left/4429c3fa-ddac-4c8e-b2ae-23c59e296074.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "8b02bf3cfa4645ccbe08c103d1f25fa884187a3e2fa4df510306df4ef749c46e",
+          "width": 25,
+          "height": 40,
+          "opaqueBounds": [
+            0,
+            1,
+            22,
+            38
+          ],
+          "footAnchor": [
+            12.5,
+            38
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_kris_hug_left/e80b1416-2656-4e46-93b5-ae1f056f5a04.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "b4bf7d3d44cd83e6eeb586cc221a95a587e80641b22b3d4715f8d9123be65ae6",
+          "width": 25,
+          "height": 40,
+          "opaqueBounds": [
+            0,
+            1,
+            22,
+            38
+          ],
+          "footAnchor": [
+            12.5,
+            38
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiRight": {
+      "sourceName": "spr_ralseir",
+      "width": 23,
+      "height": 44,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseir/c1182c5b-f42a-44aa-a72f-8f9e7759170f.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "658d55750912ea81765246efd40705b5b121f542824d4830c7bced97d02bade1",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseir/2622a020-f7b0-4b16-aaea-54f83518c511.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "38843959979749cd1b945f88587ce1666805f54be69328ada52161c5aef0f499",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            1,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseir/bde40df2-0d3d-4617-9dc1-e4b126720653.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "658d55750912ea81765246efd40705b5b121f542824d4830c7bced97d02bade1",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseir/577ce945-347b-4859-98bc-6bb346453165.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "38843959979749cd1b945f88587ce1666805f54be69328ada52161c5aef0f499",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            1,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiLeft": {
+      "sourceName": "spr_ralseil",
+      "width": 23,
+      "height": 44,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseil/f214ca6f-1948-4786-a71f-ff052254bce2.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "070c688fdfa0e427526cbee564d5a0b78cef4e1b0d2ad98fce14758dc06dfeb6",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseil/e4804ed5-339a-4df8-8764-d28a5c88cffb.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "56737f87d14f3d5fda24a657da20f2f367ab2b0b1bd7e1007ae78cb671e32e70",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            1,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseil/61d3eb31-712a-4e37-9bf3-2e9f87555024.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "070c688fdfa0e427526cbee564d5a0b78cef4e1b0d2ad98fce14758dc06dfeb6",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            0,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseil/8283a9c1-4224-42b0-967e-be81a4d01c45.png",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "sha256": "56737f87d14f3d5fda24a657da20f2f367ab2b0b1bd7e1007ae78cb671e32e70",
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            1,
+            1,
+            22,
+            43
+          ],
+          "footAnchor": [
+            11.5,
+            43
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "cake": {
+      "sourceName": "spr_cauldron_cake",
+      "width": 30,
+      "height": 19,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "usage": "Native cauldron cake body sprite used as the carried pastry prop, without claiming a separate Top Cake inventory icon",
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_cauldron_cake/24233cd0-a0ba-432f-892a-f3d1b1058632.png",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "sha256": "92e1c5165bbb2439a8091150f0ce89ba37be7c0a407f840248bc5bbff70e4858",
+          "width": 30,
+          "height": 19,
+          "opaqueBounds": [
+            3,
+            2,
+            28,
+            19
+          ],
+          "footAnchor": [
+            15.0,
+            19
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    }
+  },
+  "audio": {
+    "starwalkerVoice": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_text/snd_text.wav",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "a0c8f92afe14618ffe23aee7b9deabe08c69002a",
+      "sha256": "dd871b0b2c2336c831d4327cdd669d2a2358c3af51fc2b6c044df7bab68ae49e",
+      "bytes": 22852,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.129297,
+      "sourceName": "snd_text",
+      "usage": "Original default writer sound, used by this cameo without inventing a unique voice"
+    },
+    "tennaTVTime": {
+      "sha256": "82cd0b59904dca04d18a9dd9812a169fc983f9b9be6d61db3a9d785db8c70afa",
+      "bytes": 487968,
+      "source": "https://deltarune.wiki/w/File:Tenna_voiceclip_it%27s_tv_time.wav",
+      "duration": 5.532018,
+      "native_name": "Tenna_voiceclip_it's_tv_time.wav",
+      "codec_name": "pcm_s16le",
+      "sample_rate": "44100",
+      "channels": 1
+    },
+    "tennaMusic": {
+      "sha256": "8b0a0cfd959b7e626093255f23e673ac51d85ba194a128103644730acf0ec9da",
+      "bytes": 2647352,
+      "source": "https://tobyfox.bandcamp.com/track/it-s-tv-time",
+      "duration": 165.405397,
+      "credit": "Toby Fox",
+      "codec_name": "mp3",
+      "sample_rate": "44100",
+      "channels": 2,
+      "side_data_list": [
+        {}
+      ]
+    },
+    "tennaCheer": {
+      "sha256": "c6a2a953e2db4926a64c416678d164133e24efab8968fe84058b4df8489fe135",
+      "bytes": 202312,
+      "source": "https://deltarune.wiki/w/File:Snd_crowd_cheer_single_music.wav",
+      "duration": 2.293288,
+      "native_name": "Snd_crowd_cheer_single_music.wav",
+      "codec_name": "pcm_s16le",
+      "sample_rate": "44100",
+      "channels": 1
+    },
+    "tennaAww": {
+      "sha256": "59c09a09b451ad43123a5c7a772d3473fa5a344095c37c2aa1cf6f6d94835f20",
+      "bytes": 352300,
+      "source": "https://deltarune.wiki/w/File:Snd_audience_aww_music.wav",
+      "duration": 1.996916,
+      "native_name": "Snd_audience_aww_music.wav",
+      "codec_name": "pcm_s16le",
+      "sample_rate": "44100",
+      "channels": 2
+    },
+    "tennaStatic": {
+      "sha256": "b53d766af0b7d876a5b1d5511a5ad94ea00f0c31c516893d58cfa60faaa41d72",
+      "bytes": 705644,
+      "source": "https://raw.githubusercontent.com/Ceyase/DeltaruneEngine/ea6babe288b69294ff714e573eae1ccb358f7e17/sounds/snd_tv_static/snd_tv_static.wav",
+      "native_name": "snd_tv_static",
+      "duration": 8.0,
+      "codec_name": "pcm_s16le",
+      "sample_rate": "44100",
+      "channels": 1
+    },
+    "tennaVoiceDerived": {
+      "sha256": "208cca7f892d973e19c77f58b1cfc615f589193e16fe1bf5ae099a63a12b01ce",
+      "bytes": 7982,
+      "sourceName": "snd_its_tv_time",
+      "source": {
+        "sha256": "82cd0b59904dca04d18a9dd9812a169fc983f9b9be6d61db3a9d785db8c70afa",
+        "bytes": 487968,
+        "source": "https://deltarune.wiki/w/File:Tenna_voiceclip_it%27s_tv_time.wav",
+        "duration": 5.532018,
+        "native_name": "Tenna_voiceclip_it's_tv_time.wav",
+        "codec_name": "pcm_s16le",
+        "sample_rate": "44100",
+        "channels": 1
+      },
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 0.09,
+      "nativeWriterSample": false,
+      "derivation": {
+        "kind": "Fan-edited dialogue blip from original native voiced catchphrase",
+        "startSample": 8820,
+        "endSample": 12789,
+        "startSeconds": 0.2,
+        "endSeconds": 0.29,
+        "processing": "Sample-exact 90 ms crop; original pitch, rate, channels and PCM values preserved"
+      }
+    },
+    "susieLaugh": {
+      "sha256": "a7ed00955bf7106e5a874fe099ed7c0fda40cc7482737ed608c579c3b5643042",
+      "sourceName": "snd_suslaugh",
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_suslaugh/snd_suslaugh.wav",
+      "derivation": "Unmodified original Chapter2 sound, copied from verified native extraction"
+    }
+  },
+  "inventoryNote": "Only effective v3 audio entries are listed; native voices-v3 entries override earlier edited voice fragments. Historical fallback claims are omitted."
+}

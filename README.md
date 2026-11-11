@@ -28,6 +28,8 @@ Open the repository root in Claude Code, Codex, or Hermes Agent. [AGENTS.md](AGE
 
 [Kris & Susie: Queen’s Inside Story](projects/queens-inside-story/README.md) is a playable Nintendo DS-style boss encounter with editable scene data and a Shorts renderer.
 
+[What If Ralsei Kept Multiplying?](projects/ralsei-multiplication/README.md) contains the 118-second fan film's story clock, physical crowd simulation, native-voice mixer, and portrait/landscape renderer. Prepared original game assets stay in a private workspace; the project records the approved exports and commands for reproducing the film.
+
 For new crossovers, use original game assets from each franchise and credit their sources in the example page.
 
 Each folder under `examples/` pairs a finished video with a frame and its project notes. Keep English titles, documentation, issues, and commits together with the work.

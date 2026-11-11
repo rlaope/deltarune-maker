@@ -1,0 +1,6291 @@
+{
+  "provenance": "Original game resource bytes from pinned third-party decompilation and game-file mirrors. Sprite order follows GameMaker sequence keys.",
+  "sources": {
+    "ch2": {
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba"
+    },
+    "gameAudio": {
+      "repo": "Mollomm1/test",
+      "revision": "ac1db67df09e8ae48572c5de84b4b6ac5ebd1e67"
+    },
+    "ch1": {
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527"
+    }
+  },
+  "sprites": {
+    "ralseiIdle": {
+      "sourceName": "spr_ralseid",
+      "width": 23,
+      "height": 44,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseid/d1c362f7-cfb4-4cbc-bbb7-a63013a8d850.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "59a39901a4f10df14a3d146207f304777b730b68",
+          "sha256": "c755ecd547686c38be206e94a6612f406fa4bf3a60bd8aba300582b3ac22ec7a",
+          "bytes": 887,
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            0,
+            0,
+            23,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "hatContact": [
+            3.45,
+            9
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseid/4da2cf93-a871-4ad0-8e59-9c958a7400bc.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "cec0bd145d7d4e4177a0faa67907286a504149d6",
+          "sha256": "087d8e125177149a1fd7822bf633b5481cc971c8cc4abf532ff68e7578bdb488",
+          "bytes": 881,
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            0,
+            1,
+            23,
+            44
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            11,
+            44
+          ],
+          "hatContact": [
+            3.45,
+            10
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseid/e44a0a4c-b1f2-426b-859e-19447b435746.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "59a39901a4f10df14a3d146207f304777b730b68",
+          "sha256": "c755ecd547686c38be206e94a6612f406fa4bf3a60bd8aba300582b3ac22ec7a",
+          "bytes": 887,
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            0,
+            0,
+            23,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "hatContact": [
+            3.45,
+            9
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseid/e30ef819-6b54-4742-b563-10feed0906c0.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "effd70b59e7a884a0828b5e2b41be37ebbf7286b",
+          "sha256": "b02d25d5318daee1f28e1b2cf6e89f72f1ca86a159f381a7cff60329d405b575",
+          "bytes": 882,
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            0,
+            1,
+            23,
+            44
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            11,
+            44
+          ],
+          "hatContact": [
+            3.45,
+            10
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiBattleIdle": {
+      "sourceName": "spr_ralseib_idle",
+      "width": 50,
+      "height": 47,
+      "origin": [
+        4,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_idle/88806e5a-10ec-438e-a5fa-637210414dce.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "54c7b2f3c40292d6b20c2834b538209c1e60c314",
+          "sha256": "29043aff366b9aad4f9f7db8497cf4a1c6b29b57a2dba19fb11b4f57096d56f3",
+          "bytes": 996,
+          "width": 50,
+          "height": 47,
+          "opaqueBounds": [
+            5,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            16,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_idle/49b92792-f364-463a-8bee-79f19bf0a728.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "4aef4bdc8c187baa317ee236c792d6ce18101f16",
+          "sha256": "151ea621e9ccff007dd58ed3264f37924ccf7cd3c3b4188b83008eab39085035",
+          "bytes": 1028,
+          "width": 50,
+          "height": 47,
+          "opaqueBounds": [
+            5,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            16,
+            45
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_idle/d85a92d1-77e9-4ff5-bf8d-9860e9689210.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "ca87a1df9df7a8807f6a3388fa1c518b9974dc56",
+          "sha256": "109585cd2b91478da0259d88fb3c3f678f5bbbaf52a6d693b0efcc52482a5819",
+          "bytes": 1058,
+          "width": 50,
+          "height": 47,
+          "opaqueBounds": [
+            5,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            16,
+            45
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_idle/1d771126-3695-4eca-aa39-740cbcbf86c6.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "3b5e3aac926e5e0cf27f56264e22336aad718f35",
+          "sha256": "44a0de04f8ab6759b48b991d4182ae1aecc1fdf4d1ac594e7327f8ade01d1fe4",
+          "bytes": 1002,
+          "width": 50,
+          "height": 47,
+          "opaqueBounds": [
+            6,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            16,
+            45
+          ],
+          "key": 3,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_idle/b0495d36-a0c7-4c83-8645-8958e9a3f308.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "c5519a1d8160f01ddfe63ad0a3ab64362b41360b",
+          "sha256": "4151e29e235bda3c186a5498104ed1cb990277d17b77b20bd4109b5cd4b0bdbc",
+          "bytes": 1029,
+          "width": 50,
+          "height": 47,
+          "opaqueBounds": [
+            6,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            16,
+            45
+          ],
+          "key": 4,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiMagic": {
+      "sourceName": "spr_ralseib_spell",
+      "width": 56,
+      "height": 47,
+      "origin": [
+        9,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/78beec73-db12-496a-9be3-8a8794776d2f.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "cf49930132bcf9e544e2549c55b083fa1986b8d6",
+          "sha256": "9d002dc70b964d896af4ab29fd1a1a35c89d4e5d18fb4a0cd93c1a45400c7877",
+          "bytes": 1163,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            1,
+            6,
+            44,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/828cfeee-fd10-4157-b866-046600a9262f.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "ae42363e8e4f04c51c215f044c91337e43ee08a6",
+          "sha256": "572947d3a1ee5d736a53d6837d9edb7f0bd29254ce39c2a922a5ef05ddb7f302",
+          "bytes": 1186,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            3,
+            42,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/845576e8-e36a-424b-8671-b7bb3924313c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "33a40f4136d5c31cc1e4a42d73b30ba43e6d4f51",
+          "sha256": "d7251256c727bf77b5254b050bfd31375df97125af49a2ff50da4bd79cab7dac",
+          "bytes": 1196,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            2,
+            41,
+            46
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/e94fe985-ed48-4bc2-82ff-887aef70045b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "168cfb87d12a86b7ef91fc1efba077c06b5c620c",
+          "sha256": "f04d71aa738d8e8eaeb072fe92a4ff3c432503a49debd98bf348c37340d0ecc6",
+          "bytes": 1191,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            0,
+            41,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 3,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/a5238277-ecc2-467b-a865-4b112a671cb0.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "2a55ca999943f8e14ef937c8039c1591b03880a3",
+          "sha256": "7f2922d5330da699c3ff7b2d30d46b997277ac1f0b4899b8a97c0c1e1331b445",
+          "bytes": 1203,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            1,
+            41,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 4,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/95f83da1-c04a-45c2-86d6-aab375f573ae.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "94c89816169d4f6d8c60c6482bbcad291e6442f7",
+          "sha256": "ac4feddad9afe5e307f6a3f11c08f44cac82efe42a240fbd47b028f99cf28a6c",
+          "bytes": 1198,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            2,
+            41,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 5,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/cb5c5949-e7fb-452c-93dd-3fdf3eb4190c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "fb9a5def755f99c84ab74ac42f04c7bd01d2a22c",
+          "sha256": "7f1d43867a78c4a030b5abbddf470d4e07776c715ba94ef16cb697e659977524",
+          "bytes": 1179,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            3,
+            41,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 6,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/002fd6f3-8562-4bb7-a543-77dee9907700.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "8abbb4197daa87fed5ba78b4a5881e62ce4f2da2",
+          "sha256": "df945410153eeccafe24cebca3d2e17738ea71a4920b56262c3684e13d48b27e",
+          "bytes": 1165,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            4,
+            41,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 7,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/78407ca0-7cf6-4c72-8925-05a590b46dd8.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "a29563c5a6e27d46419e6ae8412ccd700ba4e0e5",
+          "sha256": "418c45fb76b3915ae35adb8a2e015ed0ca997e24ca28443b10d86cc4c57d55d4",
+          "bytes": 1049,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            10,
+            2,
+            37,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 8,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spell/167f4132-632e-4c2d-a4dc-4b7172f0ceba.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "6b463a447cf79a7720f5bf0500fd8c2a39f5e41c",
+          "sha256": "6d39427677544129ac781a8584582f774e2074e63ea8f5e7d1fd5a2cdc4c9bda",
+          "bytes": 1014,
+          "width": 56,
+          "height": 47,
+          "opaqueBounds": [
+            10,
+            2,
+            36,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 9,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiMagicReady": {
+      "sourceName": "spr_ralseib_spellready",
+      "width": 78,
+      "height": 47,
+      "origin": [
+        9,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spellready/ce93ddb7-5851-484f-8a42-c0d93abb81c4.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "f0a0d1d9eb79d776cee37a01894fddea2c215ddf",
+          "sha256": "379ddb06b03378470a78460b2264fad3b349f53a87a13749ba902490f936d017",
+          "bytes": 1169,
+          "width": 78,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            2,
+            42,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spellready/6af1a241-29c9-4839-91be-ae9afd7a74cb.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "d7738bd00d7fafd1117a9b0fea297ac09c0a37cb",
+          "sha256": "141a537716b6dca43746b9b977214376ffad389a741a31754507f4994481458b",
+          "bytes": 1182,
+          "width": 78,
+          "height": 47,
+          "opaqueBounds": [
+            6,
+            3,
+            42,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spellready/283c8e25-c0c5-4260-b562-f0c45b142970.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "ef98e10a18b922c0bf05a4459052c451b9063bd3",
+          "sha256": "d2a96913611deddedeb348d720445d9b51fb6217b24e721bd94f14b2f7df92de",
+          "bytes": 1205,
+          "width": 78,
+          "height": 47,
+          "opaqueBounds": [
+            5,
+            3,
+            42,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseib_spellready/eda849a7-2f66-4921-a482-6f3225fedab2.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "d72107d369986ad7c5c5783fd49d23becd001224",
+          "sha256": "36c9f8668072ce5032c882ca825a2cdec8d43471fb6fcbcb6ced74ce1b342734",
+          "bytes": 1233,
+          "width": 78,
+          "height": 47,
+          "opaqueBounds": [
+            9,
+            3,
+            42,
+            47
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              169,
+              216,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              207,
+              109
+            ]
+          ],
+          "footAnchor": [
+            20,
+            45
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiSurprised": {
+      "sourceName": "spr_ralsei_shock_overworld",
+      "width": 38,
+      "height": 47,
+      "origin": [
+        10,
+        10
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralsei_shock_overworld/bfede01d-d4af-4225-a779-7cd570262404.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "857aa720e917f052d56df098eb02cea6d4ef0601",
+          "sha256": "4ed808ebca3d6d41d39ab043d127b6a7ea1414814b8e8910adb68802fc8526e7",
+          "bytes": 1070,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            4,
+            37,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            31,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiPleased": {
+      "sourceName": "spr_ralseid_pleased",
+      "width": 23,
+      "height": 44,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527/sprites/spr_ralseid_pleased/25d78db6-9ecd-4506-a3bd-e166e77a05e4.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "985d441b60eb0786f2d1dd5ddc1a8c4a7d7d1527",
+          "gitBlob": "ababc929947b47af593006fe369ac2e2852bd21b",
+          "sha256": "063fb0722f5088ae1e076846197cce1ee45342843b2ee9344fd86784d6b2cbd1",
+          "bytes": 941,
+          "width": 23,
+          "height": 44,
+          "opaqueBounds": [
+            0,
+            0,
+            23,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              56,
+              112,
+              94
+            ],
+            [
+              77,
+              204,
+              142
+            ],
+            [
+              246,
+              14,
+              151
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "hatContact": [
+            3.45,
+            9
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "ralseiFace": {
+      "sourceName": "spr_face_r_dark",
+      "width": 57,
+      "height": 59,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/39ae2b6f-7670-4930-9b84-123e49d6f367.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "6197e880145dae937cc3c36ab57deb0ecc1073e5",
+          "sha256": "9fd010aa19331d66124e476208ac63613d294cb578d4fe9c6fcb181fd9d45445",
+          "bytes": 1088,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            5,
+            56,
+            55
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/c211770f-bb6c-4d19-be53-e5ae44e2946b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "38e5bfb080fcb1fd76b8a2e5348410cfdbd00b42",
+          "sha256": "4c2860f40ec2a971a4ae83c3494de277c1cb5cd0ffdd214a6878eedd555fb8d6",
+          "bytes": 1101,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            5,
+            55,
+            55
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/2ba8f6df-95a9-4386-b450-13e46cd8de4b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "01a832b8b4b5e9bab874120294a8edfbd509267c",
+          "sha256": "a205f452a03b341107b3790d3aabdbdb36746a2ec6915f4406269312e18a1334",
+          "bytes": 1109,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/d1395af7-6537-416d-816e-27e54990931c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9371c857bf8cd9b8bdf4cd3fca5a12a25498bb3e",
+          "sha256": "b8e13d4bde97c383321f0c476562729f3bfa4a4f4b7c9a2cb021796d94894d38",
+          "bytes": 1115,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 3,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/5d81ee1c-2651-4a0c-b83f-596b9b454103.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9a7ebaa23f5863fde78cb7c17462f8a1df003b54",
+          "sha256": "e459113f12b81b87e558e747f16f00d1ab38dba91dc3b385cef7d719ff452e0e",
+          "bytes": 1111,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 4,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/3bc4934a-8536-420e-a80e-c8d966f0b3e6.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "86363f5b3caadb5ee253378b428fd831bc64f0a5",
+          "sha256": "ce6770fd60b4d7ddd33e9baa38bb33b04bd0ca12a8ce350df6e5a68f72b2797d",
+          "bytes": 1114,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 5,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/ff32d87d-881a-469e-964a-022890ff95d7.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4f49d895d159795f620c30f86c6046a9efe075f3",
+          "sha256": "180d26870a9e32ca14d6e98cdc643f217bc23bcd773e77fcbb9163122abc69ee",
+          "bytes": 1086,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            6,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 6,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/d9c80ee2-a502-49a2-8d34-67b4b79c5c46.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "27e7e14308a79e0b935651c74ab7b3615eed9eaa",
+          "sha256": "5a3029eefb787196527e087d9ab54b20da5fcd369bb0d53ea9f1e7c05350ba67",
+          "bytes": 1098,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            5,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 7,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/d0c69a25-60c9-4105-a2a1-9814e1bb3948.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "230d1c6a0104395842f509cfccb1e490a6273175",
+          "sha256": "3f5a5671cce8e723d7a78625cfdae1fe1d80cfc175f2abcbdf8a2b3bcc6e4e43",
+          "bytes": 1103,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 8,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/5afaf6e8-f69e-442c-bc47-916c4b25d4a5.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "acba0ea2f85181ae4845029243dd37a0602397f7",
+          "sha256": "580fcc16a5cfb966c7a3a45d8021be6ecb362a1def97a38e3357135e359454dd",
+          "bytes": 878,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            0,
+            0,
+            57,
+            59
+          ],
+          "alphaLevels": [
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 9,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/43c3e5c9-c5bd-4b65-b377-1938364f38cd.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4b84c71a6b850bf24386bf93db4656fb4adfc34f",
+          "sha256": "d383cc3cb2369265c05ee52279de394309e969636159136d43dccac3e07725bc",
+          "bytes": 1138,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            4,
+            55,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 10,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/f70fb77f-995c-42eb-af5a-19f926c22dc5.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "caea18b45e85f6df157ab358f2eea613205170db",
+          "sha256": "c13ce1ddd4b9f8e6239b66a588b3acffbcae1b9601755eedab272014832a73dd",
+          "bytes": 1082,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            5,
+            56,
+            55
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 11,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_r_dark/ab56cf65-dae9-41e4-9c03-edee1b36d821.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "b1cb531b894a0b5f48f8cc91c20c3fc084f6701d",
+          "sha256": "aa9ed924019b48106f71d859edb486fb2f5d090b17080fc97138b25396f3fb68",
+          "bytes": 1088,
+          "width": 57,
+          "height": 59,
+          "opaqueBounds": [
+            3,
+            5,
+            56,
+            55
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              125,
+              112
+            ],
+            [
+              19,
+              168,
+              135
+            ],
+            [
+              106,
+              255,
+              17
+            ],
+            [
+              138,
+              57,
+              155
+            ],
+            [
+              248,
+              69,
+              154
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 12,
+          "length": 1
+        }
+      ]
+    },
+    "susieIdle": {
+      "sourceName": "spr_susie_down_dw",
+      "width": 26,
+      "height": 43,
+      "origin": [
+        0,
+        -2
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_down_dw/7be0b2ba-87cc-4a9d-91df-bb38865c3ce9.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "3a3b35373a892f2356a508bff7727f7c8f7d7c0e",
+          "sha256": "886e3a307247e23e5b55d6f15ad0be3205c9261143c9b0528ca5ad267a271b68",
+          "bytes": 964,
+          "width": 26,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            26,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            12,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "susieWalk": {
+      "sourceName": "spr_susie_walk_right_dw",
+      "width": 25,
+      "height": 43,
+      "origin": [
+        0,
+        -2
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_walk_right_dw/e66f2450-c469-4bae-afee-302ac888efdd.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f5595d16bd90be043ba1a67bc5de390514cb8fa1",
+          "sha256": "000004b720dd27f295272d5f02324363688eeb9cf219afed659d6e4285fb3a7f",
+          "bytes": 910,
+          "width": 25,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            25,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_walk_right_dw/9387d10b-1783-455c-ab01-109c94a93975.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f1ab1a6aeffa44dc56c4630834178b50062ea070",
+          "sha256": "48979d65a691b11987e408d383efa829e2eeb07847f8fa7f1388932e6b4e30c7",
+          "bytes": 974,
+          "width": 25,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            1,
+            25,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_walk_right_dw/a6d6ad27-17b6-4570-828a-988b466e3632.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f5595d16bd90be043ba1a67bc5de390514cb8fa1",
+          "sha256": "000004b720dd27f295272d5f02324363688eeb9cf219afed659d6e4285fb3a7f",
+          "bytes": 910,
+          "width": 25,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            0,
+            25,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_walk_right_dw/1c11451d-63af-442e-9dda-43ba47d12e26.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "be7a5493d1243fc0a80946d5708c640af50febce",
+          "sha256": "d90402444a7dc71ae4132d923794702305153b6d6afae48ddf35ccc283da7285",
+          "bytes": 970,
+          "width": 25,
+          "height": 43,
+          "opaqueBounds": [
+            0,
+            1,
+            25,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            11,
+            43
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "susieJump": {
+      "sourceName": "spr_susie_dw_jump_ball",
+      "width": 29,
+      "height": 30,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_jump_ball/9c4415e2-7bf7-4828-941c-96e4ce5e8a3d.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "23f3422a5afbde1d85eef749fba48eb787409ce0",
+          "sha256": "07a9f180351a85b6bbb64f97c76c78d77c5d31afae6b0d0b72420b1e5f4a5579",
+          "bytes": 711,
+          "width": 29,
+          "height": 30,
+          "opaqueBounds": [
+            0,
+            1,
+            28,
+            29
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            14,
+            29
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_jump_ball/6a2561be-31e8-4d52-a9eb-a033dd48b0c4.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "471276a8f135f1b27e9718febbec3c202668067a",
+          "sha256": "7699a0aa17a787b010d85cb282c3524c3b5780573de3277ab25eb5695d4e7292",
+          "bytes": 715,
+          "width": 29,
+          "height": 30,
+          "opaqueBounds": [
+            1,
+            2,
+            29,
+            30
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            14,
+            30
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_jump_ball/330bf088-5eae-417d-9a9b-a19f17ebf2fc.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "537e1d1fcc56cdf59ebd41ee52bd5c63c984fd12",
+          "sha256": "6fd56a7526ad0d7031b31c7fefe18df75d33dea8ab356994b924e6a8ce311146",
+          "bytes": 687,
+          "width": 29,
+          "height": 30,
+          "opaqueBounds": [
+            2,
+            1,
+            29,
+            29
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            14,
+            29
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_jump_ball/d61988ad-1cef-4372-a026-054183b6b445.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "ed614ac390534437e766f5a422b8b9a75de1c923",
+          "sha256": "d4f20a5ba59d7a5de560b950e136d1ae00875ed79b85c6d95063bc22e856582c",
+          "bytes": 685,
+          "width": 29,
+          "height": 30,
+          "opaqueBounds": [
+            1,
+            0,
+            29,
+            28
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            14,
+            28
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "susieJumpBack": {
+      "sourceName": "spr_susieu_dark_jump",
+      "width": 26,
+      "height": 46,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susieu_dark_jump/a285ec41-7c55-4973-bdb8-69fd41594980.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "d5996fe04b4aff60d6a72bfefc96c6e78aa2defd",
+          "sha256": "ba582a919fd1cebdd0725e95647387f540468305f83f6c321909257b78e13070",
+          "bytes": 832,
+          "width": 26,
+          "height": 46,
+          "opaqueBounds": [
+            1,
+            2,
+            26,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            13,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "susieLand": {
+      "sourceName": "spr_susie_dw_landed",
+      "width": 36,
+      "height": 48,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_landed/d08b47fe-7935-442b-81b6-b83ae713e8ab.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "075618c1c9d3823abfe7c1e9f9407798eed42790",
+          "sha256": "6c717508d372b119570e1d91f093bb05cb309ec6b7ce70bb14cc99ddd996e4a0",
+          "bytes": 950,
+          "width": 36,
+          "height": 48,
+          "opaqueBounds": [
+            4,
+            12,
+            32,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            12,
+            45
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_landed/d94c43c0-67cc-4b00-a327-27af9dd5c565.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "8f41ee438109bfba22bc0eed0857fb24435ae32c",
+          "sha256": "f5a6152886c0bb027df9803f4e53f9a1df75189f99c41be1b332929c084abd18",
+          "bytes": 985,
+          "width": 36,
+          "height": 48,
+          "opaqueBounds": [
+            4,
+            11,
+            32,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            12,
+            45
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_dw_landed/951d87c0-fff5-45f1-9c00-0ba44278e21d.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "54b19cbd3490bc5cf5f750221994f166dc414cd9",
+          "sha256": "3bc2cfd0ec8354a64a4d1f8d2119c2e968f850be6fa0ab75ca06935105aa0a5d",
+          "bytes": 1006,
+          "width": 36,
+          "height": 48,
+          "opaqueBounds": [
+            5,
+            2,
+            31,
+            45
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              95,
+              31,
+              156
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            17,
+            45
+          ],
+          "key": 2,
+          "length": 1
+        }
+      ]
+    },
+    "susieSit": {
+      "sourceName": "spr_susie_sit_wind",
+      "width": 26,
+      "height": 35,
+      "origin": [
+        0,
+        -5
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_sit_wind/cbd12c7a-4129-4db0-a581-118c1ae1edb0.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "47290225f5811fb4323c456232b3583b401c62d8",
+          "sha256": "840f6f8bde8cc0748681ac74449d61d46786f8e591db7d189f28deba9f749f30",
+          "bytes": 778,
+          "width": 26,
+          "height": 35,
+          "opaqueBounds": [
+            0,
+            0,
+            26,
+            35
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              104,
+              142,
+              206
+            ],
+            [
+              175,
+              103,
+              175
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            8,
+            35
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_sit_wind/e5d907cf-2f63-4229-a877-48ac87668ce2.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "74744b57cd5079e4e9b0bac12eb92324342d4449",
+          "sha256": "4b458bf194494871bd1c2724cf0967db2d3d32806db6fef2a6749b505eb71513",
+          "bytes": 759,
+          "width": 26,
+          "height": 35,
+          "opaqueBounds": [
+            1,
+            0,
+            26,
+            35
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              104,
+              142,
+              206
+            ],
+            [
+              175,
+              103,
+              175
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            8,
+            35
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_susie_sit_wind/a0530d49-3447-4b17-8ea4-a1a7b5702021.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "ca4df1b591076ab69e2d2f686a2825648e4cbeb5",
+          "sha256": "b6371f7a2fdc7a051a77b7967d5201847ccb79b2b3a48389ffe51ac55c4329bf",
+          "bytes": 763,
+          "width": 26,
+          "height": 35,
+          "opaqueBounds": [
+            1,
+            0,
+            26,
+            35
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              104,
+              142,
+              206
+            ],
+            [
+              175,
+              103,
+              175
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            8,
+            35
+          ],
+          "key": 2,
+          "length": 1
+        }
+      ]
+    },
+    "susieLookDown": {
+      "sourceName": "spr_cutscene_20_susie_lancer_look_down",
+      "width": 50,
+      "height": 41,
+      "origin": [
+        0,
+        -4
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_cutscene_20_susie_lancer_look_down/731ee102-0f6b-41c9-b50f-6dd32599477f.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "a43a3ac384094bb62a8d4f2639c88b39a1d447bd",
+          "sha256": "4e11bd72735ee8c10ef133b66bd69d130fe8e868274b60d030af7e2ab09d1dcd",
+          "bytes": 1348,
+          "width": 50,
+          "height": 41,
+          "opaqueBounds": [
+            0,
+            2,
+            49,
+            41
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              23
+            ],
+            [
+              41,
+              20,
+              32
+            ],
+            [
+              50,
+              50,
+              50
+            ],
+            [
+              80,
+              80,
+              80
+            ],
+            [
+              84,
+              71,
+              143
+            ],
+            [
+              136,
+              23,
+              106
+            ],
+            [
+              144,
+              144,
+              144
+            ],
+            [
+              159,
+              24,
+              207
+            ],
+            [
+              178,
+              178,
+              178
+            ],
+            [
+              248,
+              131,
+              215
+            ],
+            [
+              250,
+              177,
+              58
+            ]
+          ],
+          "footAnchor": [
+            10,
+            41
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "susieFace": {
+      "sourceName": "spr_face_s0",
+      "width": 45,
+      "height": 50,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_s0/d2fad068-87fe-45be-877a-88083e27b355.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "ac6311bac3e83d8b61f1cad4a0b24e357048100b",
+          "sha256": "3d5ed80b953ce8e26e87bec0571d5bc50699c008eb2e07fe5a5d23677aefd695",
+          "bytes": 739,
+          "width": 45,
+          "height": 50,
+          "opaqueBounds": [
+            0,
+            0,
+            45,
+            50
+          ],
+          "alphaLevels": [
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "krisIdle": {
+      "sourceName": "spr_krisd_dark",
+      "width": 19,
+      "height": 38,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisd_dark/bc73c527-c34f-4640-9f86-d8a174deadd9.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9b3446c0f57cd331ef32d15c0f83c58a0c7e9814",
+          "sha256": "417238a67753391be759cf226adb654b74d87f24d2f694f8a2fced5faf471861",
+          "bytes": 764,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            0,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisd_dark/65d75458-0248-4093-8990-9e20b17ecc0a.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "ec08550a401f28f79d32eeb7394525fb5a360ad6",
+          "sha256": "8e61a61f5e8ca5ddbc660bdedc82a212945366eca0316a9e7692ae316108adec",
+          "bytes": 762,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            1,
+            19,
+            38
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            38
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisd_dark/4f12c78e-2425-42a3-8174-329ff16aaf79.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9b3446c0f57cd331ef32d15c0f83c58a0c7e9814",
+          "sha256": "417238a67753391be759cf226adb654b74d87f24d2f694f8a2fced5faf471861",
+          "bytes": 764,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            0,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisd_dark/b424d5c9-6271-49df-b523-695990c89b43.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "c6c486a08827e20b8c2e06719441f0b663aa24d1",
+          "sha256": "0bee901957c9c4bd19672cc026dc97cd232c206046f1c656a41af42af58e1b97",
+          "bytes": 756,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            1,
+            19,
+            38
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            38
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "krisSide": {
+      "sourceName": "spr_krisr_dark",
+      "width": 19,
+      "height": 38,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisr_dark/2609abc7-8667-4e6d-8b55-2a9f13f0fa31.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f1d71d61cc50262f5a9cd1a46d39722da8715a59",
+          "sha256": "7ea8798766288988456cf34edc9a6d781ffd0b9f59488fa9ed64f9c6656ede58",
+          "bytes": 703,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            0,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisr_dark/666d9b37-f961-4179-9c4c-fb8167b86cb5.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "edce32a221d5fbcf8d9435eb5493d92bc06a2bc9",
+          "sha256": "cfa8d011f151349a037ea9a110f2c46ab82bb3d5112750211f5d2fe56d053268",
+          "bytes": 731,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            1,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisr_dark/f4fbcec3-75cf-4fc5-a896-6a3477a653e9.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f1d71d61cc50262f5a9cd1a46d39722da8715a59",
+          "sha256": "7ea8798766288988456cf34edc9a6d781ffd0b9f59488fa9ed64f9c6656ede58",
+          "bytes": 703,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            0,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_krisr_dark/14096438-4ae9-4201-8992-1d1b2e932f84.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "d377e660e4cf06c8c4b96ba4f3786021143963fa",
+          "sha256": "7b0780fbc331b243c4f4412ab9e78dd8e4242f55f4b9c6893033e59ffa77d1c3",
+          "bytes": 736,
+          "width": 19,
+          "height": 38,
+          "opaqueBounds": [
+            0,
+            1,
+            19,
+            37
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              11,
+              11,
+              59
+            ],
+            [
+              106,
+              123,
+              196
+            ],
+            [
+              117,
+              251,
+              237
+            ],
+            [
+              199,
+              227,
+              242
+            ],
+            [
+              235,
+              0,
+              149
+            ]
+          ],
+          "footAnchor": [
+            9,
+            37
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "queenIdle": {
+      "sourceName": "spr_queen_left",
+      "width": 33,
+      "height": 63,
+      "origin": [
+        4,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_queen_left/38d056af-b5cf-4610-8a22-520c9bee23db.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4effdd46bb06788fb6340da1604a6a1a45b87db4",
+          "sha256": "969ea00fee3e449df17f37b54f48a13967a80d6c67808524b49879d9e9073908",
+          "bytes": 1004,
+          "width": 33,
+          "height": 63,
+          "opaqueBounds": [
+            5,
+            0,
+            33,
+            63
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              99,
+              188
+            ],
+            [
+              111,
+              209,
+              255
+            ],
+            [
+              114,
+              138,
+              237
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            13,
+            63
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "queenWalk": {
+      "sourceName": "spr_queen_walk_left",
+      "width": 33,
+      "height": 63,
+      "origin": [
+        4,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_queen_walk_left/7f84a89f-2944-4abc-985a-3123cc3ea970.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4effdd46bb06788fb6340da1604a6a1a45b87db4",
+          "sha256": "969ea00fee3e449df17f37b54f48a13967a80d6c67808524b49879d9e9073908",
+          "bytes": 1004,
+          "width": 33,
+          "height": 63,
+          "opaqueBounds": [
+            5,
+            0,
+            33,
+            63
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              99,
+              188
+            ],
+            [
+              111,
+              209,
+              255
+            ],
+            [
+              114,
+              138,
+              237
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            13,
+            63
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_queen_walk_left/c4a3ecc5-c43e-41e2-a5b1-14a508603db7.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "dc6ed3d7037a76f7e7784a8e6e066a4227fad071",
+          "sha256": "09203aeced390e2594587925c36f83aae8b184e8b493c6a442fd5022404e4268",
+          "bytes": 1104,
+          "width": 33,
+          "height": 63,
+          "opaqueBounds": [
+            0,
+            1,
+            33,
+            63
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              99,
+              188
+            ],
+            [
+              111,
+              209,
+              255
+            ],
+            [
+              114,
+              138,
+              237
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            13,
+            63
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_queen_walk_left/f378faaa-2f54-4df8-bf19-36cb6ed22a98.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4effdd46bb06788fb6340da1604a6a1a45b87db4",
+          "sha256": "969ea00fee3e449df17f37b54f48a13967a80d6c67808524b49879d9e9073908",
+          "bytes": 1004,
+          "width": 33,
+          "height": 63,
+          "opaqueBounds": [
+            5,
+            0,
+            33,
+            63
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              99,
+              188
+            ],
+            [
+              111,
+              209,
+              255
+            ],
+            [
+              114,
+              138,
+              237
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            13,
+            63
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_queen_walk_left/6c1ec090-9f3a-4a2c-b682-e5a70e2cc142.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "3d1c248e7bc0fd956bd73a16a3df38f6474d85d1",
+          "sha256": "384a2ada83459e680155e89cb5b94057ad99093e3dad87ecb0b92a6ea0754d00",
+          "bytes": 1085,
+          "width": 33,
+          "height": 63,
+          "opaqueBounds": [
+            0,
+            1,
+            33,
+            63
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              99,
+              188
+            ],
+            [
+              111,
+              209,
+              255
+            ],
+            [
+              114,
+              138,
+              237
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            13,
+            63
+          ],
+          "key": 3,
+          "length": 1
+        }
+      ]
+    },
+    "queenFace": {
+      "sourceName": "spr_face_queen",
+      "width": 38,
+      "height": 47,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/7465c04d-e884-43dd-af5f-6e04d035f4ce.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "8608e00fcd1229a3f61f30956c10595423f3cfac",
+          "sha256": "c61738fcba509517cba3378f46747e02fee01602a835f629fdd0bb595a533466",
+          "bytes": 775,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/aa5de505-18e1-4d1a-816a-ba49a1fc86f3.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "27b43aa7f03b19afc6578db25234459aa7a18d4d",
+          "sha256": "8bd6cc0032f2c5bcf304983c3741ac49c0b73a77917c618a4511cf44e9f77824",
+          "bytes": 763,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/2a859b4e-6b59-4d75-98c4-21d30e092778.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9968874591d963d329a10a4eb41a2d00302b8cbe",
+          "sha256": "48a7d7ef93abafc5b95276cb73bf88481e6907c6eed0bac890822915083832a5",
+          "bytes": 773,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/1cc42d2d-6412-4d30-9d17-a8033f8a16c8.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "a74a7327dd9dc5cb6e8bfda5c56ee7e9da3d3122",
+          "sha256": "fad267f79d35c36f0f24dfd91a31c321e622ea927526b8ecfe6d9a6f7f67b743",
+          "bytes": 748,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 3,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/4b09a906-d1bc-476f-87f4-72f942e8d3d5.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "ca6c37a2a0e1ce6605ccf4dd5615bd357a121b1c",
+          "sha256": "ef32d6c3904707a1d720f566a77ad0a8965b74c5dd92a9c9b3be79bcbe96674f",
+          "bytes": 748,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 4,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/3adffee6-dede-452f-84bd-c0a7fe0c5f27.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "237ed9500b1750769bf1e5b246dcd998121af563",
+          "sha256": "db90d174c83efb5596f2e08e97e8f560f4cc4232a0fa78f7bef756c108bf3817",
+          "bytes": 750,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            44
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 5,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/16a55206-a3f3-4ee4-a91a-38bbc3fbfd22.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "783912276eb60ee195d78334fdf9f9d4269fc614",
+          "sha256": "db3d58ca60051e12aa45e95a7877aa26a7e7c8782ecde4932ee36237ea3faddf",
+          "bytes": 765,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 6,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/5e7d7836-7e6a-4cc4-99c5-dbedc1d1c52d.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "8dd48b84376ad801954097c4541b739c4213f584",
+          "sha256": "f4ec85561c900ed92ca0f7e01fab29c93a2dc4d60015257525c6074bcc60724b",
+          "bytes": 783,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 7,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/529394c8-6a39-4eff-93fc-8cc175978d62.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "7bc0b1e60d90cab59569da39457c921380b521e7",
+          "sha256": "699497c71a6138ca2ace0da0abf030ad989ec41f30fac1577c266062fbf5d23d",
+          "bytes": 828,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            44
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 8,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/75045562-528a-4023-9c52-353993588e02.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "793332a5adec06512f983ddbb7be24c20cc1d252",
+          "sha256": "9411ae8c20a9a892a24cc72497dd384fadd05f10fe81c52c83bf51ee903c81bc",
+          "bytes": 788,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 9,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/eec6a3a6-5f10-415c-9d9d-5a7841d80c81.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "fbef271f3ea0af25d06be420c2e4561004d08aa8",
+          "sha256": "929a2d4e4d3a201237ff668c5ec762165d034d4777ed9699b120f083b2db49cc",
+          "bytes": 772,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 10,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/52e12850-e271-40e6-aaec-ba337335043c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "bbf7f3c4236822ee5c8ac41dfe9713a34230d087",
+          "sha256": "9993df0d16e7f07dd44bb1c027f763f94152b143f2105df62e51427a9efe28f2",
+          "bytes": 767,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 11,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/9270a51a-796c-4c29-9bd6-1ee9f9b7464b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "1630f0c2b60c32e55c6fdaa20f8cd4d165a3e6cd",
+          "sha256": "1d7ff381088857e71817b51015b5265caeb509b9118103bd590a5d63ae11a4f9",
+          "bytes": 769,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 12,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/15f4dc0a-f28d-4623-9bc7-1c50d45bdb30.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f3a2f81326cca4d93eb5709c4752ce1460f547c8",
+          "sha256": "ddfad22a77938630794bbd8d7aa02228a33515341353935e3302d85a7e76a82e",
+          "bytes": 770,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 13,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/fcd58585-9e42-4acb-8041-886f0731f543.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "1d91da2ca6fe7992e1080308f3e0e81e7fee6d91",
+          "sha256": "86e891ae66fadf8b92f0cec0f1b841e09587433db12351a5c4cf2f52184063b0",
+          "bytes": 766,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 14,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/1bcc01ba-2eea-4d4c-9961-224feb036f12.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "c6a3a325f1c6aa174eb9d5bfa00f5366a75ee849",
+          "sha256": "9d06b93ac17164de620d6c44994a89de151caa544328c9ba5626939bfdea9533",
+          "bytes": 738,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 15,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/61cbda93-d588-4351-b4fd-b618afb727d4.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9f2721a7ca158d5e2a4d37d0b2f4f4d5e48c757b",
+          "sha256": "9ad1a74a7db3fe5bf2c2082b75b4e68f2f76e0c164742449963526ec88878756",
+          "bytes": 758,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 16,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/ea07835e-e9b8-47c3-a0e2-b2a28a938df3.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "9a1961f7849c1945414c57318d25da80fc228de1",
+          "sha256": "134fecb7ec46bc2f8e3df149923b66cc93e6b34b29055298665e72e417fa11cd",
+          "bytes": 768,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 17,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/435d3e93-20a5-406b-a256-2b964176d089.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "061d57b7d9e7f02a79aa26893aa2c1dd4429c59e",
+          "sha256": "21eb339e31b3abf4c5e94ae9342d2e62ce8dd25beb1294cb8d9b935eedeea6dc",
+          "bytes": 829,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 18,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/4014142f-c5e7-4779-b092-187f8cc6f8c5.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "5ed679311fffd575a8d1962499a3066c48b0cf54",
+          "sha256": "20dd977289850c203ec47eef1c48f10cddd175abdc6f2f073c060c01e93d1f3c",
+          "bytes": 801,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 19,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/d8930589-6c2b-415d-a75a-bd3eb78bf904.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "8fb45bf496959da45698147c8efba08bbd7bafe9",
+          "sha256": "c12ce8e1657bdb609b9fcb60818e568557140f6cd61e03d401bf5ad31d2bfca2",
+          "bytes": 816,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 20,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/7528d55f-6dff-4a01-9b15-eedb3749722a.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4d4962236cf401508927a655ab90389edd58226b",
+          "sha256": "b8459451745dbed7dc4348b1c8c7051bd55bb1c4ee411c241cd37d26decf4792",
+          "bytes": 826,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 21,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/1869bafb-49c8-418e-9f82-521936a85b32.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "f79225b3dd3fcf607e8960c1edf2ba30bcd2c984",
+          "sha256": "934429639730d59c41df45585cf2725e4a64b245f6e68860eacd2d389cd28340",
+          "bytes": 794,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 22,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/551fd772-7283-4a47-ad46-95d2f4cf1b69.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "603c10add46830a2f83c744a508714a8bd746380",
+          "sha256": "3dc7d37fe4d1c0012ed48186c76030d1dd0f969aad04c30699aacd31d7cda64f",
+          "bytes": 802,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 23,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/07922299-0863-4cd2-90d2-d06395818b4e.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "d2354c0815f78a8eefa4f14c7d44d6a25ecc2f70",
+          "sha256": "df5bb1ca5ea31375525cb5930bc67be52dc541ef5d1d8702d4a3763be952a0b9",
+          "bytes": 805,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 24,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/76a9d4b9-e9b1-4577-a102-615a9795301c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "d0493ff34c38966488c0743fde14ebc561811cc8",
+          "sha256": "ae0f2be135037da24e393f74c0f1ccf3738a0898ff8761860b76911469a2ccca",
+          "bytes": 806,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            44
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 25,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/37c10856-6e15-453d-9158-4dd81cf2527d.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "75366f2ca4153f9bddd4b199deebfa1660e2b142",
+          "sha256": "33f577c862e0b543ac1758f6caa65ac451a7e64a1ea490ba32df1a18d0bfe440",
+          "bytes": 814,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 26,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_queen/2eb64344-0f9e-4b6f-b76b-677fd95af7c3.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "4d4962236cf401508927a655ab90389edd58226b",
+          "sha256": "b8459451745dbed7dc4348b1c8c7051bd55bb1c4ee411c241cd37d26decf4792",
+          "bytes": 826,
+          "width": 38,
+          "height": 47,
+          "opaqueBounds": [
+            0,
+            0,
+            38,
+            43
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              162,
+              232
+            ],
+            [
+              7,
+              111,
+              224
+            ],
+            [
+              237,
+              28,
+              36
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 27,
+          "length": 1
+        }
+      ]
+    },
+    "lancerIdle": {
+      "sourceName": "spr_lancer_dt",
+      "width": 36,
+      "height": 35,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_lancer_dt/0e1c145f-52f7-4386-94e3-bb072c9c51cb.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "237278475492c6c05954bcf0bcb2db49b3756d9e",
+          "sha256": "6e4dd170442ece46f71964fe5dc902f2f7c91f4b0b129f6d27e07e3c97f8b47f",
+          "bytes": 805,
+          "width": 36,
+          "height": 35,
+          "opaqueBounds": [
+            2,
+            1,
+            32,
+            35
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              50,
+              50,
+              50
+            ],
+            [
+              85,
+              133,
+              189
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "footAnchor": [
+            18,
+            35
+          ],
+          "key": 0,
+          "length": 1
+        }
+      ]
+    },
+    "lancerFace": {
+      "sourceName": "spr_face_l0",
+      "width": 55,
+      "height": 56,
+      "origin": [
+        0,
+        0
+      ],
+      "playbackSpeed": 1,
+      "playbackSpeedType": 1,
+      "frames": [
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/cd43bf13-62ed-4b67-8148-eeeb3a3594ed.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "66b26524c380c12ebb7ee3064d1e68dcb5a20e61",
+          "sha256": "5bdd374f8fcec18b72115c4d38fe2a01575af411b5d070a975b46c4ebf28d310",
+          "bytes": 781,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            49,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 0,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/0ccc8dd0-9453-42cc-84b6-106cc1938b06.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "565b7e7ff9ab880e62e3e396039a300172c60138",
+          "sha256": "97556ae83531c825f224151c46275d50d31c5734eb99093f596b7e8f08b7023e",
+          "bytes": 835,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            1,
+            47,
+            56
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 1,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/349e5c59-d1e2-4251-9a04-ac667036039e.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "3a2adb4e7466908b9e6586789c8a421aa51d398a",
+          "sha256": "09150e07e3582b932f0590f14374261a640641408b8ffbd28518403a6b9ff83c",
+          "bytes": 791,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            48,
+            52
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 2,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/1154ddcb-67d5-4a42-866b-fddaeb95ca8f.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "0d797f73bb7e389a8e7b39f6733c6c47d09f3a1c",
+          "sha256": "f0b11be159aca4c9ef69d02e9280b0ed641a3848f9c2215125e77d053a33912a",
+          "bytes": 763,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            48,
+            55
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 3,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/16f7e768-d52d-4d28-a6dd-de37b16a2c0e.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "a0372f0d7a98d9ab55475601ffac92cadb434c17",
+          "sha256": "3a3d3dde94833a0f42704f4a654afedd8200c764f068a626e69e669ad7538a03",
+          "bytes": 692,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            1,
+            3,
+            55,
+            53
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 4,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/cb614ef1-1dc2-47ba-8ba9-51857aa280e1.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "3963acde816755a57709dff5b358a5f5aa6c6931",
+          "sha256": "c2dab71fd430a12799dcb761f3c6298b527c3283b7fb2ce881525dd085163f0c",
+          "bytes": 736,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            47,
+            51
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 5,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/d92c6bc7-e35d-4215-9d0a-f19da86d4b23.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "7f48a24eb4a80f5c59b299b98a7775106d2b7771",
+          "sha256": "51d10525f2b1dd61ed28d067af0347ce182a9bd88bb6e505e6d1f27120e0aa34",
+          "bytes": 747,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            48,
+            53
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 6,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/2af88d68-fcb5-4a7d-8028-2e9e4a5b0a3b.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "94a55012bee4e1e1517f975a16d73b49695f8ae1",
+          "sha256": "8b05d322d6cbdc346997fbc43046e8b0b53d4912ca8a95defddc9d22e0fa59f7",
+          "bytes": 716,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            3,
+            49,
+            50
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 7,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/d92efcb4-fb08-4172-9ccb-fa9abb054df3.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "bdd7db13c9d131d0de3281e5dfd235af1987ee7c",
+          "sha256": "59569aa3b4e9e92b1e98667588cd03e37bd7c61f600a071db7b4fa5ba9f7420d",
+          "bytes": 844,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            47,
+            54
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 8,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/226accf4-135c-47a3-a528-58a784f9f276.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "922ea581b8f88ce64e7d98bceaffd4a73a3ba200",
+          "sha256": "0367014cbd16ccb74de6ca990480ffbbf0813041c3233ac22ddbf3eaeb2cc9c5",
+          "bytes": 830,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            1,
+            47,
+            56
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 9,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/462e02bf-18f8-4b1d-b617-66f6cd49c850.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "01a288fc40ac4a95def2da3968c800b0379c0b2a",
+          "sha256": "f48b6d91dc860f34c94c90998b594113c3dad94508ed6a5d9a06e0a6b0ab815f",
+          "bytes": 735,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            47,
+            51
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 10,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/8ee9f48d-1793-47fb-b684-b34c8f27e26c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "892e4475a1e0dd219d8393e5ea27e9172b7cfddb",
+          "sha256": "a4a204e7f5d73b659ef3238fb5cb178c1e272fa8b570c212f008098174525a1b",
+          "bytes": 732,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            47,
+            51
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 11,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/466f10a3-abd1-4c12-996b-12653993dd6c.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "7f91bc2fff3089c9ae58f42f283abfe73b65d682",
+          "sha256": "2d4edf2ad2d8ff08ca750b50b706fc92de22c1ee29be203e0883f4673f1ce24a",
+          "bytes": 759,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            49,
+            53
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 12,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/2ea72c32-4b29-4667-a464-4b5cb3fc5c1e.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "624161b2c621ecd50cea584f927657c74afd0554",
+          "sha256": "d0fee3d3d64a7b3bcd128ca58130bc1bfa0ddffe5d13f2ce17798d7ca2d186c4",
+          "bytes": 772,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            49,
+            53
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              136,
+              0,
+              21
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 13,
+          "length": 1
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sprites/spr_face_l0/cb5c1696-7011-4ccb-962f-7289e07c07d3.png",
+          "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+          "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+          "gitBlob": "dbda2996c4aa9760b03bff20b3efa505160dd1e8",
+          "sha256": "f7977ba5be50e3fb53d1402aff281ff67773e8af935a44c67d9c3d19e1f6672c",
+          "bytes": 810,
+          "width": 55,
+          "height": 56,
+          "opaqueBounds": [
+            7,
+            0,
+            49,
+            52
+          ],
+          "alphaLevels": [
+            0,
+            255
+          ],
+          "opaquePalette": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              64,
+              96,
+              128
+            ],
+            [
+              136,
+              0,
+              21
+            ],
+            [
+              255,
+              255,
+              255
+            ]
+          ],
+          "key": 14,
+          "length": 1
+        }
+      ]
+    }
+  },
+  "audio": {
+    "narratorVoice": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_text/snd_text.wav",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "a0c8f92afe14618ffe23aee7b9deabe08c69002a",
+      "sha256": "dd871b0b2c2336c831d4327cdd669d2a2358c3af51fc2b6c044df7bab68ae49e",
+      "bytes": 22852,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.129297,
+      "sourceName": "snd_text"
+    },
+    "ralseiVoice": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_txtral/snd_txtral",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "39b76a1e9a6164a0fc2741263f9115925cd0243a",
+      "sha256": "0fc3e81515eba726ca622062a147640255ada372b93a16602b5f8570f798e4d1",
+      "bytes": 12250,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 0.13839,
+      "sourceName": "snd_txtral"
+    },
+    "susieVoice": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_txtsus/snd_txtsus",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "8e106f00353798c2314cec09f692fc42ea8ba444",
+      "sha256": "bec43c4daca177164313d6d31a1d49abee1ef6996bd376a3ac8e2a26275f4a58",
+      "bytes": 11464,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 0.129478,
+      "sourceName": "snd_txtsus"
+    },
+    "lancerVoice": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_txtlan/snd_txtlan",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "0fbc70031da286d4989274155b4e8b023a0f5c39",
+      "sha256": "a4c2fa10afb418e694ffa11c6ccd6fb8ad37b125fb909160b2e1a9d5266f542c",
+      "bytes": 4360,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 0.048934,
+      "sourceName": "snd_txtlan"
+    },
+    "grow": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_power/snd_power",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "57f9f21a5f9ac6383c8377ee055728d4b1c1afd7",
+      "sha256": "182383d95123c6c64c9a4661db35fb6738be54f511f2853bd1deb6a756ee9af7",
+      "bytes": 62928,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 0.712971,
+      "sourceName": "snd_power"
+    },
+    "magic": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_magicsprinkle/snd_magicsprinkle",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "5d401df9f2cd2289c9331580b47b383f3edc0615",
+      "sha256": "6bfe95433d293ab1b94ea3900e2ec6f17c73ac9e3c4104a273d2bac28c5d66c0",
+      "bytes": 124928,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 1.415918,
+      "sourceName": "snd_magicsprinkle"
+    },
+    "jump": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_jump/snd_jump",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "5fe049c7462f97050bebb86389eead9679a96835",
+      "sha256": "450137730620e0082b7594d31ce3a825cb92b35a6f010edbbd5e7d4c6835cd6f",
+      "bytes": 97498,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 1,
+      "duration": 1.104921,
+      "sourceName": "snd_jump"
+    },
+    "land": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/sounds/snd_impact/snd_impact",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "daf42badd4952491c4eff5c93265c60c9b7a8524",
+      "sha256": "24a26f6c6c80cdf5f1f9df14dce9670af50d003b59f8060d2ec44b989b2c9190",
+      "bytes": 108844,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2,
+      "duration": 0.61678,
+      "sourceName": "snd_impact"
+    },
+    "music": {
+      "url": "https://raw.githubusercontent.com/Mollomm1/test/ac1db67df09e8ae48572c5de84b4b6ac5ebd1e67/mus/castletown.ogg",
+      "repo": "Mollomm1/test",
+      "revision": "ac1db67df09e8ae48572c5de84b4b6ac5ebd1e67",
+      "gitBlob": "f24bd1b2a0fe74dc7ad01c42d254704d2a329cc4",
+      "sha256": "82edd8d4590e1fe849dc3ef57565826608567cfa79387eaeb6b0537a7dc79ccf",
+      "bytes": 1537218,
+      "codec": "vorbis",
+      "sampleRate": 48000,
+      "channels": 2,
+      "duration": 126.131396,
+      "sourceName": "castletown",
+      "title": "My Castle Town",
+      "creator": "Toby Fox"
+    }
+  },
+  "fonts": {
+    "main": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/fonts/fnt_main/fnt_main.png",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "d84eed9f935f230cf0bad770331fb42cad4dca84",
+      "sha256": "68611200b212b62e59d7fc483cf7665b8a8cb30f6b20603240738107d4659f10",
+      "bytes": 1900,
+      "width": 128,
+      "height": 128,
+      "size": 12,
+      "fontName": "8bitoperator JVE"
+    },
+    "small": {
+      "url": "https://raw.githubusercontent.com/TeamBlossomDevs/DeltaruneDecomp_beta/154f9a97b8f18fa6974e917c4c4e774bde6b7eba/fonts/fnt_small/fnt_small.png",
+      "repo": "TeamBlossomDevs/DeltaruneDecomp_beta",
+      "revision": "154f9a97b8f18fa6974e917c4c4e774bde6b7eba",
+      "gitBlob": "5c96c6923737d906d083de840d75528c27bc1aa4",
+      "sha256": "76986f062fc326dcf950b46bbd93924fe47ee20994b791e40fef4a2096fd09c6",
+      "bytes": 1032,
+      "width": 128,
+      "height": 64,
+      "size": 6,
+      "fontName": "Crypt of Tomorrow"
+    }
+  }
+}
