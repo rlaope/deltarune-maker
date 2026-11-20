@@ -1,6 +1,6 @@
 # Working in the studio
 
-Start with [AGENTS.md](../AGENTS.md), the shared creative and asset policy, and the [showcase catalog](../examples/catalog.json). The published examples document finished videos; their pages identify the available artifacts. The studio image is a visual concept.
+Start with [AGENTS.md](../AGENTS.md), the shared creative and asset policy, the [showcase catalog](../examples/catalog.json), and the [production lessons](production-lessons.md) learned from rejected cuts. The published examples document finished videos; their pages identify the available artifacts. The studio image is a visual concept.
 
 ## Use your preferred agent
 

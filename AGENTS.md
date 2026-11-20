@@ -1,7 +1,7 @@
 <!-- omh:agent-instructions:begin -->
 # Studio instructions
 
-This is an English-language DELTARUNE fan creation studio. Keep these instructions as the canonical project policy for every agent. Read [the workflow](docs/workflow.md) before producing or publishing an example.
+This is an English-language DELTARUNE fan creation studio. Keep these instructions as the canonical project policy for every agent. Read [the workflow](docs/workflow.md) and [the production lessons](docs/production-lessons.md) before producing or publishing an example.
 
 ## Verification
 
