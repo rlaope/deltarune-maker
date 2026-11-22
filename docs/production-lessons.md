@@ -44,6 +44,37 @@ Lessons from finished crossovers, each learned from a rejected cut. They apply t
 - Review fast exchanges on a strip of 12-18 consecutive encoded frames, and ask where the projectile is and what covers whom in each frame. Single stills hid blobs, teleports and strobing.
 - Cut encoded frames of every scene touched in a revision, not only the ones in the feedback. A scene that passed as a still can freeze or skip its key frame in the encode. Fix a failed beat and render again before delivering.
 
+## Pick the format from data
+
+- Before pitching ideas, search the platform and collect the view count, length and channel of a few hundred recent fan shorts. Group them by format and compare medians. Pitches made without numbers were all rejected.
+- In one snapshot of about 300 DELTARUNE shorts under three minutes, the medians were: songs with lyrics about 800K, battle animations about 560K, "what if" or "but it's X" about 250K, dialogue skits about 120K, and crossovers that drop the cast into another game about 4K. Re-measure before trusting these numbers; trends move.
+- "DELTARUNE, but it's X" works as a series. Each episode keeps the frame (a handheld, a fighting game, an anime opening) and swaps the subject. Plan the next boss or opening as an episode with a title card.
+- For an anime-opening remake, first search for openings that have already been remade with the game, and pick a popular one that has not.
+
+## Pace for reading, not for length
+
+- A story that hurries from walk to boss to win reads as rushed, even when every beat is present. Let each beat hold for its text at about 21 glyphs per second plus a hold, and put the cause on screen before each reaction.
+- When the runtime has to shrink, cut whole beats (an extra attack, a flavour line, a heal) rather than speeding everything up. Keep the story beats (the walk, the reveal, the boss's own lines) and shorten the middle of the battle.
+- Give a series episode a short title card ("EPISODE: <BOSS>") after the boot screen.
+- On a small screen, draw battle sprites slightly smaller than the field sprites and leave visible room in the bullet box. A full-size cast pressed against the box left no space to read a dodge.
+
+## Port the boss, then make it readable
+
+- Port each attack's spawn pattern, speed and timing from the decompiled object code, and quote the native line that announces it. Then thin the bullets until they read at the target resolution, and say so in the notes.
+- A bullet that touches the SOUL always causes a hurt flash and an HP drop. Plan the SOUL's path so near misses and hits both happen on purpose.
+- Use the reward the game actually gives for the route shown. Sparing a boss and fighting him to defeat give different items, so check the event code for which flag gives which reward.
+- In a fighting-game parody, keep the opponent's signature attacks from the boss fight (arrow volleys, shell pinball, the swing-down) and drop decoration that duplicates them. Every reaction still needs its cause on screen.
+- After a knockout, let the boss return to his overworld form and react in character before the win screen. A body hanging in mid-air after the K.O. read as a bug.
+- Frame both fighters whole during every beat that matters to both of them, including the post-K.O. reaction. A camera biased to one side clipped the other fighter off the edge.
+
+## Music, Content ID and length
+
+- Game music is the composer's work. Chiptune or MIDI arrangements of it still match Content ID, and the publisher claims them. Never describe an arrangement as original music in a hand-off.
+- On YouTube, a vertical Short of one to three minutes with any active claim is blocked worldwide. Under 60 seconds it stays viewable, though the claimant may take the revenue. Long-form videos over three minutes, and horizontal videos, stay viewable with a monetise or track claim.
+- So a Short that uses game or label music must be 59 seconds or less. Assert the limit in the story clock and check the encoded file's duration before delivering. To run longer, either write fully original music or publish as a different format.
+- Replacing a boss theme with original music to keep the length was rejected: the audience expects that boss's theme. Prefer the theme in a 59-second cut.
+- Do not dispute a claim on music you did use, and do not detune or retime a theme to slip past matching.
+
 ## Editions
 
 - A longform edition gets its own 16:9 layout around the same game screen, not the vertical frame with bars.
